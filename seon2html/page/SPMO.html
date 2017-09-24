@@ -1,0 +1,484 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<META charset="ISO-8859-1">
+<TITLE>Software Project Management Ontology (SPMO)</TITLE>
+<LINK rel="stylesheet" type="text/css" href="style.css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-81695120-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="maphilight.js"></script>
+<script type="text/javascript">
+	$(function() {
+        $('.map').maphilight();
+    });
+</script>
+
+</HEAD>
+<BODY>
+	<h3 align="center">SEON: Networked Ontology Specification</h3>
+	<h1 align="center">Software Project Management Ontology (SPMO)</h1>
+
+	<h2>1. Ontology Description</h2>
+	<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+
+	<h2>2. Related Ontologies</h2>
+	<p>Networked ontologies used by SPMO:</p>
+	<table border="1" style="width: 100%" cellpadding="6">
+		<tbody>
+			<tr style="background-color: #D8D8D8">
+				<td style="width: 20%"><b>Ontology</b></td>
+				<td style="width: 66%"><b>Relation</b></td>
+				<td style="width: 14%; text-align: center"><b>Integration Level</b></td>
+			</tr>
+			<tr><td><a href="SPO.html">SPO - Software Process Ontology</a></td><td></td><td style="text-align:center">High</td></tr>
+<tr><td><a href="SwAO.html">SwAO - Software Artifact Ontology</a></td><td></td><td style="text-align:center"></td></tr>
+
+		</tbody>
+	</table>
+
+	<h2>3. Ontology Models</h2>
+	<p>Figure 1 presents the packages of the SPMO Modularization.</p>
+<p align="center"><IMG src="images/SPMO Modularization.png" width="771" class="map" usemap="#SPMO Modularization"><MAP NAME="SPMO Modularization">
+<area shape="rect" coords="280,10,486,80" href="SPO.html#SPO_Intended+Process+Structure_section" title="">
+<area shape="rect" coords="606,10,761,80" href="SPO.html#SPO_Performed+Process_section" title="">
+<area shape="rect" coords="10,10,163,80" href="SPMO.html#SPMO_Estimated+Process_section" title="">
+<area shape="rect" coords="309,122,449,192" href="SPMO.html#SPMO_Tracked+Process_section" title="">
+<area shape="rect" coords="24,188,92,258" href="SPMO.html#SPMO_WBS_section" title=""></MAP></p>
+<p align="center"><b>Figure 1. SPMO Modularization.</b></p>
+<p align="justify">The Project Management Ontology (PMO) is defined as a layer over the Software Process Ontology, addressing aspects related to scope, time & duration, and cost estimation of intended processes, as well as aspects related to tracking planned versus performed processes. </p>
+
+<h3><a name="SPMO_WBS_section">3.1.  WBS</a></h3>
+<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p>Figure 2 presents the conceptual model of the WBS subontology.</p>
+<p align="center"><IMG src="images/WBS.png" width="449" class="map" usemap="#WBS"><MAP NAME="WBS">
+<area shape="rect" coords="10,19,130,55" href="SPO.html#SPO_Software+Project" title="A Project related to software development or maintenance.">
+<area shape="rect" coords="270,19,363,57" href="SPMO.html#SPMO_Deliverable" title="">
+<area shape="rect" coords="322,121,436,151" href="SPMO.html#SPMO_Practical+Result" title="">
+<area shape="rect" coords="191,121,297,151" href="SPMO.html#SPMO_Work+Package" title=""></MAP></p>
+<p align="center"><b>Figure 2. WBS conceptual model.</b></p>
+<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+
+<h3><a name="SPMO_Estimated+Process_section">3.2.  Estimated Process</a></h3>
+<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p>Figure 3 presents the conceptual model of the Estimated Process subontology.</p>
+<p align="center"><IMG src="images/Estimated Process.png" width="1273" class="map" usemap="#Estimated Process"><MAP NAME="Estimated Process">
+<area shape="rect" coords="428,286,541,322" href="SPO.html#SPO_Project+Process" title="Intended Process defined to be performed within a Project.">
+<area shape="rect" coords="424,17,544,53" href="SPO.html#SPO_Software+Project" title="A Project related to software development or maintenance.">
+<area shape="rect" coords="61,370,227,416" href="SPMO.html#SPMO_Cost+Estimated+Process" title="A Project Process with cost estimated.
+">
+<area shape="rect" coords="274,391,438,421" href="SPO.html#SPO_General+Project+Process" title="">
+<area shape="rect" coords="394,454,558,484" href="SPO.html#SPO_Specific+Project+Process" title="">
+<area shape="rect" coords="629,455,742,485" href="SPO.html#SPO_Project+Activity" title="Intended Activity defined to be performed within a Project, and thus that is part of a Project Process.">
+<area shape="rect" coords="583,559,749,605" href="SPMO.html#SPMO_Cost+Estimated+Activity" title="A Project Activity with cost estimated.">
+<area shape="rect" coords="756,558,948,604" href="SPMO.html#SPMO_Duration+Estimated+Activity" title="A Project Process with duration estimated.">
+<area shape="rect" coords="88,430,280,476" href="SPMO.html#SPMO_Duration+Estimated+Process" title="A Project Process with duration estimated.">
+<area shape="rect" coords="894,443,1028,501" href="SPO.html#SPO_Scheduled+Activity" title="An Intended Activity defining the time interval it is planned to be performed.">
+<area shape="rect" coords="29,250,163,308" href="SPO.html#SPO_Scheduled+Process" title="An Intended Process defining the Time Interval it is planned to be performed.">
+<area shape="rect" coords="284,209,410,239" href="SPO.html#SPO_Intended+Process" title="Intention (Internal Commitment) representing the process defined to be performed in a specific project or organizational area, considering its particularities.">
+<area shape="rect" coords="748,359,874,389" href="SPO.html#SPO_Intended+Activity" title="Intention (Internal Commitment) representing the activity defined to be performed as part of an Intended Process, by a defined role, potentially consuming and producing artifacts, using resources and adopting procedures.">
+<area shape="rect" coords="401,575,574,605" href="SPMO.html#SPMO_Scope+Estimated+Activity" title="A Project Activity with its scope in the project defined in terms of the work packages that it shall produce.">
+<area shape="rect" coords="157,73,250,111" href="SPMO.html#SPMO_Deliverable" title="">
+<area shape="rect" coords="216,156,330,186" href="SPMO.html#SPMO_Practical+Result" title="">
+<area shape="rect" coords="88,156,194,186" href="SPMO.html#SPMO_Work+Package" title="">
+<area shape="rect" coords="712,673,845,703" href="SPMO.html#SPMO_Estimated+Activity" title="A Project Activity with scope, cost, duration and time estimated.">
+<area shape="rect" coords="75,522,208,552" href="SPMO.html#SPMO_Estimated+Process" title="A Project Process with cost, duration and time estimated.">
+<area shape="rect" coords="1096,305,1190,335" href="SPO.html#SPO_Stakeholder" title="Agent (Person, Team or Organization) interested or affected by the process activities or results.">
+<area shape="rect" coords="1066,458,1227,488" href="SPO.html#SPO_Stakeholder+Allocation" title="Social Relator representing a Stakeholder allocated to perform a Scheduled Activity acting an Organizational Role.">
+<area shape="rect" coords="1036,645,1263,736" href="SPMO.html#SPMO_Estimated+Stakeholder+Allocation" title=""></MAP></p>
+<p align="center"><b>Figure 3. Estimated Process conceptual model.</b></p>
+<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+
+<h3><a name="SPMO_Tracked+Process_section">3.3.  Tracked Process</a></h3>
+<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p>Figure 4 presents the conceptual model of the Tracked Process subontology.</p>
+<p align="center"><IMG src="images/Tracked Process.png" width="1298" class="map" usemap="#Tracked Process"><MAP NAME="Tracked Process">
+<area shape="rect" coords="394,292,529,353" href="SPO.html#SPO_Performed+Process" title="Complex Action, composed of other processes or activities, performed in a specific Time Interval, for reaching a goal in a Project or Organization.">
+<area shape="rect" coords="681,456,816,517" href="SPO.html#SPO_Performed+Activity" title="Action performed, in a specific Time Interval, by a Stakeholder, potentially producing and consuming Artifacts, as part of a Specific Performed Process.">
+<area shape="rect" coords="539,49,665,79" href="SPO.html#SPO_Intended+Process" title="Intention (Internal Commitment) representing the process defined to be performed in a specific project or organizational area, considering its particularities.">
+<area shape="rect" coords="822,266,948,296" href="SPO.html#SPO_Intended+Activity" title="Intention (Internal Commitment) representing the activity defined to be performed as part of an Intended Process, by a defined role, potentially consuming and producing artifacts, using resources and adopting procedures.">
+<area shape="rect" coords="180,189,300,219" href="SPO.html#SPO_Software+Project" title="A Project related to software development or maintenance.">
+<area shape="rect" coords="512,151,689,181" href="SPO.html#SPO_General+Intended+Process" title="Intended Process that is composed of Specific Intended Processes, allowing an Organization or Project to define sub-processes that are part of a complete Intended Process.">
+<area shape="rect" coords="623,207,800,237" href="SPO.html#SPO_Specific+Intended+Process" title="Intended Process that is part of the General Intended Process of a Project or Organization, necessarily composed of at least two Intended Activities.">
+<area shape="rect" coords="275,416,461,446" href="SPO.html#SPO_Performed+General+Process" title="The overall Performed Process executed in a specific Project or Organization, which is necessarily composed of Specific Performed Processes.">
+<area shape="rect" coords="409,472,595,502" href="SPO.html#SPO_Performed+Specific+Process" title="Performed Process that is part of the General Performed Process of a Project or Organization, necessarily composed of at least two Performed Activities.">
+<area shape="rect" coords="957,331,1070,361" href="SPO.html#SPO_Project+Activity" title="Intended Activity defined to be performed within a Project, and thus that is part of a Project Process.">
+<area shape="rect" coords="333,117,446,147" href="SPO.html#SPO_Project+Process" title="Intended Process defined to be performed within a Project.">
+<area shape="rect" coords="659,561,840,591" href="SPO.html#SPO_Performed+Project+Activity" title="">
+<area shape="rect" coords="148,347,329,377" href="SPO.html#SPO_Performed+Project+Process" title="Performed Process executed within a Project.">
+<area shape="rect" coords="1035,405,1168,435" href="SPMO.html#SPMO_Estimated+Activity" title="A Project Activity with scope, cost, duration and time estimated.">
+<area shape="rect" coords="10,149,143,179" href="SPMO.html#SPMO_Estimated+Process" title="A Project Process with cost, duration and time estimated.">
+<area shape="rect" coords="690,635,810,711" href="SPMO.html#SPMO_Tracked+Activity" title="">
+<area shape="rect" coords="178,473,298,549" href="SPMO.html#SPMO_Tracked+Process" title="">
+<area shape="rect" coords="125,703,219,733" href="SPO.html#SPO_Stakeholder" title="Agent (Person, Team or Organization) interested or affected by the process activities or results.">
+<area shape="rect" coords="368,688,544,749" href="SPO.html#SPO_Stakeholder+Participation" title="The participation of a Stakeholder in a Performed Activity, playing an Organizational Role.">
+<area shape="rect" coords="376,812,537,842" href="SPO.html#SPO_Stakeholder+Allocation" title="Social Relator representing a Stakeholder allocated to perform a Scheduled Activity acting an Organizational Role.">
+<area shape="rect" coords="606,750,835,811" href="SPMO.html#SPMO_Tracked+Stakeholder+Participation" title="">
+<area shape="rect" coords="616,874,843,965" href="SPMO.html#SPMO_Estimated+Stakeholder+Allocation" title="">
+<area shape="rect" coords="944,732,1050,762" href="SPMO.html#SPMO_Work+Package" title="">
+<area shape="rect" coords="1115,331,1288,361" href="SPMO.html#SPMO_Scope+Estimated+Activity" title="A Project Activity with its scope in the project defined in terms of the work packages that it shall produce."></MAP></p>
+<p align="center"><b>Figure 4. Tracked Process conceptual model.</b></p>
+<p align="justify"><br/></p>
+
+
+	<h2>4. Concepts Definition</h2>
+	<p align="justify">The following table shows the definitions for SPMO concepts.
+<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->
+	</p>
+	<table style="width: 100%" border="1" cellpadding="6">
+		<tbody>
+			<tr style="background-color: #D8D8D8">
+				<td style="width: 25%"><b>Concept</b></td>
+				<td style="width: 75%"><b>Definition</b></td>
+			</tr>
+			<tr>
+<td><a name="SPMO_Corrective+Action+Register"><b>Corrective Action Register</b></a>
+<a href=#SPMO_Corrective+Action+Register_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Information Item describing an action to eliminate the cause or reduce the likelihood of recurrence of a detected nonconformity or other undesirable situation. [ISO/IEC/IEEE 24765]
+<br/>Ex.:<i> an additional developer shall be allocated for Project X; a new agreement on the requirements change shall be obtained from the client.
+</i></td>
+</tr>
+<tr>
+<td><a name="SPMO_Cost+Estimated+Activity"><b>Cost Estimated Activity</b></a>
+<a href=#SPMO_Cost+Estimated+Activity_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Project Activity with cost estimated.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Cost+Estimated+Process"><b>Cost Estimated Process</b></a>
+<a href=#SPMO_Cost+Estimated+Process_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Project Process with cost estimated.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Deliverable"><b>Deliverable</b></a>
+<a href=#SPMO_Deliverable_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Duration+Estimated+Activity"><b>Duration Estimated Activity</b></a>
+<a href=#SPMO_Duration+Estimated+Activity_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Project Process with duration estimated.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Duration+Estimated+Process"><b>Duration Estimated Process</b></a>
+<a href=#SPMO_Duration+Estimated+Process_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Project Process with duration estimated.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Estimated+Activity"><b>Estimated Activity</b></a>
+<a href=#SPMO_Estimated+Activity_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Project Activity with scope, cost, duration and time estimated.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Estimated+Process"><b>Estimated Process</b></a>
+<a href=#SPMO_Estimated+Process_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Project Process with cost, duration and time estimated.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Estimated+Stakeholder+Allocation"><b>Estimated Stakeholder Allocation</b></a>
+<a href=#SPMO_Estimated+Stakeholder+Allocation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Practical+Result"><b>Practical Result</b></a>
+<a href=#SPMO_Practical+Result_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Project+Manager"><b>Project Manager</b></a>
+<a href=#SPMO_Project+Manager_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Stakeholder responsible for managing a Project.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Project+Plan"><b>Project Plan</b></a>
+<a href=#SPMO_Project+Plan_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Document describing the planning of a Project, to be used as the basis for project management.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Scope+Estimated+Activity"><b>Scope Estimated Activity</b></a>
+<a href=#SPMO_Scope+Estimated+Activity_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Project Activity with its scope in the project defined in terms of the work packages that it shall produce.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Tracked+Activity"><b>Tracked Activity</b></a>
+<a href=#SPMO_Tracked+Activity_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Tracked+Process"><b>Tracked Process</b></a>
+<a href=#SPMO_Tracked+Process_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Tracked+Stakeholder+Participation"><b>Tracked Stakeholder Participation</b></a>
+<a href=#SPMO_Tracked+Stakeholder+Participation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Work+Package"><b>Work Package</b></a>
+<a href=#SPMO_Work+Package_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+
+		</tbody>
+	</table>
+	<br/>
+	<h2>Detailed Concepts</h2>
+	<a name="SPMO_Corrective+Action+Register_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Corrective Action Register<strong></td></tr>
+</table><br/>
+<b>SPMO::Corrective Action Register</b><br/>
+Specializes SwAO::Information Item<br/><br/>
+Information Item describing an action to eliminate the cause or reduce the likelihood of recurrence of a detected nonconformity or other undesirable situation. [ISO/IEC/IEEE 24765]<br/>
+Ex.:<i> an additional developer shall be allocated for Project X; a new agreement on the requirements change shall be obtained from the client.
+</i><br/>
+<br/>
+Relations:<br/>
+<code>Noncompliance Register (0..*) <>-- (0..*) Corrective Action Register<br/>
+Noncompliance Resolution creates Corrective Action Register<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SPMO_Cost+Estimated+Activity_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Cost Estimated Activity<strong></td></tr>
+</table><br/>
+<b>SPMO::Cost Estimated Activity</b><br/>
+Specializes SPO::Project Activity<br/><br/>
+A Project Activity with cost estimated.<br/>
+<br/>
+<br/>
+<br/>
+<br/><br/>
+
+<a name="SPMO_Cost+Estimated+Process_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Cost Estimated Process<strong></td></tr>
+</table><br/>
+<b>SPMO::Cost Estimated Process</b><br/>
+Specializes SPO::Project Process<br/><br/>
+A Project Process with cost estimated.<br/><br/>
+<br/>
+<br/>
+<br/>
+<br/><br/>
+
+<a name="SPMO_Deliverable_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltmode&gt&gt</code><br/>
+<strong>Deliverable<strong></td></tr>
+</table><br/>
+<b>SPMO::Deliverable</b><br/>
+Specializes <br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Practical Result (0..*) <>-- (2..*) Deliverable<br/>
+<span style='color:red' title='Relation to a lower level (SPO-->SPMO)'>Software Project (1..1) has (0..*) Deliverable</span><br/>
+</code><br/>
+<br/><br/>
+
+<a name="SPMO_Duration+Estimated+Activity_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Duration Estimated Activity<strong></td></tr>
+</table><br/>
+<b>SPMO::Duration Estimated Activity</b><br/>
+Specializes SPO::Project Activity<br/><br/>
+A Project Process with duration estimated.<br/>
+<br/>
+<br/>
+<br/>
+<br/><br/>
+
+<a name="SPMO_Duration+Estimated+Process_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Duration Estimated Process<strong></td></tr>
+</table><br/>
+<b>SPMO::Duration Estimated Process</b><br/>
+Specializes SPO::Project Process<br/><br/>
+A Project Process with duration estimated.<br/>
+<br/>
+<br/>
+<br/>
+<br/><br/>
+
+<a name="SPMO_Estimated+Activity_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Estimated Activity<strong></td></tr>
+</table><br/>
+<b>SPMO::Estimated Activity</b><br/>
+Specializes SPMO::Duration Estimated Activity, SPO::Scheduled Activity, SPMO::Cost Estimated Activity, SPO::Project Activity, SPMO::Scope Estimated Activity<br/><br/>
+A Project Activity with scope, cost, duration and time estimated.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Tracked Activity (0..1) tracked in relation to (1..1) Estimated Activity<br/>
+Estimated Stakeholder Allocation (0..*) is to perform (1..1) Estimated Activity  &lt&ltmediation&gt&gt<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SPMO_Estimated+Process_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Estimated Process<strong></td></tr>
+</table><br/>
+<b>SPMO::Estimated Process</b><br/>
+Specializes SPMO::Duration Estimated Process, SPMO::Cost Estimated Process, SPO::Scheduled Process, SPO::Project Process<br/><br/>
+A Project Process with cost, duration and time estimated.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Tracked Process (0..1) tracked in relation to (1..1) Estimated Process<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SPMO_Estimated+Stakeholder+Allocation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Estimated Stakeholder Allocation<strong></td></tr>
+</table><br/>
+<b>SPMO::Estimated Stakeholder Allocation</b><br/>
+Specializes SPO::Stakeholder Allocation<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Estimated Stakeholder Allocation (0..*) is to perform (1..1) Estimated Activity  &lt&ltmediation&gt&gt<br/>
+Tracked Stakeholder Participation (0..*) refers to (1..1) Estimated Stakeholder Allocation<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SPMO_Practical+Result_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Practical Result<strong></td></tr>
+</table><br/>
+<b>SPMO::Practical Result</b><br/>
+Specializes SPMO::Deliverable<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Practical Result (0..*) <>-- (2..*) Deliverable<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SPMO_Project+Manager_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
+<strong>Project Manager<strong></td></tr>
+</table><br/>
+<b>SPMO::Project Manager</b><br/>
+Specializes SPO::Stakeholder<br/><br/>
+Stakeholder responsible for managing a Project.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Project Manager is in charge of Quality Assurance Planning<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SPMO_Project+Plan_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Project Plan<strong></td></tr>
+</table><br/>
+<b>SPMO::Project Plan</b><br/>
+Specializes SwAO::Document<br/><br/>
+Document describing the planning of a Project, to be used as the basis for project management.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Quality Assurance Planning uses Project Plan<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SPMO_Scope+Estimated+Activity_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Scope Estimated Activity<strong></td></tr>
+</table><br/>
+<b>SPMO::Scope Estimated Activity</b><br/>
+Specializes SPO::Project Activity<br/><br/>
+A Project Activity with its scope in the project defined in terms of the work packages that it shall produce.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Scope Estimated Activity (1..*) is to produce (1..*) Work Package<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SPMO_Tracked+Activity_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Tracked Activity<strong></td></tr>
+</table><br/>
+<b>SPMO::Tracked Activity</b><br/>
+Specializes SPO::Performed Project Activity<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Tracked Activity (0..1) tracked in relation to (1..1) Estimated Activity<br/>
+Tracked Activity (0..*) contributes to produce (1..*) Work Package<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SPMO_Tracked+Process_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Tracked Process<strong></td></tr>
+</table><br/>
+<b>SPMO::Tracked Process</b><br/>
+Specializes SPO::Performed Project Process<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Tracked Process (0..1) tracked in relation to (1..1) Estimated Process<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SPMO_Tracked+Stakeholder+Participation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Tracked Stakeholder Participation<strong></td></tr>
+</table><br/>
+<b>SPMO::Tracked Stakeholder Participation</b><br/>
+Specializes SPO::Stakeholder Participation<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Tracked Stakeholder Participation (0..*) refers to (1..1) Estimated Stakeholder Allocation<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SPMO_Work+Package_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Work Package<strong></td></tr>
+</table><br/>
+<b>SPMO::Work Package</b><br/>
+Specializes SPMO::Deliverable<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Tracked Activity (0..*) contributes to produce (1..*) Work Package<br/>
+Scope Estimated Activity (1..*) is to produce (1..*) Work Package<br/>
+</code><br/>
+<br/><br/>
+
+
+	<hr>
+	<br/>
+	<small><b>Software Project Management Ontology (SPMO)</b></small><br/>
+	<small>Tue Jun 13 19:53:58 BRT 2017</small>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+</BODY>
+</HTML>

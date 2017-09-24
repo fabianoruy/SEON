@@ -1,0 +1,526 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<META charset="ISO-8859-1">
+<TITLE>Software Artifact Ontology (SwAO)</TITLE>
+<LINK rel="stylesheet" type="text/css" href="style.css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-81695120-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="maphilight.js"></script>
+<script type="text/javascript">
+	$(function() {
+        $('.map').maphilight();
+    });
+</script>
+
+</HEAD>
+<BODY>
+	<h3 align="center">SEON: Networked Ontology Specification</h3>
+	<h1 align="center">Software Artifact Ontology (SwAO)</h1>
+
+	<h2>1. Ontology Description</h2>
+	<p align="justify">The Software Artifact Ontology (SwAO) aims at establishing a common conceptualization regarding Software Artifacts, including software products and related components.<br/>SwAO captures that software products have  a complex artifactual nature, being constituted of software artifacts of different nature, including software  systems, programs and code. Artifacts are objects consumed or produced during the software process. They can present different nature and composition. Possible types of Artifacts are (not limited to): Software Product (e.g. Eclipse IDE), Software Item (e.g. a database schema), Information Item (e.g. a bug reported), Model (e.g. a UML class model) and Document (e.g. a requirements specification). Documents can depict other Artifacts, as it is the case of a Design Specification describing a Software Architecture. The concepts Artifact Type, Document Type and Software Product Type define the possible specializations of Artifact, Software Product and Document (respectively).<br/>An Artifact can be composite or simple. A Composite Artifact is composed of two or more other Artifacts (e.g. a Project Plan composed of artifacts as a WBS diagram and a Risk Plan). A Simple Artifact is not decomposable. Artifacts can also depend on other Artifacts to be produced or updated, such as a Test Case depending on the Code it was designed to test.</p>
+
+	<h2>2. Related Ontologies</h2>
+	<p>Networked ontologies used by SwAO:</p>
+	<table border="1" style="width: 100%" cellpadding="6">
+		<tbody>
+			<tr style="background-color: #D8D8D8">
+				<td style="width: 20%"><b>Ontology</b></td>
+				<td style="width: 66%"><b>Relation</b></td>
+				<td style="width: 14%; text-align: center"><b>Integration Level</b></td>
+			</tr>
+			<tr><td><a href="UFO.html">UFO - Unified Foundational Ontology</a></td><td>The SwO concepts are derived from UFO (mostly social entities from UFO-C).</td><td style="text-align:center">High</td></tr>
+
+		</tbody>
+	</table>
+
+	<h2>3. Ontology Models</h2>
+	<p>Figure 1 presents the conceptual model of the Software Artifact Ontology.</p>
+<p align="center"><IMG src="images/Software Artifact Ontology.png" width="1069" class="map" usemap="#Software Artifact Ontology"><MAP NAME="Software Artifact Ontology">
+<area shape="rect" coords="494,21,603,51" href="UFO.html#UFO_Object" title="">
+<area shape="rect" coords="438,523,510,553" href="SwAO.html#SwAO_Program" title="Software Item which aims at producing a certain result through execution on a computer, in a particular way, given by the Program Specification. A Program is constituted by code, but it is not identical to code. Code can be changed without altering the identity of its program, which is anchored to the program's essential property: its intended specification (Program Specification).">
+<area shape="rect" coords="82,523,205,553" href="SwAO.html#SwAO_Software+System" title="Software Item that aims at satisfying a specification (System Specification), concerning a desired change in a data structure inside a computer, abstracting away from the behavior.">
+<area shape="rect" coords="647,615,744,645" href="SwAO.html#SwAO_Source+Code" title="A well-formed sequence of computer instructions and data definitions expressed in a programming language, in a form suitable for input to an assembler, compiler,
+or other translator.">
+<area shape="rect" coords="854,615,961,645" href="SwAO.html#SwAO_Machine+Code" title="Computer instructions and data definitions expressed in a form output by an assembler, compiler, or other translator, which can be recognized by the processing unit of a computer machine.">
+<area shape="rect" coords="400,646,555,676" href="SwAO.html#SwAO_Program+Specification" title="A document that describes the purpose (structure and functions) of a program in sufficient detail to permit coding and to facilitate maintenance.">
+<area shape="rect" coords="71,646,219,676" href="SwAO.html#SwAO_System+Specification" title="">
+<area shape="rect" coords="766,523,818,553" href="SwAO.html#SwAO_Code" title="Software Item representing a set of computer instructions and data definitions expressed in a programming language or in a form output by an assembler, compiler, or other translator (SEVOCAB).">
+<area shape="rect" coords="931,428,1015,458" href="SwAO.html#SwAO_Document" title="Any written or pictorial, uniquely identified, information related to the software development, usually presented in a predefined format.">
+<area shape="rect" coords="493,428,599,458" href="SwAO.html#SwAO_Software+Item" title="Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result.">
+<area shape="rect" coords="81,428,206,458" href="SwAO.html#SwAO_Software+Product" title="One or more computer programs together with any accompanying auxiliary items, such as documentation, delivered under a single name, ready for use.">
+<area shape="rect" coords="227,232,339,262" href="SwAO.html#SwAO_Simple+Artifact" title="Artifact that is not decomposed into other Artifacts.">
+<area shape="rect" coords="726,141,826,171" href="SwAO.html#SwAO_Artifact+Type" title="Object Kind which is the powertype of Artifact, classifying its specializations.">
+<area shape="rect" coords="709,21,851,51" href="UFO.html#UFO_Object+Kind" title="">
+<area shape="rect" coords="911,304,1029,334" href="SwAO.html#SwAO_Document+Type" title="Artifact Type which is the powertype of Document, classifying its specializations.">
+<area shape="rect" coords="328,429,386,459" href="SwAO.html#SwAO_Model" title="A representation (abstraction) of a process or system from a particular perspective.">
+<area shape="rect" coords="705,429,831,459" href="SwAO.html#SwAO_Information+Item" title="Relevant information for human use, produced or used by Performed Activity.">
+<area shape="rect" coords="115,304,274,334" href="SwAO.html#SwAO_Software+Product+Type" title="Artifact Type which is the powertype of Software Product, classifying its specializations.">
+<area shape="rect" coords="514,141,580,171" href="SwAO.html#SwAO_Artifact" title="Object intentionally made to serve a given purpose in the context of a software Project or Organization.">
+<area shape="rect" coords="69,232,207,262" href="SwAO.html#SwAO_Composite+Artifact" title="Artifact composed of other Artifacts."></MAP></p>
+<p align="center"><b>Figure 1. Software Artifact Ontology conceptual model.</b></p>
+<p align="justify">In the context of the software domain, Artifacts are objects intentionally made to serve a given purpose in the context of a Software Project or Organization. They can be composed of other artifacts (Composite Artifact) or not (Simple Artifact). An artifact is an instance of an Artifact Type (a second order type). Artifact Type partitions the generalization set of Artifacts according to their nature, giving rise to a taxonomy of artifacts. More specific taxonomies can be established for specific types of artifacts, such as documents (established by instances of Document Type) and Software Product (Software Product Type), among others.</p>
+
+
+	<h2>4. Concepts Definition</h2>
+	<p align="justify">The following table shows the definitions for SwAO concepts.
+<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->
+	</p>
+	<table style="width: 100%" border="1" cellpadding="6">
+		<tbody>
+			<tr style="background-color: #D8D8D8">
+				<td style="width: 25%"><b>Concept</b></td>
+				<td style="width: 75%"><b>Definition</b></td>
+			</tr>
+			<tr>
+<td><a name="SwAO_Artifact"><b><i>Artifact</i></b></a>
+<a href=#SwAO_Artifact_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Object intentionally made to serve a given purpose in the context of a software Project or Organization.
+<br/>Ex.:<i> a document, a model, a library, an e-mail, a bug.</i></td>
+</tr>
+<tr>
+<td><a name="SwAO_Artifact+Type"><b><i>Artifact Type</i></b></a>
+<a href=#SwAO_Artifact+Type_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Object Kind which is the powertype of Artifact, classifying its specializations.
+<br/>Ex.:<i> Document, Model, Software Product, Information Item, Software Item.</i></td>
+</tr>
+<tr>
+<td><a name="SwAO_CASE+Tool"><b><i>CASE Tool</i></b></a>
+<a href=#SwAO_CASE+Tool_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="SwAO_Code"><b><i>Code</i></b></a>
+<a href=#SwAO_Code_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Software Item representing a set of computer instructions and data definitions expressed in a programming language or in a form output by an assembler, compiler, or other translator (SEVOCAB).
+<br/></td>
+</tr>
+<tr>
+<td><a name="SwAO_Composite+Artifact"><b><i>Composite Artifact</i></b></a>
+<a href=#SwAO_Composite+Artifact_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Artifact composed of other Artifacts.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SwAO_Document"><b><i>Document</i></b></a>
+<a href=#SwAO_Document_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Any written or pictorial, uniquely identified, information related to the software development, usually presented in a predefined format.
+<br/>Ex.:<i> a Requirements Document, a specification, a report.</i></td>
+</tr>
+<tr>
+<td><a name="SwAO_Document+Type"><b><i>Document Type</i></b></a>
+<a href=#SwAO_Document+Type_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Artifact Type which is the powertype of Document, classifying its specializations.
+<br/>Ex.:<i> Requirements Document, Design Specification, Project Plan.</i></td>
+</tr>
+<tr>
+<td><a name="SwAO_Information+Item"><b><i>Information Item</i></b></a>
+<a href=#SwAO_Information+Item_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Relevant information for human use, produced or used by Performed Activity.
+<br/>Ex.:<i> a documented requirement, a bug reported, an agreement e-mail, a component description.</i></td>
+</tr>
+<tr>
+<td><a name="SwAO_Machine+Code"><b><i>Machine Code</i></b></a>
+<a href=#SwAO_Machine+Code_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Computer instructions and data definitions expressed in a form output by an assembler, compiler, or other translator, which can be recognized by the processing unit of a computer machine.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SwAO_Model"><b><i>Model</i></b></a>
+<a href=#SwAO_Model_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A representation (abstraction) of a process or system from a particular perspective.
+<br/>Ex.:<i> a use case model, a class model, a component model.</i></td>
+</tr>
+<tr>
+<td><a name="SwAO_Program"><b><i>Program</i></b></a>
+<a href=#SwAO_Program_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Software Item which aims at producing a certain result through execution on a computer, in a particular way, given by the Program Specification. A Program is constituted by code, but it is not identical to code. Code can be changed without altering the identity of its program, which is anchored to the program's essential property: its intended specification (Program Specification).
+<br/></td>
+</tr>
+<tr>
+<td><a name="SwAO_Program+Specification"><b><i>Program Specification</i></b></a>
+<a href=#SwAO_Program+Specification_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A document that describes the purpose (structure and functions) of a program in sufficient detail to permit coding and to facilitate maintenance.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SwAO_Programming+Language"><b><i>Programming Language</i></b></a>
+<a href=#SwAO_Programming+Language_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A language used to express computer programs.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SwAO_Simple+Artifact"><b><i>Simple Artifact</i></b></a>
+<a href=#SwAO_Simple+Artifact_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Artifact that is not decomposed into other Artifacts.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SwAO_Software+Item"><b><i>Software Item</i></b></a>
+<a href=#SwAO_Software+Item_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result.
+<br/>Ex.:<i> a component, database schema, a script.</i></td>
+</tr>
+<tr>
+<td><a name="SwAO_Software+Product"><b><i>Software Product</i></b></a>
+<a href=#SwAO_Software+Product_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>One or more computer programs together with any accompanying auxiliary items, such as documentation, delivered under a single name, ready for use.
+<br/>Ex.:<i> Astah modeling tool, Microsoft Word, Eclipse IDE.</i></td>
+</tr>
+<tr>
+<td><a name="SwAO_Software+Product+Type"><b><i>Software Product Type</i></b></a>
+<a href=#SwAO_Software+Product+Type_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Artifact Type which is the powertype of Software Product, classifying its specializations.
+<br/>Ex.:<i> Modeling Tool, Text Editor, IDE, Compiler.</i></td>
+</tr>
+<tr>
+<td><a name="SwAO_Software+System"><b><i>Software System</i></b></a>
+<a href=#SwAO_Software+System_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Software Item that aims at satisfying a specification (System Specification), concerning a desired change in a data structure inside a computer, abstracting away from the behavior.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SwAO_Source+Code"><b><i>Source Code</i></b></a>
+<a href=#SwAO_Source+Code_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A well-formed sequence of computer instructions and data definitions expressed in a programming language, in a form suitable for input to an assembler, compiler,<br/>or other translator.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SwAO_System+Specification"><b><i>System Specification</i></b></a>
+<a href=#SwAO_System+Specification_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+
+		</tbody>
+	</table>
+	<br/>
+	<h2>Detailed Concepts</h2>
+	<a name="SwAO_Artifact_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltcategory&gt&gt</code><br/>
+<strong>Artifact<strong></td></tr>
+</table><br/>
+<b>SwAO::Artifact</b><br/>
+Specializes RSMO::Measurable Software-Related Entity, UFO::Object<br/><br/>
+Object intentionally made to serve a given purpose in the context of a software Project or Organization.<br/>
+Ex.:<i> a document, a model, a library, an e-mail, a bug.</i><br/>
+<br/>
+Relations:<br/>
+<code>Artifact (0..*) instanceOf (1..1) Artifact Type<br/>
+Artifact (0..*) depends on (0..*) Artifact  &lt&ltmaterial&gt&gt<br/>
+Artifact Participation (0..*) participation of (1..1) Artifact<br/>
+Document (0..*) depicts (0..*) Artifact<br/>
+Stakeholder (0..*) responsible for (0..*) Artifact  &lt&ltmaterial&gt&gt<br/>
+Performed Activity (0..1) creates (0..*) Artifact  &lt&ltmaterial&gt&gt<br/>
+Performed Activity (0..*) changes (0..*) Artifact  &lt&ltmaterial&gt&gt<br/>
+Performed Activity (0..*) uses (0..*) Artifact  &lt&ltmaterial&gt&gt<br/>
+Composite Artifact (0..*) <>-- (2..*) Artifact  &lt&ltcomponentOf&gt&gt<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SwAO_Artifact+Type_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&lt2ndOT&gt&gt</code><br/>
+<strong>Artifact Type<strong></td></tr>
+</table><br/>
+<b>SwAO::Artifact Type</b><br/>
+Specializes UFO::Object Kind<br/><br/>
+Object Kind which is the powertype of Artifact, classifying its specializations.<br/>
+Ex.:<i> Document, Model, Software Product, Information Item, Software Item.</i><br/>
+<br/>
+Relations:<br/>
+<code>Standard Activity (0..*) uses (0..*) Artifact Type<br/>
+Standard Activity (0..*) changes (0..*) Artifact Type<br/>
+Standard Activity (0..*) creates (0..*) Artifact Type<br/>
+Artifact (0..*) instanceOf (1..1) Artifact Type<br/>
+Intended Activity (0..*) creates (0..*) Artifact Type<br/>
+Intended Activity (0..*) changes (0..*) Artifact Type<br/>
+Intended Activity (0..*) uses (0..*) Artifact Type<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SwAO_CASE+Tool_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>CASE Tool<strong></td></tr>
+</table><br/>
+<b>SwAO::CASE Tool</b><br/>
+Specializes SwAO::Software Product<br/><br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/><br/>
+
+<a name="SwAO_Code_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Code<strong></td></tr>
+</table><br/>
+<b>SwAO::Code</b><br/>
+Specializes SwAO::Software Item<br/><br/>
+Software Item representing a set of computer instructions and data definitions expressed in a programming language or in a form output by an assembler, compiler, or other translator (SEVOCAB).<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Code (0..*) implements (1..1) Program Specification<br/>
+Code Development creates Code<br/>
+Code Review uses Code<br/>
+Program (0..1) constituted of (1..*) Code<br/>
+Code Documentation changes Code<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SwAO_Composite+Artifact_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltcategory&gt&gt</code><br/>
+<strong>Composite Artifact<strong></td></tr>
+</table><br/>
+<b>SwAO::Composite Artifact</b><br/>
+Specializes SwAO::Artifact<br/><br/>
+Artifact composed of other Artifacts.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Composite Artifact (0..*) <>-- (2..*) Artifact  &lt&ltcomponentOf&gt&gt<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SwAO_Document_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltkind&gt&gt</code><br/>
+<strong>Document<strong></td></tr>
+</table><br/>
+<b>SwAO::Document</b><br/>
+Specializes SwAO::Artifact<br/><br/>
+Any written or pictorial, uniquely identified, information related to the software development, usually presented in a predefined format.<br/>
+Ex.:<i> a Requirements Document, a specification, a report.</i><br/>
+<br/>
+Relations:<br/>
+<code>Document (0..*) depicts (0..*) Artifact<br/>
+Document (0..*) instance of (1..1) Document Type<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SwAO_Document+Type_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&lt2ndOT&gt&gt</code><br/>
+<strong>Document Type<strong></td></tr>
+</table><br/>
+<b>SwAO::Document Type</b><br/>
+Specializes SwAO::Artifact Type<br/><br/>
+Artifact Type which is the powertype of Document, classifying its specializations.<br/>
+Ex.:<i> Requirements Document, Design Specification, Project Plan.</i><br/>
+<br/>
+Relations:<br/>
+<code>Document (0..*) instance of (1..1) Document Type<br/>
+Document Template (0..*) applies to (1..1) Document Type<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SwAO_Information+Item_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltkind&gt&gt</code><br/>
+<strong>Information Item<strong></td></tr>
+</table><br/>
+<b>SwAO::Information Item</b><br/>
+Specializes SwAO::Artifact<br/><br/>
+Relevant information for human use, produced or used by Performed Activity.<br/>
+Ex.:<i> a documented requirement, a bug reported, an agreement e-mail, a component description.</i><br/>
+<br/>
+<br/>
+<br/><br/>
+
+<a name="SwAO_Machine+Code_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Machine Code<strong></td></tr>
+</table><br/>
+<b>SwAO::Machine Code</b><br/>
+Specializes SwAO::Code<br/><br/>
+Computer instructions and data definitions expressed in a form output by an assembler, compiler, or other translator, which can be recognized by the processing unit of a computer machine.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Machine Code (0..*) generated from (1..1) Source Code<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SwAO_Model_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltkind&gt&gt</code><br/>
+<strong>Model<strong></td></tr>
+</table><br/>
+<b>SwAO::Model</b><br/>
+Specializes SwAO::Artifact<br/><br/>
+A representation (abstraction) of a process or system from a particular perspective.<br/>
+Ex.:<i> a use case model, a class model, a component model.</i><br/>
+<br/>
+<br/>
+<br/><br/>
+
+<a name="SwAO_Program_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Program<strong></td></tr>
+</table><br/>
+<b>SwAO::Program</b><br/>
+Specializes SwAO::Software Item<br/><br/>
+Software Item which aims at producing a certain result through execution on a computer, in a particular way, given by the Program Specification. A Program is constituted by code, but it is not identical to code. Code can be changed without altering the identity of its program, which is anchored to the program's essential property: its intended specification (Program Specification).<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Program (0..1) constituted of (1..*) Code<br/>
+Program (0..1) intends to implement (1..1) Program Specification<br/>
+<span style='color:red' title='Relation to a lower level (SwAO-->RSRO)'>Program (0..*) implements (1..*) Software Function Universal</span><br/>
+<span style='color:red' title='Relation to a lower level (SwAO-->RSRO)'>Program (0..*) \intends to satisfy (1..*) Requirement Artifact</span><br/>
+Software System (0..*) constituted of (1..*) Program<br/>
+Loaded Program Copy (0..*) materialization of (1..1) Program<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SwAO_Program+Specification_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Program Specification<strong></td></tr>
+</table><br/>
+<b>SwAO::Program Specification</b><br/>
+Specializes SwAO::Document<br/><br/>
+A document that describes the purpose (structure and functions) of a program in sufficient detail to permit coding and to facilitate maintenance.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Program Specification (0..*) intends to satisfy (1..1) System Specification<br/>
+<span style='color:red' title='Relation to a lower level (SwAO-->RSRO)'>Program Specification (0..*) intends to satisfy (1..*) Requirement Artifact</span><br/>
+<span style='color:red' title='Relation to a lower level (SwAO-->RSRO)'>Program Specification (0..*) describes (1..*) Software Function Universal</span><br/>
+Code (0..*) implements (1..1) Program Specification<br/>
+Program (0..1) intends to implement (1..1) Program Specification<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SwAO_Programming+Language_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltkind&gt&gt</code><br/>
+<strong>Programming Language<strong></td></tr>
+</table><br/>
+<b>SwAO::Programming Language</b><br/>
+Specializes UFO::Social Object<br/><br/>
+A language used to express computer programs.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Source Code (0..*) written in (1..*) Programming Language<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SwAO_Simple+Artifact_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltcategory&gt&gt</code><br/>
+<strong>Simple Artifact<strong></td></tr>
+</table><br/>
+<b>SwAO::Simple Artifact</b><br/>
+Specializes SwAO::Artifact<br/><br/>
+Artifact that is not decomposed into other Artifacts.<br/>
+<br/>
+<br/>
+<br/>
+<br/><br/>
+
+<a name="SwAO_Software+Item_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltkind&gt&gt</code><br/>
+<strong>Software Item<strong></td></tr>
+</table><br/>
+<b>SwAO::Software Item</b><br/>
+Specializes SwAO::Artifact<br/><br/>
+Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result.<br/>
+Ex.:<i> a component, database schema, a script.</i><br/>
+<br/>
+<br/>
+<br/><br/>
+
+<a name="SwAO_Software+Product_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltkind&gt&gt</code><br/>
+<strong>Software Product<strong></td></tr>
+</table><br/>
+<b>SwAO::Software Product</b><br/>
+Specializes SwAO::Composite Artifact, SwAO::Artifact<br/><br/>
+One or more computer programs together with any accompanying auxiliary items, such as documentation, delivered under a single name, ready for use.<br/>
+Ex.:<i> Astah modeling tool, Microsoft Word, Eclipse IDE.</i><br/>
+<br/>
+Relations:<br/>
+<code>Software Product (0..*) instance of (1..1) Software Product Type<br/>
+Software Product (0..1) constituted of (1..*) Software System<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SwAO_Software+Product+Type_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&lt2ndOT&gt&gt</code><br/>
+<strong>Software Product Type<strong></td></tr>
+</table><br/>
+<b>SwAO::Software Product Type</b><br/>
+Specializes SwAO::Artifact Type<br/><br/>
+Artifact Type which is the powertype of Software Product, classifying its specializations.<br/>
+Ex.:<i> Modeling Tool, Text Editor, IDE, Compiler.</i><br/>
+<br/>
+Relations:<br/>
+<code>Standard Activity (0..*) requires (0..*) Software Product Type<br/>
+Software Product (0..*) instance of (1..1) Software Product Type<br/>
+Intended Activity (0..*) requires (0..*) Software Product Type<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SwAO_Software+System_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Software System<strong></td></tr>
+</table><br/>
+<b>SwAO::Software System</b><br/>
+Specializes SwAO::Software Item<br/><br/>
+Software Item that aims at satisfying a specification (System Specification), concerning a desired change in a data structure inside a computer, abstracting away from the behavior.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Software System (0..*) constituted of (1..*) Program<br/>
+Software System (0..1) intends to implement (1..1) System Specification<br/>
+Software Product (0..1) constituted of (1..*) Software System<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SwAO_Source+Code_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Source Code<strong></td></tr>
+</table><br/>
+<b>SwAO::Source Code</b><br/>
+Specializes SwAO::Code<br/><br/>
+A well-formed sequence of computer instructions and data definitions expressed in a programming language, in a form suitable for input to an assembler, compiler,<br/>or other translator.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Source Code (0..*) written in (1..*) Programming Language<br/>
+Machine Code (0..*) generated from (1..1) Source Code<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SwAO_System+Specification_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>System Specification<strong></td></tr>
+</table><br/>
+<b>SwAO::System Specification</b><br/>
+Specializes SwAO::Document<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Software System (0..1) intends to implement (1..1) System Specification<br/>
+Program Specification (0..*) intends to satisfy (1..1) System Specification<br/>
+</code><br/>
+<br/><br/>
+
+
+	<hr>
+	<br/>
+	<small><b>Software Artifact Ontology (SwAO)</b></small><br/>
+	<small>Tue Jun 13 19:53:57 BRT 2017</small>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+</BODY>
+</HTML>

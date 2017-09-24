@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE>SEON: The Software Engineering Ontology Network</TITLE>
+<BASE target="mainFrame">
+<style>
+p {
+margin:6px;
+font:90% sans-serif
+}
+
+h3 {
+color: #005A9C;
+margin:12px;
+font:bold 100% sans-serif
+}
+
+a:link {text-decoration: none}
+a:visited {text-decoration: none}
+a:hover {text-decoration: underline}
+a:active {text-decoration: underline}
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-81695120-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</HEAD>
+
+<BODY style="font-family: sans-serif">
+	<p><h3><a href="SEON.html"><b>SEON Network</b></a></h3></p>
+	<hr size="2" noshade>
+
+	<p><h3>Foundational Layer</h3></p>
+	@foundOntology
+	<hr>
+
+	<p><h3>Core Layer</h3></p>
+	@coreOntologies
+	<hr>
+
+	<p><h3>Domain Layer</h3></p>
+	@domainOntologies
+	<hr size="3" noshade>
+	
+	<p><h3>Features</h3></p>
+	<p><a href="SearchFrames.html">Concepts Searcher</a></p>
+	<p><a href="NetworkGraph.html">Network Graph</a></p>
+	<p><a href="NetworkStats.html">Network Stats</a></p>
+	<p><a href="SEON.owl" target="_blank">Operational Version (OWL)</a></p>
+	<hr>
+	<p><a href="SeonFeedback.html">Feedback</a></p>
+	<br>
+	<p><small>@version<br/>@date</small></p>
+	
+</BODY>
+</HTML>

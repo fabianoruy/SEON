@@ -1,0 +1,457 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<META charset="ISO-8859-1">
+<TITLE>Quality Assurance Process Ontology (QAPO)</TITLE>
+<LINK rel="stylesheet" type="text/css" href="style.css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-81695120-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="maphilight.js"></script>
+<script type="text/javascript">
+	$(function() {
+        $('.map').maphilight();
+    });
+</script>
+
+</HEAD>
+<BODY>
+	<h3 align="center">SEON: Networked Ontology Specification</h3>
+	<h1 align="center">Quality Assurance Process Ontology (QAPO)</h1>
+
+	<h2>1. Ontology Description</h2>
+	<p align="justify">The Quality Assurance Process Ontology (QAPO) aims at representing the activities, artifacts and stakeholders involved in the Quality Assurance Process. Since QAPO can be applied in the context of several SE subdomains, it represents some general notions applicable for diverse SEON processes and artifacts.</p>
+
+	<h2>2. Related Ontologies</h2>
+	<p>Networked ontologies used by QAPO:</p>
+	<table border="1" style="width: 100%" cellpadding="6">
+		<tbody>
+			<tr style="background-color: #D8D8D8">
+				<td style="width: 20%"><b>Ontology</b></td>
+				<td style="width: 66%"><b>Relation</b></td>
+				<td style="width: 14%; text-align: center"><b>Integration Level</b></td>
+			</tr>
+			<tr><td><a href="SPO.html">SPO - Software Process Ontology</a></td><td>All QAPO concepts extend concepts from SPO.</td><td style="text-align:center">High</td></tr>
+<tr><td><a href="SwAO.html">SwAO - Software Artifact Ontology</a></td><td></td><td style="text-align:center"></td></tr>
+
+		</tbody>
+	</table>
+
+	<h2>3. Ontology Models</h2>
+	<p>Figure 1 presents the conceptual model of the QAPO.</p>
+<p align="center"><IMG src="images/QAPO.png" width="1093" class="map" usemap="#QAPO"><MAP NAME="QAPO">
+<area shape="rect" coords="730,193,839,240" href="SwAO.html#SwAO_Artifact" title="Object intentionally made to serve a given purpose in the context of a software Project or Organization.">
+<area shape="rect" coords="550,335,688,365" href="SwAO.html#SwAO_Composite+Artifact" title="Artifact composed of other Artifacts.">
+<area shape="rect" coords="628,299,740,329" href="SwAO.html#SwAO_Simple+Artifact" title="Artifact that is not decomposed into other Artifacts.">
+<area shape="rect" coords="705,387,811,417" href="SwAO.html#SwAO_Software+Item" title="Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result.">
+<area shape="rect" coords="577,387,702,417" href="SwAO.html#SwAO_Software+Product" title="One or more computer programs together with any accompanying auxiliary items, such as documentation, delivered under a single name, ready for use.">
+<area shape="rect" coords="814,387,940,417" href="SwAO.html#SwAO_Information+Item" title="Relevant information for human use, produced or used by Performed Activity.">
+<area shape="rect" coords="935,387,993,417" href="SwAO.html#SwAO_Model" title="A representation (abstraction) of a process or system from a particular perspective.">
+<area shape="rect" coords="997,387,1081,417" href="SwAO.html#SwAO_Document" title="Any written or pictorial, uniquely identified, information related to the software development, usually presented in a predefined format.">
+<area shape="rect" coords="126,10,261,40" href="SPO.html#SPO_Performed+Process" title="Complex Action, composed of other processes or activities, performed in a specific Time Interval, for reaching a goal in a Project or Organization.">
+<area shape="rect" coords="265,327,472,357" href="SPO.html#SPO_Performed+Composite+Activity" title="Performed Activity composed of other Performed Activities.">
+<area shape="rect" coords="371,287,552,317" href="SPO.html#SPO_Performed+Simple+Activity" title="Performed Activity that is not further decomposed into other Performed Activities.">
+<area shape="rect" coords="45,76,231,106" href="SPO.html#SPO_Performed+General+Process" title="The overall Performed Process executed in a specific Project or Organization, which is necessarily composed of Specific Performed Processes.">
+<area shape="rect" coords="149,122,335,152" href="SPO.html#SPO_Performed+Specific+Process" title="Performed Process that is part of the General Performed Process of a Project or Organization, necessarily composed of at least two Performed Activities.">
+<area shape="rect" coords="329,194,464,240" href="SPO.html#SPO_Performed+Activity" title="Action performed, in a specific Time Interval, by a Stakeholder, potentially producing and consuming Artifacts, as part of a Specific Performed Process.">
+<area shape="rect" coords="45,210,139,240" href="SPO.html#SPO_Stakeholder" title="Agent (Person, Team or Organization) interested or affected by the process activities or results.">
+<area shape="rect" coords="152,453,336,483" href="QAPO.html#QAPO_Quality+Assurance+Process" title="Process for conducting the activities related to software quality assurance, assessing and assuring adherence of the performed processes and produced artifacts to the applicable requirements.">
+<area shape="rect" coords="275,494,466,524" href="QAPO.html#QAPO_Quality+Assurance+Planning" title="Activity for planning the quality assurance activities, resulting in a Quality Assurance Plan.">
+<area shape="rect" coords="275,536,429,566" href="QAPO.html#QAPO_Adherence+Evaluation" title="Activity for objectively evaluating the adherence of processes and products to the applicable requirements, registering the identified issues.">
+<area shape="rect" coords="275,705,441,735" href="QAPO.html#QAPO_Noncompliance+Control" title="Activity for managing the registered noncompliances until their effective resolution.">
+<area shape="rect" coords="424,577,559,607" href="QAPO.html#QAPO_Artifact+Evaluation" title="Activity for objectively evaluating the adherence of products and deliverables to the applicable requirements.">
+<area shape="rect" coords="424,618,560,648" href="QAPO.html#QAPO_Process+Evaluation" title="Activity for objectively evaluating the adherence of processes and activities to the applicable requirements.">
+<area shape="rect" coords="424,660,626,690" href="QAPO.html#QAPO_Noncompliance+Identification" title="Activity for registering the noncompliances identified in processes and artifacts.">
+<area shape="rect" coords="424,750,610,780" href="QAPO.html#QAPO_Noncompliance+Resolution" title="Activity for analyzing a noncompliance, planning and executing the applicable corrective actions to its resolution.">
+<area shape="rect" coords="424,792,591,822" href="QAPO.html#QAPO_Noncompliance+Closing" title="Activity for finishing a noncompliance once it is satisfactorily solved.">
+<area shape="rect" coords="31,495,150,525" href="SPMO.html#SPMO_Project+Manager" title="Stakeholder responsible for managing a Project.">
+<area shape="rect" coords="31,536,147,566" href="QAPO.html#QAPO_Quality+Auditor" title="Stakeholder responsible for conducting objective evaluations.">
+<area shape="rect" coords="685,453,777,483" href="SPMO.html#SPMO_Project+Plan" title="Document describing the planning of a Project, to be used as the basis for project management.">
+<area shape="rect" coords="685,494,848,524" href="QAPO.html#QAPO_Quality+Assurance+Plan" title="Document registering the planed quality assurance activities, processes and artifacts to be evaluated and involved personnel.">
+<area shape="rect" coords="894,572,1024,610" href="QAPO.html#QAPO_Evaluated+Artifact" title="Artifact objectively evaluated.">
+<area shape="rect" coords="745,536,875,566" href="QAPO.html#QAPO_Evaluation+Report" title="Document describing the evaluation results and identified issues.">
+<area shape="rect" coords="724,660,894,690" href="QAPO.html#QAPO_Noncompliance+Register" title="Information Item describing a noncompliance (a failure or refusal to conform to an applicable requirement) in a process or artifact, and related information to solve it.">
+<area shape="rect" coords="31,705,226,735" href="QAPO.html#QAPO_Noncompliance+Responsible" title="Stakeholder responsible for solving a noncompliance.">
+<area shape="rect" coords="777,750,959,780" href="SPMO.html#SPMO_Corrective+Action+Register" title="Information Item describing an action to eliminate the cause or reduce the likelihood of recurrence of a detected nonconformity or other undesirable situation. [ISO/IEC/IEEE 24765]">
+<area shape="rect" coords="894,615,1025,653" href="QAPO.html#QAPO_Evaluated+Process" title="Process objectively evaluated."></MAP></p>
+<p align="center"><b>Figure 1. QAPO conceptual model.</b></p>
+<p align="justify">The Quality Assurance Process is a Process with the purpose of conducting the activities related to software quality assurance, assessing and assuring adherence of the performed processes and produced artifacts to the applicable requirements. It is composed of three main activities. (1) Quality Assurance Planning plans the quality assurance activities, resulting in a Quality Assurance Plan. (2) Adherence Evaluation objectively evaluates the adherence of processes and products to the applicable requirements, registering the identified issues. It has three sub-actvities: Artifact Evaluation, for evaluating the adherence of products and deliverables; Process Evaluation, for evaluating the adherence of processes and activities; and Noncompliance Identification, for registering the noncompliances identified in processes and artifacts. (3) Noncompliance Control manages the registered noncompliances until their effective resolution. It is decomposed into two sub-activities: Noncompliance Resolution, for analyzing a Noncompliance, planning and executing the applicable Corrective Actions to its resolution; and Noncompliance Closing, for finishing a noncompliance once it is satisfactorily solved.<br/>The process involves four Stakeholders: the Quality Auditor, who is responsible for conducting the objective evaluations; the Noncompliance Responsible, who is assigned for solving a noncompliance; the Project Manager, who is in charge of planning the Quality Assurance Process; and Project Team, who is involved in the objective evaluations of its project.</p>
+
+
+	<h2>4. Concepts Definition</h2>
+	<p align="justify">The following table shows the definitions for QAPO concepts.
+<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->
+	</p>
+	<table style="width: 100%" border="1" cellpadding="6">
+		<tbody>
+			<tr style="background-color: #D8D8D8">
+				<td style="width: 25%"><b>Concept</b></td>
+				<td style="width: 75%"><b>Definition</b></td>
+			</tr>
+			<tr>
+<td><a name="QAPO_Adherence+Evaluation"><b>Adherence Evaluation</b></a>
+<a href=#QAPO_Adherence+Evaluation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for objectively evaluating the adherence of processes and products to the applicable requirements, registering the identified issues.
+<br/></td>
+</tr>
+<tr>
+<td><a name="QAPO_Artifact+Evaluation"><b>Artifact Evaluation</b></a>
+<a href=#QAPO_Artifact+Evaluation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for objectively evaluating the adherence of products and deliverables to the applicable requirements.
+<br/></td>
+</tr>
+<tr>
+<td><a name="QAPO_Evaluated+Artifact"><b>Evaluated Artifact</b></a>
+<a href=#QAPO_Evaluated+Artifact_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Artifact objectively evaluated.
+<br/></td>
+</tr>
+<tr>
+<td><a name="QAPO_Evaluated+Process"><b>Evaluated Process</b></a>
+<a href=#QAPO_Evaluated+Process_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Process objectively evaluated.
+<br/></td>
+</tr>
+<tr>
+<td><a name="QAPO_Evaluation+Report"><b>Evaluation Report</b></a>
+<a href=#QAPO_Evaluation+Report_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Document describing the evaluation results and identified issues.
+<br/></td>
+</tr>
+<tr>
+<td><a name="QAPO_Noncompliance+Closing"><b>Noncompliance Closing</b></a>
+<a href=#QAPO_Noncompliance+Closing_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for finishing a noncompliance once it is satisfactorily solved.
+<br/></td>
+</tr>
+<tr>
+<td><a name="QAPO_Noncompliance+Control"><b>Noncompliance Control</b></a>
+<a href=#QAPO_Noncompliance+Control_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for managing the registered noncompliances until their effective resolution.
+<br/></td>
+</tr>
+<tr>
+<td><a name="QAPO_Noncompliance+Identification"><b>Noncompliance Identification</b></a>
+<a href=#QAPO_Noncompliance+Identification_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for registering the noncompliances identified in processes and artifacts.
+<br/></td>
+</tr>
+<tr>
+<td><a name="QAPO_Noncompliance+Register"><b>Noncompliance Register</b></a>
+<a href=#QAPO_Noncompliance+Register_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Information Item describing a noncompliance (a failure or refusal to conform to an applicable requirement) in a process or artifact, and related information to solve it.
+<br/>Ex.:<i> a neglected activity in a process; a document wrongly specified.</i></td>
+</tr>
+<tr>
+<td><a name="QAPO_Noncompliance+Resolution"><b>Noncompliance Resolution</b></a>
+<a href=#QAPO_Noncompliance+Resolution_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for analyzing a noncompliance, planning and executing the applicable corrective actions to its resolution.
+<br/></td>
+</tr>
+<tr>
+<td><a name="QAPO_Noncompliance+Responsible"><b>Noncompliance Responsible</b></a>
+<a href=#QAPO_Noncompliance+Responsible_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Stakeholder responsible for solving a noncompliance.
+<br/></td>
+</tr>
+<tr>
+<td><a name="QAPO_Process+Evaluation"><b>Process Evaluation</b></a>
+<a href=#QAPO_Process+Evaluation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for objectively evaluating the adherence of processes and activities to the applicable requirements.
+<br/></td>
+</tr>
+<tr>
+<td><a name="QAPO_Quality+Assurance+Plan"><b>Quality Assurance Plan</b></a>
+<a href=#QAPO_Quality+Assurance+Plan_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Document registering the planed quality assurance activities, processes and artifacts to be evaluated and involved personnel.
+<br/></td>
+</tr>
+<tr>
+<td><a name="QAPO_Quality+Assurance+Planning"><b>Quality Assurance Planning</b></a>
+<a href=#QAPO_Quality+Assurance+Planning_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for planning the quality assurance activities, resulting in a Quality Assurance Plan.
+<br/></td>
+</tr>
+<tr>
+<td><a name="QAPO_Quality+Assurance+Process"><b>Quality Assurance Process</b></a>
+<a href=#QAPO_Quality+Assurance+Process_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Process for conducting the activities related to software quality assurance, assessing and assuring adherence of the performed processes and produced artifacts to the applicable requirements.
+<br/></td>
+</tr>
+<tr>
+<td><a name="QAPO_Quality+Auditor"><b>Quality Auditor</b></a>
+<a href=#QAPO_Quality+Auditor_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Stakeholder responsible for conducting objective evaluations.
+<br/></td>
+</tr>
+
+		</tbody>
+	</table>
+	<br/>
+	<h2>Detailed Concepts</h2>
+	<a name="QAPO_Adherence+Evaluation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Adherence Evaluation<strong></td></tr>
+</table><br/>
+<b>QAPO::Adherence Evaluation</b><br/>
+Specializes SPO::Performed Composite Activity<br/><br/>
+Activity for objectively evaluating the adherence of processes and products to the applicable requirements, registering the identified issues.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Adherence Evaluation <>-- Artifact Evaluation<br/>
+Adherence Evaluation <>-- Process Evaluation<br/>
+Adherence Evaluation <>-- Noncompliance Identification<br/>
+Adherence Evaluation creates Evaluation Report<br/>
+Quality Auditor is in charge of Adherence Evaluation<br/>
+Quality Assurance Process <>-- Adherence Evaluation<br/>
+</code><br/>
+<br/><br/>
+
+<a name="QAPO_Artifact+Evaluation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Artifact Evaluation<strong></td></tr>
+</table><br/>
+<b>QAPO::Artifact Evaluation</b><br/>
+Specializes SPO::Performed Simple Activity<br/><br/>
+Activity for objectively evaluating the adherence of products and deliverables to the applicable requirements.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Artifact Evaluation uses Evaluated Artifact<br/>
+Adherence Evaluation <>-- Artifact Evaluation<br/>
+</code><br/>
+<br/><br/>
+
+<a name="QAPO_Evaluated+Artifact_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
+<strong>Evaluated Artifact<strong></td></tr>
+</table><br/>
+<b>QAPO::Evaluated Artifact</b><br/>
+Specializes SwAO::Artifact<br/><br/>
+Artifact objectively evaluated.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Artifact Evaluation uses Evaluated Artifact<br/>
+</code><br/>
+<br/><br/>
+
+<a name="QAPO_Evaluated+Process_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
+<strong>Evaluated Process<strong></td></tr>
+</table><br/>
+<b>QAPO::Evaluated Process</b><br/>
+Specializes SPO::Performed Process<br/><br/>
+Process objectively evaluated.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Process Evaluation uses Evaluated Process<br/>
+</code><br/>
+<br/><br/>
+
+<a name="QAPO_Evaluation+Report_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Evaluation Report<strong></td></tr>
+</table><br/>
+<b>QAPO::Evaluation Report</b><br/>
+Specializes SwAO::Document<br/><br/>
+Document describing the evaluation results and identified issues.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Adherence Evaluation creates Evaluation Report<br/>
+</code><br/>
+<br/><br/>
+
+<a name="QAPO_Noncompliance+Closing_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Noncompliance Closing<strong></td></tr>
+</table><br/>
+<b>QAPO::Noncompliance Closing</b><br/>
+Specializes SPO::Performed Simple Activity<br/><br/>
+Activity for finishing a noncompliance once it is satisfactorily solved.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Noncompliance Control <>-- Noncompliance Closing<br/>
+</code><br/>
+<br/><br/>
+
+<a name="QAPO_Noncompliance+Control_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Noncompliance Control<strong></td></tr>
+</table><br/>
+<b>QAPO::Noncompliance Control</b><br/>
+Specializes SPO::Performed Composite Activity<br/><br/>
+Activity for managing the registered noncompliances until their effective resolution.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Noncompliance Control <>-- Noncompliance Resolution<br/>
+Noncompliance Control <>-- Noncompliance Closing<br/>
+Noncompliance Control changes Noncompliance Register<br/>
+Noncompliance Responsible participates in Noncompliance Control<br/>
+Quality Auditor is in charge of Noncompliance Control<br/>
+Quality Assurance Process <>-- Noncompliance Control<br/>
+</code><br/>
+<br/><br/>
+
+<a name="QAPO_Noncompliance+Identification_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Noncompliance Identification<strong></td></tr>
+</table><br/>
+<b>QAPO::Noncompliance Identification</b><br/>
+Specializes SPO::Performed Simple Activity<br/><br/>
+Activity for registering the noncompliances identified in processes and artifacts.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Noncompliance Identification creates Noncompliance Register<br/>
+Adherence Evaluation <>-- Noncompliance Identification<br/>
+</code><br/>
+<br/><br/>
+
+<a name="QAPO_Noncompliance+Register_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Noncompliance Register<strong></td></tr>
+</table><br/>
+<b>QAPO::Noncompliance Register</b><br/>
+Specializes SwAO::Information Item<br/><br/>
+Information Item describing a noncompliance (a failure or refusal to conform to an applicable requirement) in a process or artifact, and related information to solve it.<br/>
+Ex.:<i> a neglected activity in a process; a document wrongly specified.</i><br/>
+<br/>
+Relations:<br/>
+<code>Noncompliance Register (0..*) <>-- (0..*) Corrective Action Register<br/>
+Noncompliance Control changes Noncompliance Register<br/>
+Configuration Audit Report depicts Noncompliance Register<br/>
+Noncompliance Identification creates Noncompliance Register<br/>
+</code><br/>
+<br/><br/>
+
+<a name="QAPO_Noncompliance+Resolution_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Noncompliance Resolution<strong></td></tr>
+</table><br/>
+<b>QAPO::Noncompliance Resolution</b><br/>
+Specializes SPO::Performed Simple Activity<br/><br/>
+Activity for analyzing a noncompliance, planning and executing the applicable corrective actions to its resolution.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Noncompliance Resolution creates Corrective Action Register<br/>
+Noncompliance Control <>-- Noncompliance Resolution<br/>
+</code><br/>
+<br/><br/>
+
+<a name="QAPO_Noncompliance+Responsible_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
+<strong>Noncompliance Responsible<strong></td></tr>
+</table><br/>
+<b>QAPO::Noncompliance Responsible</b><br/>
+Specializes SPO::Stakeholder<br/><br/>
+Stakeholder responsible for solving a noncompliance.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Noncompliance Responsible participates in Noncompliance Control<br/>
+</code><br/>
+<br/><br/>
+
+<a name="QAPO_Process+Evaluation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Process Evaluation<strong></td></tr>
+</table><br/>
+<b>QAPO::Process Evaluation</b><br/>
+Specializes SPO::Performed Simple Activity<br/><br/>
+Activity for objectively evaluating the adherence of processes and activities to the applicable requirements.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Process Evaluation uses Evaluated Process<br/>
+Adherence Evaluation <>-- Process Evaluation<br/>
+</code><br/>
+<br/><br/>
+
+<a name="QAPO_Quality+Assurance+Plan_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Quality Assurance Plan<strong></td></tr>
+</table><br/>
+<b>QAPO::Quality Assurance Plan</b><br/>
+Specializes SwAO::Document<br/><br/>
+Document registering the planed quality assurance activities, processes and artifacts to be evaluated and involved personnel.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Quality Assurance Planning creates Quality Assurance Plan<br/>
+</code><br/>
+<br/><br/>
+
+<a name="QAPO_Quality+Assurance+Planning_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Quality Assurance Planning<strong></td></tr>
+</table><br/>
+<b>QAPO::Quality Assurance Planning</b><br/>
+Specializes SPO::Performed Composite Activity<br/><br/>
+Activity for planning the quality assurance activities, resulting in a Quality Assurance Plan.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Quality Assurance Planning uses Project Plan<br/>
+Quality Assurance Planning creates Quality Assurance Plan<br/>
+Project Manager is in charge of Quality Assurance Planning<br/>
+Quality Assurance Process <>-- Quality Assurance Planning<br/>
+</code><br/>
+<br/><br/>
+
+<a name="QAPO_Quality+Assurance+Process_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Quality Assurance Process<strong></td></tr>
+</table><br/>
+<b>QAPO::Quality Assurance Process</b><br/>
+Specializes SPO::Performed Specific Process<br/><br/>
+Process for conducting the activities related to software quality assurance, assessing and assuring adherence of the performed processes and produced artifacts to the applicable requirements.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Quality Assurance Process <>-- Quality Assurance Planning<br/>
+Quality Assurance Process <>-- Adherence Evaluation<br/>
+Quality Assurance Process <>-- Noncompliance Control<br/>
+</code><br/>
+<br/><br/>
+
+<a name="QAPO_Quality+Auditor_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
+<strong>Quality Auditor<strong></td></tr>
+</table><br/>
+<b>QAPO::Quality Auditor</b><br/>
+Specializes SPO::Stakeholder<br/><br/>
+Stakeholder responsible for conducting objective evaluations.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Quality Auditor is in charge of Adherence Evaluation<br/>
+Quality Auditor is in charge of Noncompliance Control<br/>
+</code><br/>
+<br/><br/>
+
+
+	<hr>
+	<br/>
+	<small><b>Quality Assurance Process Ontology (QAPO)</b></small><br/>
+	<small>Tue Jun 13 19:53:58 BRT 2017</small>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+</BODY>
+</HTML>

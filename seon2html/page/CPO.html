@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<META charset="ISO-8859-1">
+<TITLE>Coding Process Ontology (CPO)</TITLE>
+<LINK rel="stylesheet" type="text/css" href="style.css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-81695120-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="maphilight.js"></script>
+<script type="text/javascript">
+	$(function() {
+        $('.map').maphilight();
+    });
+</script>
+
+</HEAD>
+<BODY>
+	<h3 align="center">SEON: Networked Ontology Specification</h3>
+	<h1 align="center">Coding Process Ontology (CPO)</h1>
+
+	<h2>1. Ontology Description</h2>
+	<p align="justify">The Coding Process Ontology (CPO) aims at representing the activities, artifacts and stakeholders involved in the Coding Process, for developing a proper code for the software. Since CPO is in the core of the technical processes in software development, it reuses some concepts from other SEON networked ontologies.</p>
+
+	<h2>2. Related Ontologies</h2>
+	<p>Networked ontologies used by CPO:</p>
+	<table border="1" style="width: 100%" cellpadding="6">
+		<tbody>
+			<tr style="background-color: #D8D8D8">
+				<td style="width: 20%"><b>Ontology</b></td>
+				<td style="width: 66%"><b>Relation</b></td>
+				<td style="width: 14%; text-align: center"><b>Integration Level</b></td>
+			</tr>
+			<tr><td><a href="SPO.html">SPO - Software Process Ontology</a></td><td>All CPO concepts extend concepts from SPO.</td><td style="text-align:center">High</td></tr>
+<tr><td><a href="RSRO.html">RSRO - Reference Software Requirements Ontology</a></td><td>CPO imports an artifact from RSRO.</td><td style="text-align:center">Low</td></tr>
+<tr><td><a href="DPO.html">DPO - Design Process Ontology</a></td><td>CPO imports an artifact from DPO.</td><td style="text-align:center">Low</td></tr>
+<tr><td><a href="SwAO.html">SwAO - Software Artifact Ontology</a></td><td></td><td style="text-align:center"></td></tr>
+
+		</tbody>
+	</table>
+
+	<h2>3. Ontology Models</h2>
+	<p>Figure 1 presents the conceptual model of the CPO.</p>
+<p align="center"><IMG src="images/CPO.png" width="1060" class="map" usemap="#CPO"><MAP NAME="CPO">
+<area shape="rect" coords="695,193,804,240" href="SwAO.html#SwAO_Artifact" title="Object intentionally made to serve a given purpose in the context of a software Project or Organization.">
+<area shape="rect" coords="515,335,653,365" href="SwAO.html#SwAO_Composite+Artifact" title="Artifact composed of other Artifacts.">
+<area shape="rect" coords="593,299,705,329" href="SwAO.html#SwAO_Simple+Artifact" title="Artifact that is not decomposed into other Artifacts.">
+<area shape="rect" coords="670,387,776,417" href="SwAO.html#SwAO_Software+Item" title="Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result.">
+<area shape="rect" coords="542,387,667,417" href="SwAO.html#SwAO_Software+Product" title="One or more computer programs together with any accompanying auxiliary items, such as documentation, delivered under a single name, ready for use.">
+<area shape="rect" coords="779,387,905,417" href="SwAO.html#SwAO_Information+Item" title="Relevant information for human use, produced or used by Performed Activity.">
+<area shape="rect" coords="900,387,958,417" href="SwAO.html#SwAO_Model" title="A representation (abstraction) of a process or system from a particular perspective.">
+<area shape="rect" coords="962,387,1046,417" href="SwAO.html#SwAO_Document" title="Any written or pictorial, uniquely identified, information related to the software development, usually presented in a predefined format.">
+<area shape="rect" coords="91,10,226,40" href="SPO.html#SPO_Performed+Process" title="Complex Action, composed of other processes or activities, performed in a specific Time Interval, for reaching a goal in a Project or Organization.">
+<area shape="rect" coords="230,327,437,357" href="SPO.html#SPO_Performed+Composite+Activity" title="Performed Activity composed of other Performed Activities.">
+<area shape="rect" coords="336,287,517,317" href="SPO.html#SPO_Performed+Simple+Activity" title="Performed Activity that is not further decomposed into other Performed Activities.">
+<area shape="rect" coords="12,76,198,106" href="SPO.html#SPO_Performed+General+Process" title="The overall Performed Process executed in a specific Project or Organization, which is necessarily composed of Specific Performed Processes.">
+<area shape="rect" coords="114,122,300,152" href="SPO.html#SPO_Performed+Specific+Process" title="Performed Process that is part of the General Performed Process of a Project or Organization, necessarily composed of at least two Performed Activities.">
+<area shape="rect" coords="294,194,429,240" href="SPO.html#SPO_Performed+Activity" title="Action performed, in a specific Time Interval, by a Stakeholder, potentially producing and consuming Artifacts, as part of a Specific Performed Process.">
+<area shape="rect" coords="11,210,105,240" href="SPO.html#SPO_Stakeholder" title="Agent (Person, Team or Organization) interested or affected by the process activities or results.">
+<area shape="rect" coords="13,485,109,515" href="CPO.html#CPO_Programmer" title="Stakeholder with programming skills responsible for producing and documenting the software Code.">
+<area shape="rect" coords="143,441,259,471" href="CPO.html#CPO_Coding+Process" title="Specific Performed Process for conducting the activities related to software Code production.">
+<area shape="rect" coords="295,486,360,516" href="CPO.html#CPO_Coding" title="Composite Performed Activity executed for coordinating the Code development and documentation, according to definitions from the Requirements Document and Design Document.">
+<area shape="rect" coords="906,661,1050,691" href="CPO.html#CPO_Code+Review+Report" title="Document pointing out problems identified in the Code during review activities.">
+<area shape="rect" coords="696,555,748,585" href="SwAO.html#SwAO_Code" title="Software Item representing a set of computer instructions and data definitions expressed in a programming language or in a form output by an assembler, compiler, or other translator (SEVOCAB).">
+<area shape="rect" coords="296,661,395,691" href="CPO.html#CPO_Code+Review" title="Simple Performed Activity executed for reviewing the software Code to identify errors and non-conformances.">
+<area shape="rect" coords="348,555,487,585" href="CPO.html#CPO_Code+Development" title="Simple Performed Activity executed for developing the software Code according to previews definitions.">
+<area shape="rect" coords="348,598,500,628" href="CPO.html#CPO_Code+Documentation" title="Simple Performed Activity executed for documenting the software Code with useful information.">
+<area shape="rect" coords="789,485,963,515" href="RSRO.html#RSRO_Requirements+Document" title="Document composed of Documented Requirements and related information, as a basis for other technical software processes, including maintenance.">
+<area shape="rect" coords="831,522,963,552" href="DPO.html#DPO_Design+Document" title="Document specifying the design of a software, by depicting the software architecture, components, interfaces and data models, as well as other information regarding the design choices and decisions.">
+<area shape="rect" coords="15,661,126,691" href="CPO.html#CPO_Code+Reviewer" title="Stakeholder responsible for reviewing the Code according to the Requirements Document and Design Document."></MAP></p>
+<p align="center"><b>Figure 1. CPO conceptual model.</b></p>
+<p align="justify">Coding Process is a Performed Process with the purpose of producing software Code in conformance with the requirements and design decisions established in the previous technical processes (requirements development and design processes). It is composed of a set of Coding activity, when the Programmer uses the requirements and definitions established in the Requirements Document and Design Document for developing and documenting the code. Code Development activity creates the software Code , while Code Documentation changes the Code by adding comments with useful information. Finally, in the Code Review activity, the Code Reviewer reviews the Code searching for errors and non-conformances and produces a Code Review Report.</p>
+
+
+	<h2>4. Concepts Definition</h2>
+	<p align="justify">The following table shows the definitions for CPO concepts.
+<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->
+	</p>
+	<table style="width: 100%" border="1" cellpadding="6">
+		<tbody>
+			<tr style="background-color: #D8D8D8">
+				<td style="width: 25%"><b>Concept</b></td>
+				<td style="width: 75%"><b>Definition</b></td>
+			</tr>
+			<tr>
+<td><a name="CPO_Code+Development"><b>Code Development</b></a>
+<a href=#CPO_Code+Development_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Simple Performed Activity executed for developing the software Code according to previews definitions.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CPO_Code+Documentation"><b>Code Documentation</b></a>
+<a href=#CPO_Code+Documentation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Simple Performed Activity executed for documenting the software Code with useful information.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CPO_Code+Review"><b>Code Review</b></a>
+<a href=#CPO_Code+Review_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Simple Performed Activity executed for reviewing the software Code to identify errors and non-conformances.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CPO_Code+Review+Report"><b>Code Review Report</b></a>
+<a href=#CPO_Code+Review+Report_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Document pointing out problems identified in the Code during review activities.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CPO_Code+Reviewer"><b>Code Reviewer</b></a>
+<a href=#CPO_Code+Reviewer_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Stakeholder responsible for reviewing the Code according to the Requirements Document and Design Document.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CPO_Coding"><b>Coding</b></a>
+<a href=#CPO_Coding_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Composite Performed Activity executed for coordinating the Code development and documentation, according to definitions from the Requirements Document and Design Document.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CPO_Coding+Process"><b>Coding Process</b></a>
+<a href=#CPO_Coding+Process_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Specific Performed Process for conducting the activities related to software Code production.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CPO_Programmer"><b>Programmer</b></a>
+<a href=#CPO_Programmer_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Stakeholder with programming skills responsible for producing and documenting the software Code.
+<br/></td>
+</tr>
+
+		</tbody>
+	</table>
+	<br/>
+	<h2>Detailed Concepts</h2>
+	<a name="CPO_Code+Development_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Code Development<strong></td></tr>
+</table><br/>
+<b>CPO::Code Development</b><br/>
+Specializes SPO::Performed Simple Activity<br/><br/>
+Simple Performed Activity executed for developing the software Code according to previews definitions.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Code Development creates Code<br/>
+Coding <>-- Code Development<br/>
+</code><br/>
+<br/><br/>
+
+<a name="CPO_Code+Documentation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Code Documentation<strong></td></tr>
+</table><br/>
+<b>CPO::Code Documentation</b><br/>
+Specializes SPO::Performed Simple Activity<br/><br/>
+Simple Performed Activity executed for documenting the software Code with useful information.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Code Documentation changes Code<br/>
+Coding <>-- Code Documentation<br/>
+</code><br/>
+<br/><br/>
+
+<a name="CPO_Code+Review_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Code Review<strong></td></tr>
+</table><br/>
+<b>CPO::Code Review</b><br/>
+Specializes SPO::Performed Simple Activity<br/><br/>
+Simple Performed Activity executed for reviewing the software Code to identify errors and non-conformances.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Code Review creates Code Review Report<br/>
+Code Review uses Requirements Document<br/>
+Code Review uses Design Document<br/>
+Code Review uses Code<br/>
+Code Reviewer is in charge of Code Review<br/>
+Coding Process <>-- Code Review<br/>
+</code><br/>
+<br/><br/>
+
+<a name="CPO_Code+Review+Report_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Code Review Report<strong></td></tr>
+</table><br/>
+<b>CPO::Code Review Report</b><br/>
+Specializes SwAO::Document<br/><br/>
+Document pointing out problems identified in the Code during review activities.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Code Review creates Code Review Report<br/>
+</code><br/>
+<br/><br/>
+
+<a name="CPO_Code+Reviewer_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
+<strong>Code Reviewer<strong></td></tr>
+</table><br/>
+<b>CPO::Code Reviewer</b><br/>
+Specializes SPO::Stakeholder<br/><br/>
+Stakeholder responsible for reviewing the Code according to the Requirements Document and Design Document.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Code Reviewer is in charge of Code Review<br/>
+</code><br/>
+<br/><br/>
+
+<a name="CPO_Coding_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Coding<strong></td></tr>
+</table><br/>
+<b>CPO::Coding</b><br/>
+Specializes SPO::Performed Composite Activity<br/><br/>
+Composite Performed Activity executed for coordinating the Code development and documentation, according to definitions from the Requirements Document and Design Document.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Coding <>-- Code Development<br/>
+Coding <>-- Code Documentation<br/>
+Coding uses Design Document<br/>
+Coding uses Requirements Document<br/>
+Programmer is in charge of Coding<br/>
+Coding Process <>-- Coding<br/>
+</code><br/>
+<br/><br/>
+
+<a name="CPO_Coding+Process_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Coding Process<strong></td></tr>
+</table><br/>
+<b>CPO::Coding Process</b><br/>
+Specializes SPO::Performed Specific Process<br/><br/>
+Specific Performed Process for conducting the activities related to software Code production.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Coding Process <>-- Coding<br/>
+Coding Process <>-- Code Review<br/>
+</code><br/>
+<br/><br/>
+
+<a name="CPO_Programmer_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
+<strong>Programmer<strong></td></tr>
+</table><br/>
+<b>CPO::Programmer</b><br/>
+Specializes SPO::Stakeholder<br/><br/>
+Stakeholder with programming skills responsible for producing and documenting the software Code.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Programmer is in charge of Coding<br/>
+</code><br/>
+<br/><br/>
+
+
+	<hr>
+	<br/>
+	<small><b>Coding Process Ontology (CPO)</b></small><br/>
+	<small>Tue Jun 13 19:53:57 BRT 2017</small>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+</BODY>
+</HTML>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE>SEON: The Software Engineering Ontology Network</TITLE>
+<BASE target="mainFrame">
+<STYLE>
+.ontology {
+   float: left;
+   margin: 10px;
+   padding: 10px;
+   width: 340px;
+   height: 110px;
+   border: 1px solid gray;
+}
+</STYLE>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-81695120-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</HEAD>
+
+<BODY style="font-family: sans-serif">
+	<h2 style="color: #005A9C"><b>Network Statistics</b></h2>
+	<hr>
+
+	<h3 style="color: #005A9C">Foundational Layer</h3>
+<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">UFO - Unified Foundational Ontology</p>
+<code>125 concepts<br/>
+67 internal relations<br/>
+0 external generalizations <br/>
+0 external dependencies </code>
+</div>
+
+<br style="clear:both">
+
+	<h3 style="color: #005A9C">Core Layer</h3>
+<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">SPO - Software Process Ontology</p>
+<code>64 concepts<br/>
+58 internal relations<br/>
+39 external generalizations (UFO:29, SwAO:1, EO:2, RSMO:7)<br/>
+26 external dependencies (UFO:3, SwAO:14, EO:7, SPMO:1, RSMO:1)</code>
+</div>
+<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">SwAO - Software Artifact Ontology</p>
+<code>20 concepts<br/>
+15 internal relations<br/>
+4 external generalizations (UFO:3, RSMO:1)<br/>
+4 external dependencies (RSRO:4)</code>
+</div>
+<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">COM - Core Ontology on Measurement (external)</p>
+<code>29 concepts<br/>
+44 internal relations<br/>
+23 external generalizations (UFO:23)<br/>
+2 external dependencies (UFO:2)</code>
+</div>
+<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">EO - Enterprise Ontology (external)</p>
+<code>31 concepts<br/>
+34 internal relations<br/>
+11 external generalizations (UFO:11)<br/>
+0 external dependencies </code>
+</div>
+
+<br style="clear:both">
+
+	<h3 style="color: #005A9C">Domain Layer</h3>
+<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">ReqON - Requirements engineering Ontology subNetwork</p>
+<code>0 concepts<br/>
+0 internal relations<br/>
+0 external generalizations <br/>
+0 external dependencies </code>
+</div>
+<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">RSRO - Reference Software Requirements Ontology</p>
+<code>13 concepts<br/>
+12 internal relations<br/>
+12 external generalizations (UFO:6, SPO:2, SwAO:4)<br/>
+9 external dependencies (RDPO:9)</code>
+</div>
+<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">RRO - Runtime Requirements Ontology</p>
+<code>23 concepts<br/>
+23 internal relations<br/>
+9 external generalizations (UFO:5, SwAO:2, RSRO:2)<br/>
+2 external dependencies (SwAO:1, RSRO:1)</code>
+</div>
+<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">GORO - Goal-Oriented Requirements Ontology</p>
+<code>6 concepts<br/>
+3 internal relations<br/>
+4 external generalizations (UFO:3, RSRO:1)<br/>
+0 external dependencies </code>
+</div>
+<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">RDPO - Requirements Development Process Ontology</p>
+<code>10 concepts<br/>
+9 internal relations<br/>
+10 external generalizations (SPO:7, SwAO:3)<br/>
+7 external dependencies (RSRO:7)</code>
+</div>
+<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">DPO - Design Process Ontology</p>
+<code>24 concepts<br/>
+36 internal relations<br/>
+22 external generalizations (SPO:15, SwAO:7)<br/>
+3 external dependencies (RSRO:3)</code>
+</div>
+<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">CPO - Coding Process Ontology</p>
+<code>8 concepts<br/>
+7 internal relations<br/>
+8 external generalizations (SPO:7, SwAO:1)<br/>
+7 external dependencies (SwAO:3, RSRO:2, DPO:2)</code>
+</div>
+<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">ROoST - Reference Ontology on Software Testing</p>
+<code>41 concepts<br/>
+45 internal relations<br/>
+27 external generalizations (SPO:13, SwAO:14)<br/>
+1 external dependencies (SPO:1)</code>
+</div>
+<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">SPMO - Software Project Management Ontology</p>
+<code>17 concepts<br/>
+7 internal relations<br/>
+16 external generalizations (SPO:14, SwAO:2)<br/>
+1 external dependencies (QAPO:1)</code>
+</div>
+<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">RSMO - Reference Software Measurement Ontology</p>
+<code>39 concepts<br/>
+63 internal relations<br/>
+33 external generalizations (UFO:4, SPO:13, SwAO:8, COM:8)<br/>
+11 external dependencies (SPO:4, COM:6, EO:1)</code>
+</div>
+<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">CMPO - Configuration Management Process Ontology</p>
+<code>38 concepts<br/>
+57 internal relations<br/>
+31 external generalizations (UFO:2, SPO:21, SwAO:7, QAPO:1)<br/>
+1 external dependencies (QAPO:1)</code>
+</div>
+<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">QAPO - Quality Assurance Process Ontology</p>
+<code>16 concepts<br/>
+17 internal relations<br/>
+16 external generalizations (SPO:12, SwAO:4)<br/>
+3 external dependencies (SPMO:3)</code>
+</div>
+
+<br style="clear:both">
+	<br><br><br>
+	<small>Tue Jun 13 19:53:58 BRT 2017</small>
+</BODY>
+</HTML>

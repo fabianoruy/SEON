@@ -1,0 +1,52 @@
+# How to organize the information on Astah for exporting the SEON Specification.
+The SEON Model is the root package. It must have exact three direct subpackages typed 'Level' (Tagged Value: Type=Level), with part of the name "Foundational", "Core" and "Domain". Other subpackages are allowed.
+The levels can be decomposed many times into packages typed 'Package', 'Ontology' or 'Subontology'. The only restriction is that an Ontology or a Subontology can not contain Ontologies. E.g. Root->Level->Ontology->Package->Subontology is valid.
+The Packages (including Ontologies) can be optionaly ordered by using the tagged value 'Order' with a number. It will be used any time a sequence of packages is shown (e.g. ontologies in menu, packages and subontologies in sections).
+The Ontologies should have, besides the type, the tagged values FullName (free text) and ShortName (free text). For each Ontology (inside the one of the three levels), will be generated a page, a menu link, and a node in the graph.
+The Diagrams should define their types: 'CM' (conceptual model), 'Package' (package diagram), 'Other' (for informative diagrams) or 'Ignore' (to be skipped by the parser). If not defined, the default value is 'CM'.
+The Dependency relations between two Ontologies shoud have a Definition text explaining the how the source Ontology depends on the target Ontology, and the dependency 'Level' defined as 'High', 'Medium', or 'Low'.
+Any element can have information on the Definition field. For classes (concepts), after the text, can be added an example line preceeded by "@Ex.:".
+
+Required Information on the Astah file:
+  * Package (Tagged Value):    Type {'Level', 'Package', 'Ontology', 'Subontology', 'Ignore'} (default is 'Package').
+  * Package (Tagged Value):    Order {1-N} (optional).
+  * Ontology (Tagged Value):   Type {'Ontology'}; FullName {free text}; ShortName {free text}.
+  * Diagram (Tagged Value):    Type {'CM', 'Package', 'Other', 'Ignore'} (default is 'CM').
+  * Dependency (Tagged Value): Level {'High', 'Medium', 'Low'}.
+  * All Elements (Definition): Free text.
+  * Class (Definition):        After the definition text, optional example line preceeded by "@Ex.:".
+
+Recommentations for the Astah file:
+- Try to keep the diagrams not too large (max size to fit in the page is 1000px)
+- Try to avoid hidden relations (delete with Ctrl+D)
+- Pay attention to the relations' source and target. Put them in the correct direction. OntoA::ConceptA --> OntoB::ConceptB means a external relation from OntoA to OntoB.
+- 
+
+
+
+--------------------------------------------------------------
+Figure X presents the SPO Coloring Pattern.
+
+SPO Coloring Pattern
+Yellow	Process/Activity
+Green	Artifact
+Blue	Agent
+Purple	Resource
+Pink	Procedure
+Dark*	Types
+White	Domain Concept
+Gray	External
+
+Figure X. SPO Coloring Pattern
+
+In order to facilitate identifying concepts, SPO adopts a color pattern for differentiating the main notions in the ontology: concepts in Yellow are related to processes and activities, concepts in Green refer to artifacts, concepts in Blue concern agents, concepts in Purple are related to resources as hardware and software, concepts in Pink are refer to procedures. Concepts in Gray are external, for other SEON ontologies. Darker colors represent types. White is used for domain concepts in domain ontologies.
+
+--------------------------------------------------------------
+Extracting images
+"c:\Program Files\astah-professional\astah-commandw.exe" -image cl -f c:\Users\Fabiano\workspace\seon2html\resources\SEON.asta -o c:\Users\Fabiano\workspace\seon2html\resources\astahImages\
+
+--------------------------------------------------------------
+Se quiserem testar:
+1. Salvar na mesma pasta os arquivos SeonParser.jar e SEON.asta.
+2. Na primeira execução, é necessário informar no arquivo SeonParser.properties a localização do da instalação do astah na máquina de vocês.
+3. Executar o JAR e será criada uma pasta "page", com o index.html dentro.

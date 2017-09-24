@@ -1,0 +1,1208 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<META charset="ISO-8859-1">
+<TITLE>Reference Software Measurement Ontology ()</TITLE>
+<LINK rel="stylesheet" type="text/css" href="style.css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-81695120-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="maphilight.js"></script>
+<script type="text/javascript">
+	$(function() {
+        $('.map').maphilight();
+        $('#squidheadlink').mouseover(function(e) {
+            $('#squidhead').mouseover();
+        }).mouseout(function(e) {
+            $('#squidhead').mouseout();
+        }).click(function(e) { e.preventDefault(); });
+    });
+</script>
+
+</HEAD>
+<BODY>
+	<h3 align="center">SEON: Networked Ontology Specification</h3>
+	<h1 align="center">Reference Software Measurement Ontology ()</h1>
+
+	<h2>1. Ontology Description</h2>
+	<p align="justify"></p>
+
+	<h2>2. Related Ontologies</h2>
+	<p>Networked ontologies used by :</p>
+	<table border="1" style="width: 100%" cellpadding="6">
+		<tbody>
+			<tr style="background-color: #D8D8D8">
+				<td style="width: 20%"><b>Ontology</b></td>
+				<td style="width: 66%"><b>Relation</b></td>
+				<td style="width: 14%; text-align: center"><b>Integration Level</b></td>
+			</tr>
+			<tr><td><a href="SPO.html">SPO - Software Process Ontology</a></td><td></td><td style="text-align:center">High</td></tr>
+<tr><td><a href="COM.html">COM - Core Ontology on Measurement</a></td><td></td><td style="text-align:center">High</td></tr>
+
+		</tbody>
+	</table>
+
+	<h2>3. Ontology Models</h2>
+	<p>Figure 1 presents the conceptual model of the RSMO Modularization.</p>
+<p align="center"><IMG src="images/RSMO Modularization.png" width="903" class="map" usemap="#RSMO Modularization"><MAP NAME="RSMO Modularization"></MAP></p>
+<p align="center"><b>Figure 1. RSMO Modularization conceptual model.</b></p>
+<p align="justify"></p>
+
+<h3><a name="_Software+Measurable+Entities_section">3.1.  Software Measurable Entities</a></h3>
+<p align="justify"></p>
+<p>Figure 2 presents the conceptual model of the Software Measurement Entities subontology.</p>
+<p align="center"><IMG src="images/Software Measurement Entities.png" width="1183" class="map" usemap="#Software Measurement Entities"><MAP NAME="Software Measurement Entities">
+<area shape="rect" coords="287,64,408,94" href="COM.html#COM_Measurable+Entity">
+<area shape="rect" coords="613,63,764,93" href="COM.html#COM_Measurable+Entity+Type">
+<area shape="rect" coords="10,342,126,372" href="SPO.html#SPO_Software+Project">
+<area shape="rect" coords="146,342,208,372" href="SwAO.html#SwAO_Artifact">
+<area shape="rect" coords="365,342,488,372" href="SPO.html#SPO_Standard+Process">
+<area shape="rect" coords="307,392,423,422" href="SPO.html#SPO_Standard+Activity">
+<area shape="rect" coords="533,342,653,372" href="SPO.html#SPO_Intended+Process">
+<area shape="rect" coords="478,392,591,422" href="SPO.html#SPO_Intended+Activity">
+<area shape="rect" coords="231,243,454,273" href=".html#_Measurable+Software-Related+Entity">
+<area shape="rect" coords="692,342,824,372" href="SPO.html#SPO_Performed+Process">
+<area shape="rect" coords="643,392,768,422" href="SPO.html#SPO_Performed+Activity">
+<area shape="rect" coords="228,342,317,372" href="SPO.html#SPO_Stakeholder">
+<area shape="rect" coords="939,64,1075,94" href="COM.html#COM_Measurable+Element">
+<area shape="rect" coords="768,151,950,181" href="COM.html#COM_Directly+Measurable+Element">
+<area shape="rect" coords="982,189,1173,219" href="COM.html#COM_Indirectly+Measurable+Element">
+<area shape="rect" coords="613,243,866,273" href=".html#_Measurable+Software-Related+Entity+Type"></MAP></p>
+<p align="center"><b>Figure 2. Software Measurement Entities conceptual model.</b></p>
+<p align="justify"></p>
+
+<h3><a name="_Software+Measurement+Process_section">3.2.  Software Measurement Process</a></h3>
+<p align="justify"></p>
+<p>Figure 3 presents the conceptual model of the Software Measurement Process subontology.</p>
+<p align="center"><IMG src="images/Software Measurement Process.png" width="1611" class="map" usemap="#Software Measurement Process"><MAP NAME="Software Measurement Process">
+<area shape="rect" coords="902,197,1014,256" href="SwAO.html#SwAO_Artifact">
+<area shape="rect" coords="721,351,859,381" href="SwAO.html#SwAO_Composite+Artifact">
+<area shape="rect" coords="799,315,911,345" href="SwAO.html#SwAO_Simple+Artifact">
+<area shape="rect" coords="881,403,987,433" href="SwAO.html#SwAO_Software+Item">
+<area shape="rect" coords="744,403,869,433" href="SwAO.html#SwAO_Software+Product">
+<area shape="rect" coords="1169,403,1295,433" href="SwAO.html#SwAO_Information+Item">
+<area shape="rect" coords="998,403,1056,433" href="SwAO.html#SwAO_Model">
+<area shape="rect" coords="1072,403,1156,433" href="SwAO.html#SwAO_Document">
+<area shape="rect" coords="297,10,432,40" href="SPO.html#SPO_Performed+Process">
+<area shape="rect" coords="437,343,644,373" href="SPO.html#SPO_Performed+Composite+Activity">
+<area shape="rect" coords="543,303,724,333" href="SPO.html#SPO_Performed+Simple+Activity">
+<area shape="rect" coords="216,76,402,106" href="SPO.html#SPO_Performed+General+Process">
+<area shape="rect" coords="320,122,506,152" href="SPO.html#SPO_Performed+Specific+Process">
+<area shape="rect" coords="500,197,635,256" href="SPO.html#SPO_Performed+Activity">
+<area shape="rect" coords="217,209,311,256" href="SPO.html#SPO_Stakeholder">
+<area shape="rect" coords="328,483,533,513" href=".html#_Software+Measurement+Process">
+<area shape="rect" coords="556,534,762,564" href=".html#_Software+Measurement+Planning">
+<area shape="rect" coords="556,936,769,966" href=".html#_Software+Measurement+Execution">
+<area shape="rect" coords="556,1160,761,1190" href=".html#_Software+Measurement+Analysis">
+<area shape="rect" coords="241,565,393,595" href=".html#_Measurement+Manager">
+<area shape="rect" coords="197,866,350,896" href=".html#_Measurement+Executor">
+<area shape="rect" coords="165,1038,309,1068" href=".html#_Measurement+Analyst">
+<area shape="rect" coords="1035,586,1217,616" href=".html#_Software+Measurement+Plan">
+<area shape="rect" coords="754,638,990,668" href=".html#_Measurement+Goals+Establishment">
+<area shape="rect" coords="754,697,954,727" href=".html#_Information+Needs+Identification">
+<area shape="rect" coords="754,760,907,790" href=".html#_Measures+Identification">
+<area shape="rect" coords="754,823,1080,853" href=".html#_Operational+Definition+of+Measure+Establishment">
+<area shape="rect" coords="1142,638,1412,668" href=".html#_Software+Measurement+Goal+Description">
+<area shape="rect" coords="1183,697,1368,727" href=".html#_Information+Need+Description">
+<area shape="rect" coords="1238,823,1471,853" href=".html#_Operational+Definition+of+Measure">
+<area shape="rect" coords="1183,759,1429,789" href=".html#_Measure++Description">
+<area shape="rect" coords="703,586,885,616" href=".html#_Measurement+Planning+Start">
+<area shape="rect" coords="754,987,980,1017" href=".html#_Measurement+Plan+Item+Selection">
+<area shape="rect" coords="754,1044,997,1074" href=".html#_Selection+of+Entity+for+Measurement">
+<area shape="rect" coords="754,1101,870,1131" href=".html#_Data+Collection">
+<area shape="rect" coords="754,1202,1053,1232" href=".html#_Selection+of+Measurement+Goals+for+Analysis">
+<area shape="rect" coords="754,1260,989,1290" href=".html#_Selection+of+Measures+for+Analysis">
+<area shape="rect" coords="752,1317,957,1347" href=".html#_Selection+of+Data+for+Analysis">
+<area shape="rect" coords="754,1375,860,1405" href=".html#_Data+Analysis">
+<area shape="rect" coords="754,1433,966,1463" href=".html#_Measurement+Result+Reporting">
+<area shape="rect" coords="1142,1101,1322,1131" href=".html#_Measured+Value+Description">
+<area shape="rect" coords="1111,1375,1286,1405" href=".html#_Analysis+Result+Description">
+<area shape="rect" coords="1367,880,1601,910" href=".html#_Software+Measurement+Planning+Item">
+<area shape="rect" coords="755,880,941,910" href=".html#_Planning+Item+Documentation"></MAP></p>
+<p align="center"><b>Figure 3. Software Measurement Process conceptual model.</b></p>
+<p align="justify"></p>
+
+<h3><a name="_Software+Measurement+Planning_section">3.3.  Software Measurement Planning</a></h3>
+<p align="justify"></p>
+<p>Figure 4 presents the conceptual model of the Software Measurement Planning subontology.</p>
+<p align="center"><IMG src="images/Software Measurement Planning.png" width="1631" class="map" usemap="#Software Measurement Planning"><MAP NAME="Software Measurement Planning">
+<area shape="rect" coords="499,291,635,321" href="COM.html#COM_Measurement+Goal">
+<area shape="rect" coords="793,291,931,321" href="COM.html#COM_Information+Need">
+<area shape="rect" coords="814,484,910,534" href="COM.html#COM_Measure">
+<area shape="rect" coords="825,578,900,608" href="COM.html#COM_Indicator">
+<area shape="rect" coords="1009,386,1145,416" href="COM.html#COM_Measurable+Element">
+<area shape="rect" coords="583,399,762,429" href="COM.html#COM_Measurement+Planning+Item">
+<area shape="rect" coords="442,484,604,514" href="COM.html#COM_Measurement+Procedure">
+<area shape="rect" coords="519,158,605,188" href="UFO.html#UFO_Goal">
+<area shape="rect" coords="10,311,111,341" href=".html#_Business+Goal">
+<area shape="rect" coords="101,439,201,469" href=".html#_Software+Goal">
+<area shape="rect" coords="101,618,283,648" href=".html#_Software+Measurement+Goal">
+<area shape="rect" coords="801,736,1034,823" href=".html#_Operational+Definition+of+Measure">
+<area shape="rect" coords="418,1027,644,1057" href=".html#_Software+Project+Measurement+Plan">
+<area shape="rect" coords="213,971,329,1001" href="SPO.html#SPO_Software+Project">
+<area shape="rect" coords="485,840,719,870" href=".html#_Software+Measurement+Planning+Item">
+<area shape="rect" coords="46,840,296,870" href=".html#_Software+Measurement+Goal+Description">
+<area shape="rect" coords="441,957,623,987" href=".html#_Software+Measurement+Plan">
+<area shape="rect" coords="793,1041,978,1071" href=".html#_Information+Need+Description">
+<area shape="rect" coords="793,991,934,1021" href=".html#_Measure++Description">
+<area shape="rect" coords="875,618,1047,648" href=".html#_Software-Related+Measure">
+<area shape="rect" coords="1167,541,1420,571" href=".html#_Measurable+Software-Related+Entity+Type">
+<area shape="rect" coords="1365,432,1588,462" href=".html#_Measurable+Software-Related+Entity">
+<area shape="rect" coords="343,524,556,554" href=".html#_Measurement+Analysis+Procedure">
+<area shape="rect" coords="327,365,514,395" href="UFO.html#UFO_Normative+Description">
+<area shape="rect" coords="628,692,787,722" href="SPO.html#SPO_Software+Organization">
+<area shape="rect" coords="1226,851,1342,881" href="SPO.html#SPO_Standard+Activity">
+<area shape="rect" coords="1160,937,1290,967" href="EO.html#EO_Organizational+Role">
+<area shape="rect" coords="717,916,797,946" href=".html#_Periodicity">
+<area shape="rect" coords="1047,277,1168,307" href="COM.html#COM_Measurable+Entity">
+<area shape="rect" coords="1305,379,1456,409" href="COM.html#COM_Measurable+Entity+Type">
+<area shape="rect" coords="668,205,819,235" href="COM.html#COM_Measurement+Planning">
+<area shape="rect" coords="220,764,426,794" href=".html#_Software+Measurement+Planning"></MAP></p>
+<p align="center"><b>Figure 4. Software Measurement Planning conceptual model.</b></p>
+<p align="justify"></p>
+
+<h3><a name="_Software+Measurement+Execution_section">3.4.  Software Measurement Execution</a></h3>
+<p align="justify"></p>
+<p>Figure 5 presents the conceptual model of the Measurement Execution subontology.</p>
+<p align="center"><IMG src="images/Measurement Execution.png" width="1434" class="map" usemap="#Measurement Execution"><MAP NAME="Measurement Execution">
+<area shape="rect" coords="628,375,739,428" href="COM.html#COM_Measurement">
+<area shape="rect" coords="291,455,363,485" href="COM.html#COM_Measure">
+<area shape="rect" coords="669,495,790,525" href="COM.html#COM_Measurable+Entity">
+<area shape="rect" coords="877,387,1013,417" href="COM.html#COM_Measurable+Element">
+<area shape="rect" coords="628,287,746,317" href="COM.html#COM_Measured+Value">
+<area shape="rect" coords="327,398,489,428" href="COM.html#COM_Measurement+Procedure">
+<area shape="rect" coords="641,228,730,258" href="COM.html#COM_Scale+Value">
+<area shape="rect" coords="335,297,514,327" href="COM.html#COM_Measurement+Planning+Item">
+<area shape="rect" coords="379,132,508,162" href="COM.html#COM_Information+Need">
+<area shape="rect" coords="138,235,274,265" href="COM.html#COM_Measurement+Goal">
+<area shape="rect" coords="471,478,523,508" href="COM.html#COM_Scale">
+<area shape="rect" coords="919,623,1076,653" href=".html#_Measurement+Context">
+<area shape="rect" coords="919,665,1044,695" href="SPO.html#SPO_Performed+Activity">
+<area shape="rect" coords="186,867,395,897" href=".html#_Operational+Definition+of+Measure">
+<area shape="rect" coords="935,563,1060,593" href="UFO.html#UFO_Situation">
+<area shape="rect" coords="471,623,684,653" href=".html#_Software+Measurement+Execution">
+<area shape="rect" coords="905,736,1058,766" href=".html#_Measurement+Executor">
+<area shape="rect" coords="905,783,1031,813" href=".html#_Measurement+Tool">
+<area shape="rect" coords="1078,703,1156,733" href="SwAO.html#SwAO_CASE+Tool">
+<area shape="rect" coords="617,552,840,582" href=".html#_Measurable+Software-Related+Entity">
+<area shape="rect" coords="172,552,344,582" href=".html#_Software-Related+Measure">
+<area shape="rect" coords="10,623,244,653" href=".html#_Software+Measurement+Planning+Item">
+<area shape="rect" coords="733,831,913,861" href=".html#_Measured+Value+Description"></MAP></p>
+<p align="center"><b>Figure 5. Measurement Execution conceptual model.</b></p>
+<p align="justify"></p>
+
+<h3><a name="_Software+Measurement+Analysis_section">3.5.  Software Measurement Analysis</a></h3>
+<p align="justify"></p>
+<p>Figure 6 presents the conceptual model of the Measurement Analysis subontology.</p>
+<p align="center"><IMG src="images/Measurement Analysis.png" width="1027" class="map" usemap="#Measurement Analysis"><MAP NAME="Measurement Analysis">
+<area shape="rect" coords="508,310,658,340" href="COM.html#COM_Measurement+Analysis">
+<area shape="rect" coords="279,250,386,280" href="COM.html#COM_Analysis+Result">
+<area shape="rect" coords="553,401,625,431" href="COM.html#COM_Measure">
+<area shape="rect" coords="791,310,909,340" href="COM.html#COM_Measured+Value">
+<area shape="rect" coords="797,401,896,431" href="COM.html#COM_Measurement">
+<area shape="rect" coords="265,401,386,431" href="COM.html#COM_Measurable+Entity">
+<area shape="rect" coords="766,178,945,208" href="COM.html#COM_Measurement+Planning+Item">
+<area shape="rect" coords="459,148,595,178" href="COM.html#COM_Measurement+Goal">
+<area shape="rect" coords="712,88,841,118" href="COM.html#COM_Information+Need">
+<area shape="rect" coords="664,563,873,593" href=".html#_Operational+Definition+of+Measure">
+<area shape="rect" coords="664,737,789,767" href="SPO.html#SPO_Performed+Activity">
+<area shape="rect" coords="664,653,877,683" href=".html#_Measurement+Analysis+Procedure">
+<area shape="rect" coords="664,696,808,726" href=".html#_Measurement+Analyst">
+<area shape="rect" coords="279,564,484,594" href=".html#_Software+Measurement+Analysis">
+<area shape="rect" coords="664,779,844,809" href=".html#_Measured+Value+Description">
+<area shape="rect" coords="502,498,674,528" href=".html#_Software-Related+Measure">
+<area shape="rect" coords="783,840,1017,870" href=".html#_Software+Measurement+Planning+Item">
+<area shape="rect" coords="192,929,442,959" href=".html#_Software+Measurement+Goal+Description">
+<area shape="rect" coords="10,681,192,711" href=".html#_Software+Measurement+Goal">
+<area shape="rect" coords="535,873,710,903" href=".html#_Analysis+Result+Description"></MAP></p>
+<p align="center"><b>Figure 6. Measurement Analysis conceptual model.</b></p>
+<p align="justify"></p>
+
+<h3><a name="_Operational+Definition+of+Measure_section">3.6.  Operational Definition of Measure</a></h3>
+<p align="justify"></p>
+<p>Figure 7 presents the conceptual model of the Operational Definition of Measure subontology.</p>
+<p align="center"><IMG src="images/Operational Definition of Measure.png" width="1978" class="map" usemap="#Operational Definition of Measure"><MAP NAME="Operational Definition of Measure">
+<area shape="rect" coords="163,358,215,388" href="COM.html#COM_Scale">
+<area shape="rect" coords="16,401,105,431" href="COM.html#COM_Scale+Value">
+<area shape="rect" coords="10,464,106,494" href="COM.html#COM_Ordinal+Scale">
+<area shape="rect" coords="77,517,174,547" href="COM.html#COM_Interval+Scale">
+<area shape="rect" coords="152,464,253,494" href="COM.html#COM_Rational+Scale">
+<area shape="rect" coords="881,281,1017,311" href="COM.html#COM_Measurable+Element">
+<area shape="rect" coords="362,529,521,565" href="COM.html#COM_Measurement+Formula">
+<area shape="rect" coords="961,430,1152,460" href="COM.html#COM_Indirectly+Measurable+Element">
+<area shape="rect" coords="837,380,1019,410" href="COM.html#COM_Directly+Measurable+Element">
+<area shape="rect" coords="572,243,677,336" href="COM.html#COM_Measure">
+<area shape="rect" coords="528,379,633,409" href="COM.html#COM_Base+Measure">
+<area shape="rect" coords="461,430,585,460" href="COM.html#COM_Derived+Measure">
+<area shape="rect" coords="136,236,231,266" href="COM.html#COM_Measure+Unit">
+<area shape="rect" coords="757,533,919,563" href="COM.html#COM_Measurement+Procedure">
+<area shape="rect" coords="712,106,863,136" href="COM.html#COM_Measurable+Entity+Type">
+<area shape="rect" coords="783,650,1019,680" href="COM.html#COM_Derivative+Measurement+Procedure">
+<area shape="rect" coords="634,605,831,635" href="COM.html#COM_Basic+Measurement+Procedure">
+<area shape="rect" coords="1049,213,1221,243" href=".html#_Software-Related+Measure">
+<area shape="rect" coords="1268,372,1477,410" href=".html#_Operational+Definition+of+Measure">
+<area shape="rect" coords="1212,157,1465,187" href=".html#_Measurable+Software-Related+Entity+Type">
+<area shape="rect" coords="1608,204,1767,234" href="SPO.html#SPO_Software+Organization">
+<area shape="rect" coords="1711,372,1827,402" href="SPO.html#SPO_Standard+Activity">
+<area shape="rect" coords="1402,204,1515,234" href="SwAO.html#SwAO_Information+Item">
+<area shape="rect" coords="961,478,1148,508" href="UFO.html#UFO_Normative+Description">
+<area shape="rect" coords="953,586,1166,616" href=".html#_Measurement+Analysis+Procedure">
+<area shape="rect" coords="1616,672,1696,702" href=".html#_Periodicity">
+<area shape="rect" coords="1712,479,1842,509" href="EO.html#EO_Organizational+Role">
+<area shape="rect" coords="1719,567,1845,597" href=".html#_Measurement+Tool">
+<area shape="rect" coords="1890,497,1968,527" href="SwAO.html#SwAO_CASE+Tool"></MAP></p>
+<p align="center"><b>Figure 7. Operational Definition of Measure conceptual model.</b></p>
+<p align="justify"></p>
+
+
+	<h2>4. Concepts Definition</h2>
+	<p align="justify">The following table shows the definitions for  concepts.
+<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->
+	</p>
+	<table style="width: 100%" border="1" cellpadding="6">
+		<tbody>
+			<tr style="background-color: #D8D8D8">
+				<td style="width: 25%"><b>Concept</b></td>
+				<td style="width: 75%"><b>Definition</b></td>
+			</tr>
+			<tr>
+<td><a name="_Analysis+Result+Description"><b>Analysis Result Description</b></a>
+<a href=#_Analysis+Result+Description_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Information Item that records the Analysis Result produced in a Software Measurement Analysis.  
+<br/>Ex.:<i> the record of the analysis result: the schedule performance index of the Project P has improved in the last three months and the project is now adherent to the agreed schedule.    </i></td>
+</tr>
+<tr>
+<td><a name="_Business+Goal"><b>Business Goal</b></a>
+<a href=#_Business+Goal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Goal that expresses the intention for which strategic actions are planned and performed.
+<br/>Ex.:<i> Increase the client’s satisfaction degree. </i></td>
+</tr>
+<tr>
+<td><a name="_Data+Analysis"><b>Data Analysis</b></a>
+<a href=#_Data+Analysis_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for analyzing the selected Measured Values and producing the Analysis Result Description that records the Analysis Result.
+<br/></td>
+</tr>
+<tr>
+<td><a name="_Data+Collection"><b>Data Collection</b></a>
+<a href=#_Data+Collection_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for collecting and storing data for the Software-Related Measure indicated in the selected Software Measurement Plan Item.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="_Information+Need+Description"><b>Information Need Description</b></a>
+<a href=#_Information+Need+Description_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Information Item that documents the description of an Information Need.
+<br/>Ex.:<i> the record of the information need What is the delivered defects density?.
+</i></td>
+</tr>
+<tr>
+<td><a name="_Information+Needs+Identification"><b>Information Needs Identification</b></a>
+<a href=#_Information+Needs+Identification_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for identifying and recording the Information Needs to be included in the Software Measurement Plan. Information Needs are identified from the established Software Measurement Goals.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="_Measurable+Software-Related+Entity"><b>Measurable Software-Related Entity</b></a>
+<a href=#_Measurable+Software-Related+Entity_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Measurable Entity related to software.
+<br/>Ex.:<i> a software project,  a standard process.
+</i></td>
+</tr>
+<tr>
+<td><a name="_Measurable+Software-Related+Entity+Type"><b>Measurable Software-Related Entity Type</b></a>
+<a href=#_Measurable+Software-Related+Entity+Type_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Type of Measurable Entities related to software.
+<br/>Ex.:<i> the Requirements Engineering Standard Process is a measurable software-related entity of the Standard Process type.   
+</i></td>
+</tr>
+<tr>
+<td><a name="_Measure++Description"><b>Measure  Description</b></a>
+<a href=#_Measure++Description_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Information Item that documents the description of  a Software-Related Measure.
+<br/>Ex.:<i> the record of the software-related measure   delivered defects density.</i></td>
+</tr>
+<tr>
+<td><a name="_Measured+Value+Description"><b>Measured Value Description</b></a>
+<a href=#_Measured+Value+Description_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Information Item that records a Measured Value.
+<br/>Ex.:<i> the record of the measured value 0.75.</i></td>
+</tr>
+<tr>
+<td><a name="_Measurement+Analysis+Procedure"><b>Measurement Analysis Procedure</b></a>
+<a href=#_Measurement+Analysis+Procedure_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Procedure applied to analyze Measured Values obtained for a Software-Related Measure. 
+<br/></td>
+</tr>
+<tr>
+<td><a name="_Measurement+Analyst"><b>Measurement Analyst</b></a>
+<a href=#_Measurement+Analyst_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Role played by the Stakeholder in charge of Software Measurement Analysis. 
+<br/>Ex.:<i> If John (a Person Stakeholder) was in charge of a software measurement analysis, then he played the role of measurement analyst. 
+</i></td>
+</tr>
+<tr>
+<td><a name="_Measurement+Context"><b>Measurement Context</b></a>
+<a href=#_Measurement+Context_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Situation in which a Software Measurement Execution was performed.
+<br/>Ex.:<i> an example of measurement context for a software measurement execution that obtained the measured value 0.75 for the software-related measure schedule performance index to the Project P could be: measurement performed one month after substituting two of the team members with two members less experienced.   </i></td>
+</tr>
+<tr>
+<td><a name="_Measurement+Executor"><b>Measurement Executor</b></a>
+<a href=#_Measurement+Executor_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Role played by the Stakeholder in charge of Software Measurement Execution. 
+<br/>Ex.:<i> If Mary (a Person Stakeholder) was in charge of a software measurement execution, then she played the role of measurement executor. 
+</i></td>
+</tr>
+<tr>
+<td><a name="_Measurement+Goals+Establishment"><b>Measurement Goals Establishment</b></a>
+<a href=#_Measurement+Goals+Establishment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for establishing and recording the Software Measurement Goals to be included in the Software Measurement Plan.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="_Measurement+Manager"><b>Measurement Manager</b></a>
+<a href=#_Measurement+Manager_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Role played by the Stakeholder in charge of Software Measurement Planning. 
+<br/>Ex.:<i> If John (a Person Stakeholder) was in charge of a software measurement planning, then he played the role of measurement manager. 
+</i></td>
+</tr>
+<tr>
+<td><a name="_Measurement+Plan+Item+Selection"><b>Measurement Plan Item Selection</b></a>
+<a href=#_Measurement+Plan+Item+Selection_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for selecting the Software Measurement Plan Item to be used to guide the Software Measurement Execution. The selected Software Measurement Plan Item indicates the Software-Related Measured to be applied in the Software Measurement Execution and the Operational Definition of Measure to be considered.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="_Measurement+Planning+Start"><b>Measurement Planning Start</b></a>
+<a href=#_Measurement+Planning+Start_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for defining the Software Measurement Plan structure, its initial information (e.g., organization to which it was defined and elaboration date) and starting its elaboration.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="_Measurement+Result+Reporting"><b>Measurement Result Reporting</b></a>
+<a href=#_Measurement+Result+Reporting_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for communicating the Analysis Result Description to the relevant Stakeholders.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="_Measurement+Tool"><b>Measurement Tool</b></a>
+<a href=#_Measurement+Tool_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>CASE Tool able to perform automatic measurements (i.e., measurements performed without human intervention).
+<br/>Ex.:<i> Subversion, Taiga.
+</i></td>
+</tr>
+<tr>
+<td><a name="_Measures+Identification"><b>Measures Identification</b></a>
+<a href=#_Measures+Identification_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for identifying and recording the Software-Related Measures to be included in the Software Measurement Plan. Software-Related Measures are identified from Information Needs in the sense that Measures must meet the identified Information Needs.
+<br/></td>
+</tr>
+<tr>
+<td><a name="_Operational+Definition+of+Measure"><b>Operational Definition of Measure</b></a>
+<a href=#_Operational+Definition+of+Measure_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Information Item that specifies information regarding data collection and analysis of a Software-Related Measure. An Operational Definition of Measure indicates: Measurement Procedure, Measurement Periodicity, Measurement Moment, Measurement Responsible, Measurement Analysis Procedure, Measurement Analysis Periodicity, Measurement Analysis Moment, and Measurement Analysis Responsible.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="_Operational+Definition+of+Measure+Establishment"><b>Operational Definition of Measure Establishment</b></a>
+<a href=#_Operational+Definition+of+Measure+Establishment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for establishing the Operational Definitions of Measures for the identified Software-Related Measures.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="_Periodicity"><b>Periodicity</b></a>
+<a href=#_Periodicity_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="_Planning+Item+Documentation"><b>Planning Item Documentation</b></a>
+<a href=#_Planning+Item+Documentation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for documenting Measurement Planning Items. Each Measurement Planning Item includes a Software Measurement Goal Description, an Information Need Description, a Software-Related Measure and an Operational Definition of Measure. Measurement Planning Items produced during the Software Measurement Analysis are part of the Software Measurement Plan produced in that activity.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="_Selection+of+Data+for+Analysis"><b>Selection of Data for Analysis</b></a>
+<a href=#_Selection+of+Data+for+Analysis_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for selecting the Measured Values of the selected Software-Related Measures to be analyzed in the Software Measurement Analysis.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="_Selection+of+Entity+for+Measurement"><b>Selection of Entity for Measurement</b></a>
+<a href=#_Selection+of+Entity+for+Measurement_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for selecting the Software-Related Measurable Entity to be measured in the Software Measurement Execution. The selected entity type must be the Software-Related Measurable Entity Type indicated in the Operational Definition of Measure defined in the selected Software Measurement Plan Item.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="_Selection+of+Measurement+Goals+for+Analysis"><b>Selection of Measurement Goals for Analysis</b></a>
+<a href=#_Selection+of+Measurement+Goals+for+Analysis_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for selecting the Software Measurement Goal to be monitored by using information provided by the Software Measurement Analysis.  <br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="_Selection+of+Measures+for+Analysis"><b>Selection of Measures for Analysis</b></a>
+<a href=#_Selection+of+Measures+for+Analysis_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for selecting, among the Software-Related Measures related to the selected Software Measurement Goal the ones to be analyzed in the Software Measurement Analysis.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="_Software+Goal"><b>Software Goal</b></a>
+<a href=#_Software+Goal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Goal that expresses the intention for which software-related actions are planned and performed. Software Goals are based on Business Goals.
+<br/>Ex.:<i> the software goal Improve software products quality could be defined based on the business goal Increase the client’s satisfaction degree. 
+</i></td>
+</tr>
+<tr>
+<td><a name="_Software+Measurement+Analysis"><b>Software Measurement Analysis</b></a>
+<a href=#_Software+Measurement+Analysis_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for analyzing Measured Values collected for Software-Related Measures aiming to characterize a Software-Related Measurable Entity and provide information related to a Software Measurement Goal. 
+<br/>Ex.:<i> a software measurement analysis that analyzed the measured values 0.75, 0.9 e 1, collected for the measure schedule performance index to characterize the software-related measurable entity Project P.    </i></td>
+</tr>
+<tr>
+<td><a name="_Software+Measurement+Execution"><b>Software Measurement Execution</b></a>
+<a href=#_Software+Measurement+Execution_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for measuring a Software-Related Measurable Entity by applying a Software-Related Measure and obtaining a Measured Value.
+<br/>Ex.:<i> the software measurement execution that applied the software-related measure schedule performance index to measure the Project P and obtained the measured value 0.75.
+</i></td>
+</tr>
+<tr>
+<td><a name="_Software+Measurement+Goal"><b>Software Measurement Goal</b></a>
+<a href=#_Software+Measurement+Goal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Measurement Goal related to software. Software Measurement Goals are based on Business Goals or Software Goals.
+<br/>Ex.:<i> the measurement goal Decrease defects in delivered products could be defined based on the software goal Improve software products quality.</i></td>
+</tr>
+<tr>
+<td><a name="_Software+Measurement+Goal+Description"><b>Software Measurement Goal Description</b></a>
+<a href=#_Software+Measurement+Goal+Description_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Information Item that documents the description of a Software Measurement Goal.
+<br/>Ex.:<i> the record of the software measurement goal Decrease defects in delivered products. 
+</i></td>
+</tr>
+<tr>
+<td><a name="_Software+Measurement+Plan"><b>Software Measurement Plan</b></a>
+<a href=#_Software+Measurement+Plan_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Document produced during Software Measurement Planning. It is composed of Software Measurement Planning Items.
+<br/>Ex.:<i> the Software Measurement Plan defined for the Organization O.
+</i></td>
+</tr>
+<tr>
+<td><a name="_Software+Measurement+Planning"><b>Software Measurement Planning</b></a>
+<a href=#_Software+Measurement+Planning_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Activity for planning the software measurement, i.e., for determining the Software Measurement Goals to be monitored, the Information Needs to be considered, the Software-Related Measures to be collected to meet the Information Needs and the Operational Definition of Measure to be considered. <br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="_Software+Measurement+Planning+Item"><b>Software Measurement Planning Item</b></a>
+<a href=#_Software+Measurement+Planning+Item_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Measurement Planning Item related to software. It is an Information Item produced during Software Measurement Planning and it is composed of a Software Measurement Goal Description, an Information Need Description, a Measure Description and an Operational Definition of Measure.
+<br/>Ex.:<i> the software measurement planning item composed of the software measurement goal description Decrease defects in delivered products, the information need description What is the delivered defects density?, the measure description delivered defects density and an operational definition of measure established to the software-related measure delivered defects density.
+</i></td>
+</tr>
+<tr>
+<td><a name="_Software+Measurement+Process"><b>Software Measurement Process</b></a>
+<a href=#_Software+Measurement+Process_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>The Software Measurement Process is a Process with the purpose of collecting, analyzing, and reporting data relating to the products developed and the processes used to develop them, aiming to support effective processes management and objectively demonstrate products quality.
+<br/></td>
+</tr>
+<tr>
+<td><a name="_Software+Project+Measurement+Plan"><b>Software Project Measurement Plan</b></a>
+<a href=#_Software+Project+Measurement+Plan_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Software Measurement Plan defined for a Project.
+<br/>Ex.:<i> the Software Project Measurement Plan defined for the Project P.
+</i></td>
+</tr>
+<tr>
+<td><a name="_Software-Related+Measure"><b>Software-Related Measure</b></a>
+<a href=#_Software-Related+Measure_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Measure used to quantify Measurable Elements of Measurable Software-Related Entities.
+<br/>Ex.:<i> the software-related measure number of lines of code could be used to quantify the measurable element size of measurable-related entities of the Software type.
+</i></td>
+</tr>
+
+		</tbody>
+	</table>
+	<br/>
+	<h2>Detailed Concepts</h2>
+	<a name="_Analysis+Result+Description_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Analysis Result Description<strong></td></tr>
+</table><br/>
+<b>::Analysis Result Description</b><br/>
+Specializes SwAO::Information Item<br/><br/>
+Information Item that records the Analysis Result produced in a Software Measurement Analysis.  <br/>
+Ex.:<i> the record of the analysis result: the schedule performance index of the Project P has improved in the last three months and the project is now adherent to the agreed schedule.    </i><br/>
+<br/>
+Relations:<br/>
+<code>Analysis Result Description (0..1) describes (1..1) Analysis Result<br/>
+Measurement Result Reporting uses Analysis Result Description<br/>
+Software Measurement Analysis (1..1) \creates (1..1) Analysis Result Description<br/>
+Data Analysis creates Analysis Result Description<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Business+Goal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Business Goal<strong></td></tr>
+</table><br/>
+<b>::Business Goal</b><br/>
+Specializes UFO::Goal<br/><br/>
+Goal that expresses the intention for which strategic actions are planned and performed.<br/>
+Ex.:<i> Increase the client’s satisfaction degree. </i><br/>
+<br/>
+Relations:<br/>
+<code>Software Measurement Goal (0..*) based on (1..*) Business Goal<br/>
+Software Goal (0..*) based on (1..*) Business Goal<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Data+Analysis_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Data Analysis<strong></td></tr>
+</table><br/>
+<b>::Data Analysis</b><br/>
+Specializes <br/><br/>
+Activity for analyzing the selected Measured Values and producing the Analysis Result Description that records the Analysis Result.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Data Analysis creates Analysis Result Description<br/>
+Software Measurement Analysis <>-- Data Analysis<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Data+Collection_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Data Collection<strong></td></tr>
+</table><br/>
+<b>::Data Collection</b><br/>
+Specializes <br/><br/>
+Activity for collecting and storing data for the Software-Related Measure indicated in the selected Software Measurement Plan Item.<br/><br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Data Collection creates Measured Value Description<br/>
+Software Measurement Execution <>-- Data Collection<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Information+Need+Description_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Information Need Description<strong></td></tr>
+</table><br/>
+<b>::Information Need Description</b><br/>
+Specializes SwAO::Information Item<br/><br/>
+Information Item that documents the description of an Information Need.<br/>
+Ex.:<i> the record of the information need What is the delivered defects density?.
+</i><br/>
+<br/>
+Relations:<br/>
+<code>Information Need Description (0..1) describes (1..1) Information Need<br/>
+Information Needs Identification creates Information Need Description<br/>
+Software Measurement Planning Item (0..*) <>-- (1..1) Information Need Description<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Information+Needs+Identification_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Information Needs Identification<strong></td></tr>
+</table><br/>
+<b>::Information Needs Identification</b><br/>
+Specializes SPO::Performed Simple Activity<br/><br/>
+Activity for identifying and recording the Information Needs to be included in the Software Measurement Plan. Information Needs are identified from the established Software Measurement Goals.<br/><br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Information Needs Identification creates Information Need Description<br/>
+Software Measurement Planning <>-- Information Needs Identification<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Measurable+Software-Related+Entity_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Measurable Software-Related Entity<strong></td></tr>
+</table><br/>
+<b>::Measurable Software-Related Entity</b><br/>
+Specializes COM::Measurable Entity<br/><br/>
+Measurable Entity related to software.<br/>
+Ex.:<i> a software project,  a standard process.
+</i><br/>
+<br/>
+Relations:<br/>
+<code>Measurable Software-Related Entity (0..*) instance of (1..1) Measurable Software-Related Entity Type<br/>
+Software Measurement Execution (0..*) measures (1..1) Measurable Software-Related Entity<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Measurable+Software-Related+Entity+Type_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Measurable Software-Related Entity Type<strong></td></tr>
+</table><br/>
+<b>::Measurable Software-Related Entity Type</b><br/>
+Specializes COM::Measurable Entity Type<br/><br/>
+Type of Measurable Entities related to software.<br/>
+Ex.:<i> the Requirements Engineering Standard Process is a measurable software-related entity of the Standard Process type.   
+</i><br/>
+<br/>
+Relations:<br/>
+<code>Measurable Software-Related Entity (0..*) instance of (1..1) Measurable Software-Related Entity Type<br/>
+Operational Definition of Measure (0..*) indicates (1..1) Measurable Software-Related Entity Type<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Measure++Description_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Measure  Description<strong></td></tr>
+</table><br/>
+<b>::Measure  Description</b><br/>
+Specializes SwAO::Information Item<br/><br/>
+Information Item that documents the description of  a Software-Related Measure.<br/>
+Ex.:<i> the record of the software-related measure   delivered defects density.</i><br/>
+<br/>
+Relations:<br/>
+<code>Measure  Description (0..*) describes (1..1) Software-Related Measure<br/>
+Measures Identification creates Measure  Description<br/>
+Software Measurement Planning Item (0..*) <>-- (1..1) Measure  Description<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Measured+Value+Description_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Measured Value Description<strong></td></tr>
+</table><br/>
+<b>::Measured Value Description</b><br/>
+Specializes SwAO::Information Item<br/><br/>
+Information Item that records a Measured Value.<br/>
+Ex.:<i> the record of the measured value 0.75.</i><br/>
+<br/>
+Relations:<br/>
+<code>Measured Value Description (0..1) describes (1..1) Measured Value<br/>
+Software Measurement Analysis (0..*) \uses (1..*) Measured Value Description<br/>
+Data Collection creates Measured Value Description<br/>
+Software Measurement Execution (1..1) \creates (1..1) Measured Value Description<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Measurement+Analysis+Procedure_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Measurement Analysis Procedure<strong></td></tr>
+</table><br/>
+<b>::Measurement Analysis Procedure</b><br/>
+Specializes UFO::Normative Description<br/><br/>
+Procedure applied to analyze Measured Values obtained for a Software-Related Measure. <br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Measurement Analysis Procedure (0..*) applies to (1..*) Measure<br/>
+Software Measurement Analysis (0..*) adopts (1..1) Measurement Analysis Procedure<br/>
+Operational Definition of Measure (0..*) indicates (0..1) Measurement Analysis Procedure<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Measurement+Analyst_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
+<strong>Measurement Analyst<strong></td></tr>
+</table><br/>
+<b>::Measurement Analyst</b><br/>
+Specializes SPO::Stakeholder<br/><br/>
+Role played by the Stakeholder in charge of Software Measurement Analysis. <br/>
+Ex.:<i> If John (a Person Stakeholder) was in charge of a software measurement analysis, then he played the role of measurement analyst. 
+</i><br/>
+<br/>
+Relations:<br/>
+<code>Measurement Analyst (1..1) in charge of (1..*) Software Measurement Analysis<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Measurement+Context_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Measurement Context<strong></td></tr>
+</table><br/>
+<b>::Measurement Context</b><br/>
+Specializes UFO::Situation<br/><br/>
+Situation in which a Software Measurement Execution was performed.<br/>
+Ex.:<i> an example of measurement context for a software measurement execution that obtained the measured value 0.75 for the software-related measure schedule performance index to the Project P could be: measurement performed one month after substituting two of the team members with two members less experienced.   </i><br/>
+<br/>
+Relations:<br/>
+<code>Software Measurement Execution (1..*) occurs in (1..1) Measurement Context<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Measurement+Executor_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
+<strong>Measurement Executor<strong></td></tr>
+</table><br/>
+<b>::Measurement Executor</b><br/>
+Specializes SPO::Stakeholder<br/><br/>
+Role played by the Stakeholder in charge of Software Measurement Execution. <br/>
+Ex.:<i> If Mary (a Person Stakeholder) was in charge of a software measurement execution, then she played the role of measurement executor. 
+</i><br/>
+<br/>
+Relations:<br/>
+<code>Measurement Executor (1..1) in charge of (1..*) Software Measurement Execution<br/>
+Software Measurement Execution (0..*) performed by (1..1) Measurement Executor<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Measurement+Goals+Establishment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Measurement Goals Establishment<strong></td></tr>
+</table><br/>
+<b>::Measurement Goals Establishment</b><br/>
+Specializes SPO::Performed Simple Activity<br/><br/>
+Activity for establishing and recording the Software Measurement Goals to be included in the Software Measurement Plan.<br/><br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Measurement Goals Establishment creates Software Measurement Goal Description<br/>
+Software Measurement Planning <>-- Measurement Goals Establishment<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Measurement+Manager_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
+<strong>Measurement Manager<strong></td></tr>
+</table><br/>
+<b>::Measurement Manager</b><br/>
+Specializes SPO::Stakeholder<br/><br/>
+Role played by the Stakeholder in charge of Software Measurement Planning. <br/>
+Ex.:<i> If John (a Person Stakeholder) was in charge of a software measurement planning, then he played the role of measurement manager. 
+</i><br/>
+<br/>
+Relations:<br/>
+<code>Measurement Manager (1..1) in charge of (1..*) Software Measurement Planning<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Measurement+Plan+Item+Selection_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Measurement Plan Item Selection<strong></td></tr>
+</table><br/>
+<b>::Measurement Plan Item Selection</b><br/>
+Specializes <br/><br/>
+Activity for selecting the Software Measurement Plan Item to be used to guide the Software Measurement Execution. The selected Software Measurement Plan Item indicates the Software-Related Measured to be applied in the Software Measurement Execution and the Operational Definition of Measure to be considered.<br/><br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Software Measurement Execution <>-- Measurement Plan Item Selection<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Measurement+Planning+Start_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Measurement Planning Start<strong></td></tr>
+</table><br/>
+<b>::Measurement Planning Start</b><br/>
+Specializes SPO::Performed Simple Activity<br/><br/>
+Activity for defining the Software Measurement Plan structure, its initial information (e.g., organization to which it was defined and elaboration date) and starting its elaboration.<br/><br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Measurement Planning Start creates Software Measurement Plan<br/>
+Software Measurement Planning <>-- Measurement Planning Start<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Measurement+Result+Reporting_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Measurement Result Reporting<strong></td></tr>
+</table><br/>
+<b>::Measurement Result Reporting</b><br/>
+Specializes <br/><br/>
+Activity for communicating the Analysis Result Description to the relevant Stakeholders.<br/><br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Measurement Result Reporting uses Analysis Result Description<br/>
+Software Measurement Analysis <>-- Measurement Result Reporting<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Measurement+Tool_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
+<strong>Measurement Tool<strong></td></tr>
+</table><br/>
+<b>::Measurement Tool</b><br/>
+Specializes SwAO::CASE Tool<br/><br/>
+CASE Tool able to perform automatic measurements (i.e., measurements performed without human intervention).<br/>
+Ex.:<i> Subversion, Taiga.
+</i><br/>
+<br/>
+Relations:<br/>
+<code>Software Measurement Execution (1..*) performed by (1..1) Measurement Tool<br/>
+Operational Definition of Measure (0..*) indicates (1..1) Measurement Tool<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Measures+Identification_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Measures Identification<strong></td></tr>
+</table><br/>
+<b>::Measures Identification</b><br/>
+Specializes SPO::Performed Simple Activity<br/><br/>
+Activity for identifying and recording the Software-Related Measures to be included in the Software Measurement Plan. Software-Related Measures are identified from Information Needs in the sense that Measures must meet the identified Information Needs.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Measures Identification creates Measure  Description<br/>
+Software Measurement Planning <>-- Measures Identification<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Operational+Definition+of+Measure_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Operational Definition of Measure<strong></td></tr>
+</table><br/>
+<b>::Operational Definition of Measure</b><br/>
+Specializes SwAO::Information Item<br/><br/>
+Information Item that specifies information regarding data collection and analysis of a Software-Related Measure. An Operational Definition of Measure indicates: Measurement Procedure, Measurement Periodicity, Measurement Moment, Measurement Responsible, Measurement Analysis Procedure, Measurement Analysis Periodicity, Measurement Analysis Moment, and Measurement Analysis Responsible.<br/><br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Operational Definition of Measure (0..*) indicates (1..1) Measurable Software-Related Entity Type<br/>
+Operational Definition of Measure (0..*) indicates (1..1) Measurable Element<br/>
+Operational Definition of Measure (0..*) defined for (1..1) Software-Related Measure<br/>
+Operational Definition of Measure (0..*) indicates (1..1) Measurement Procedure<br/>
+Operational Definition of Measure (0..*) indicates (0..*) Standard Activity<br/>
+Operational Definition of Measure (0..*) indicates (0..1) Measurement Analysis Procedure<br/>
+Operational Definition of Measure (0..*) indicates (0..1) Periodicity<br/>
+Operational Definition of Measure (0..*) indicates (0..1) Organizational Role<br/>
+Operational Definition of Measure (0..*) indicates (1..1) Measurement Tool<br/>
+Operational Definition of Measure Establishment creates Operational Definition of Measure<br/>
+Software Measurement Analysis (0..*) is performed according to (0..*) Operational Definition of Measure<br/>
+Software Organization (1..*) establishes (0..*) Operational Definition of Measure<br/>
+Software Measurement Execution (0..*) /performed based on (1..1) Operational Definition of Measure<br/>
+Software Measurement Planning Item (0..*) <>-- (1..1) Operational Definition of Measure<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Operational+Definition+of+Measure+Establishment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Operational Definition of Measure Establishment<strong></td></tr>
+</table><br/>
+<b>::Operational Definition of Measure Establishment</b><br/>
+Specializes SPO::Performed Simple Activity<br/><br/>
+Activity for establishing the Operational Definitions of Measures for the identified Software-Related Measures.<br/><br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Operational Definition of Measure Establishment creates Operational Definition of Measure<br/>
+Software Measurement Planning <>-- Operational Definition of Measure Establishment<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Periodicity_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Periodicity<strong></td></tr>
+</table><br/>
+<b>::Periodicity</b><br/>
+Specializes <br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Operational Definition of Measure (0..*) indicates (0..1) Periodicity<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Planning+Item+Documentation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Planning Item Documentation<strong></td></tr>
+</table><br/>
+<b>::Planning Item Documentation</b><br/>
+Specializes SPO::Performed Simple Activity<br/><br/>
+Activity for documenting Measurement Planning Items. Each Measurement Planning Item includes a Software Measurement Goal Description, an Information Need Description, a Software-Related Measure and an Operational Definition of Measure. Measurement Planning Items produced during the Software Measurement Analysis are part of the Software Measurement Plan produced in that activity.<br/><br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Planning Item Documentation creates Software Measurement Planning Item<br/>
+Planning Item Documentation changes Software Measurement Plan<br/>
+Software Measurement Planning <>-- Planning Item Documentation<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Selection+of+Data+for+Analysis_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Selection of Data for Analysis<strong></td></tr>
+</table><br/>
+<b>::Selection of Data for Analysis</b><br/>
+Specializes <br/><br/>
+Activity for selecting the Measured Values of the selected Software-Related Measures to be analyzed in the Software Measurement Analysis.<br/><br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Software Measurement Analysis <>-- Selection of Data for Analysis<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Selection+of+Entity+for+Measurement_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Selection of Entity for Measurement<strong></td></tr>
+</table><br/>
+<b>::Selection of Entity for Measurement</b><br/>
+Specializes <br/><br/>
+Activity for selecting the Software-Related Measurable Entity to be measured in the Software Measurement Execution. The selected entity type must be the Software-Related Measurable Entity Type indicated in the Operational Definition of Measure defined in the selected Software Measurement Plan Item.<br/><br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Software Measurement Execution <>-- Selection of Entity for Measurement<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Selection+of+Measurement+Goals+for+Analysis_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Selection of Measurement Goals for Analysis<strong></td></tr>
+</table><br/>
+<b>::Selection of Measurement Goals for Analysis</b><br/>
+Specializes <br/><br/>
+Activity for selecting the Software Measurement Goal to be monitored by using information provided by the Software Measurement Analysis.  <br/><br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Software Measurement Analysis <>-- Selection of Measurement Goals for Analysis<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Selection+of+Measures+for+Analysis_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Selection of Measures for Analysis<strong></td></tr>
+</table><br/>
+<b>::Selection of Measures for Analysis</b><br/>
+Specializes <br/><br/>
+Activity for selecting, among the Software-Related Measures related to the selected Software Measurement Goal the ones to be analyzed in the Software Measurement Analysis.<br/><br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Software Measurement Analysis <>-- Selection of Measures for Analysis<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Software+Goal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Software Goal<strong></td></tr>
+</table><br/>
+<b>::Software Goal</b><br/>
+Specializes UFO::Goal<br/><br/>
+Goal that expresses the intention for which software-related actions are planned and performed. Software Goals are based on Business Goals.<br/>
+Ex.:<i> the software goal Improve software products quality could be defined based on the business goal Increase the client’s satisfaction degree. 
+</i><br/>
+<br/>
+Relations:<br/>
+<code>Software Goal (0..*) based on (1..*) Business Goal<br/>
+Software Measurement Goal (0..*) based on (1..*) Software Goal<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Software+Measurement+Analysis_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Software Measurement Analysis<strong></td></tr>
+</table><br/>
+<b>::Software Measurement Analysis</b><br/>
+Specializes SPO::Performed Composite Activity, COM::Measurement Analysis<br/><br/>
+Activity for analyzing Measured Values collected for Software-Related Measures aiming to characterize a Software-Related Measurable Entity and provide information related to a Software Measurement Goal. <br/>
+Ex.:<i> a software measurement analysis that analyzed the measured values 0.75, 0.9 e 1, collected for the measure schedule performance index to characterize the software-related measurable entity Project P.    </i><br/>
+<br/>
+Relations:<br/>
+<code>Software Measurement Analysis <>-- Selection of Measurement Goals for Analysis<br/>
+Software Measurement Analysis <>-- Selection of Measures for Analysis<br/>
+Software Measurement Analysis <>-- Selection of Data for Analysis<br/>
+Software Measurement Analysis <>-- Data Analysis<br/>
+Software Measurement Analysis <>-- Measurement Result Reporting<br/>
+Software Measurement Analysis uses Software Measurement Plan<br/>
+Software Measurement Analysis (0..*) adopts (1..1) Measurement Analysis Procedure<br/>
+Software Measurement Analysis (0..*)  (0..1) Performed Activity<br/>
+Software Measurement Analysis (0..*) is performed according to (0..*) Operational Definition of Measure<br/>
+Software Measurement Analysis (0..*) \uses (1..*) Measured Value Description<br/>
+Software Measurement Analysis (0..*) considers (1..*) Software-Related Measure<br/>
+Software Measurement Analysis (0..*) performed based on (1..*) Software Measurement Planning Item<br/>
+Software Measurement Analysis (1..1) \creates (1..1) Analysis Result Description<br/>
+Measurement Analyst (1..1) in charge of (1..*) Software Measurement Analysis<br/>
+Software Measurement Process <>-- Software Measurement Analysis<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Software+Measurement+Execution_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Software Measurement Execution<strong></td></tr>
+</table><br/>
+<b>::Software Measurement Execution</b><br/>
+Specializes SPO::Performed Composite Activity, COM::Measurement<br/><br/>
+Activity for measuring a Software-Related Measurable Entity by applying a Software-Related Measure and obtaining a Measured Value.<br/>
+Ex.:<i> the software measurement execution that applied the software-related measure schedule performance index to measure the Project P and obtained the measured value 0.75.
+</i><br/>
+<br/>
+Relations:<br/>
+<code>Software Measurement Execution <>-- Measurement Plan Item Selection<br/>
+Software Measurement Execution <>-- Selection of Entity for Measurement<br/>
+Software Measurement Execution <>-- Data Collection<br/>
+Software Measurement Execution uses Software Measurement Plan<br/>
+Software Measurement Execution (1..*) occurs in (1..1) Measurement Context<br/>
+Software Measurement Execution (0..*) occurs in (1..1) Performed Activity<br/>
+Software Measurement Execution (0..*) performed by (1..1) Measurement Executor<br/>
+Software Measurement Execution (1..*) performed by (1..1) Measurement Tool<br/>
+Software Measurement Execution (0..*) measures (1..1) Measurable Software-Related Entity<br/>
+Software Measurement Execution (0..*) applies (1..1) Software-Related Measure<br/>
+Software Measurement Execution (0..*) performed based on (1..1) Software Measurement Planning Item<br/>
+Software Measurement Execution (0..*) /performed based on (1..1) Operational Definition of Measure<br/>
+Software Measurement Execution (1..1) \creates (1..1) Measured Value Description<br/>
+Software Measurement Process <>-- Software Measurement Execution<br/>
+Measurement Executor (1..1) in charge of (1..*) Software Measurement Execution<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Software+Measurement+Goal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Software Measurement Goal<strong></td></tr>
+</table><br/>
+<b>::Software Measurement Goal</b><br/>
+Specializes COM::Measurement Goal<br/><br/>
+Measurement Goal related to software. Software Measurement Goals are based on Business Goals or Software Goals.<br/>
+Ex.:<i> the measurement goal Decrease defects in delivered products could be defined based on the software goal Improve software products quality.</i><br/>
+<br/>
+Relations:<br/>
+<code>Software Measurement Goal (0..*) based on (1..*) Software Goal<br/>
+Software Measurement Goal (0..*) based on (1..*) Business Goal<br/>
+Software Measurement Goal Description (0..1) describes (1..1) Software Measurement Goal<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Software+Measurement+Goal+Description_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Software Measurement Goal Description<strong></td></tr>
+</table><br/>
+<b>::Software Measurement Goal Description</b><br/>
+Specializes SwAO::Information Item<br/><br/>
+Information Item that documents the description of a Software Measurement Goal.<br/>
+Ex.:<i> the record of the software measurement goal Decrease defects in delivered products. 
+</i><br/>
+<br/>
+Relations:<br/>
+<code>Software Measurement Goal Description (0..1) describes (1..1) Software Measurement Goal<br/>
+Measurement Goals Establishment creates Software Measurement Goal Description<br/>
+Software Measurement Planning Item (0..*) <>-- (1..1) Software Measurement Goal Description<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Software+Measurement+Plan_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Software Measurement Plan<strong></td></tr>
+</table><br/>
+<b>::Software Measurement Plan</b><br/>
+Specializes SwAO::Document<br/><br/>
+Document produced during Software Measurement Planning. It is composed of Software Measurement Planning Items.<br/>
+Ex.:<i> the Software Measurement Plan defined for the Organization O.
+</i><br/>
+<br/>
+Relations:<br/>
+<code>Software Measurement Plan (1..1) <>-- (0..*) Software Measurement Planning Item<br/>
+Software Measurement Plan (1..1) depicts (0..*) Software Measurement Planning Item<br/>
+Software Measurement Analysis uses Software Measurement Plan<br/>
+Software Measurement Planning (1..*) produces (1..1) Software Measurement Plan<br/>
+Planning Item Documentation changes Software Measurement Plan<br/>
+Software Measurement Execution uses Software Measurement Plan<br/>
+Measurement Planning Start creates Software Measurement Plan<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Software+Measurement+Planning_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
+<strong>Software Measurement Planning<strong></td></tr>
+</table><br/>
+<b>::Software Measurement Planning</b><br/>
+Specializes SPO::Performed Composite Activity, COM::Measurement Planning<br/><br/>
+Activity for planning the software measurement, i.e., for determining the Software Measurement Goals to be monitored, the Information Needs to be considered, the Software-Related Measures to be collected to meet the Information Needs and the Operational Definition of Measure to be considered. <br/><br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Software Measurement Planning <>-- Measurement Goals Establishment<br/>
+Software Measurement Planning <>-- Information Needs Identification<br/>
+Software Measurement Planning <>-- Measures Identification<br/>
+Software Measurement Planning <>-- Operational Definition of Measure Establishment<br/>
+Software Measurement Planning <>-- Measurement Planning Start<br/>
+Software Measurement Planning <>-- Planning Item Documentation<br/>
+Software Measurement Planning (1..1) produces (1..*) Software Measurement Planning Item<br/>
+Software Measurement Planning (1..*) produces (1..1) Software Measurement Plan<br/>
+Software Measurement Process <>-- Software Measurement Planning<br/>
+Measurement Manager (1..1) in charge of (1..*) Software Measurement Planning<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Software+Measurement+Planning+Item_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Software Measurement Planning Item<strong></td></tr>
+</table><br/>
+<b>::Software Measurement Planning Item</b><br/>
+Specializes SwAO::Information Item, COM::Measurement Planning Item<br/><br/>
+Measurement Planning Item related to software. It is an Information Item produced during Software Measurement Planning and it is composed of a Software Measurement Goal Description, an Information Need Description, a Measure Description and an Operational Definition of Measure.<br/>
+Ex.:<i> the software measurement planning item composed of the software measurement goal description Decrease defects in delivered products, the information need description What is the delivered defects density?, the measure description delivered defects density and an operational definition of measure established to the software-related measure delivered defects density.
+</i><br/>
+<br/>
+Relations:<br/>
+<code>Software Measurement Planning Item (0..*) <>-- (1..1) Operational Definition of Measure<br/>
+Software Measurement Planning Item (0..*) <>-- (1..1) Measure  Description<br/>
+Software Measurement Planning Item (0..*) <>-- (1..1) Information Need Description<br/>
+Software Measurement Planning Item (0..*) <>-- (1..1) Software Measurement Goal Description<br/>
+Software Measurement Analysis (0..*) performed based on (1..*) Software Measurement Planning Item<br/>
+Software Measurement Planning (1..1) produces (1..*) Software Measurement Planning Item<br/>
+Planning Item Documentation creates Software Measurement Planning Item<br/>
+Software Measurement Execution (0..*) performed based on (1..1) Software Measurement Planning Item<br/>
+Software Measurement Plan (1..1) <>-- (0..*) Software Measurement Planning Item<br/>
+Software Measurement Plan (1..1) depicts (0..*) Software Measurement Planning Item<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Software+Measurement+Process_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Software Measurement Process<strong></td></tr>
+</table><br/>
+<b>::Software Measurement Process</b><br/>
+Specializes SPO::Performed Specific Process<br/><br/>
+The Software Measurement Process is a Process with the purpose of collecting, analyzing, and reporting data relating to the products developed and the processes used to develop them, aiming to support effective processes management and objectively demonstrate products quality.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Software Measurement Process <>-- Software Measurement Planning<br/>
+Software Measurement Process <>-- Software Measurement Execution<br/>
+Software Measurement Process <>-- Software Measurement Analysis<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Software+Project+Measurement+Plan_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Software Project Measurement Plan<strong></td></tr>
+</table><br/>
+<b>::Software Project Measurement Plan</b><br/>
+Specializes ::Software Measurement Plan<br/><br/>
+A Software Measurement Plan defined for a Project.<br/>
+Ex.:<i> the Software Project Measurement Plan defined for the Project P.
+</i><br/>
+<br/>
+Relations:<br/>
+<code>Software Project Measurement Plan (0..*) defined for (1..1) Software Project<br/>
+</code><br/>
+<br/><br/>
+
+<a name="_Software-Related+Measure_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Software-Related Measure<strong></td></tr>
+</table><br/>
+<b>::Software-Related Measure</b><br/>
+Specializes COM::Measure<br/><br/>
+Measure used to quantify Measurable Elements of Measurable Software-Related Entities.<br/>
+Ex.:<i> the software-related measure number of lines of code could be used to quantify the measurable element size of measurable-related entities of the Software type.
+</i><br/>
+<br/>
+Relations:<br/>
+<code>Software Measurement Analysis (0..*) considers (1..*) Software-Related Measure<br/>
+Software Measurement Execution (0..*) applies (1..1) Software-Related Measure<br/>
+Measure  Description (0..*) describes (1..1) Software-Related Measure<br/>
+Operational Definition of Measure (0..*) defined for (1..1) Software-Related Measure<br/>
+</code><br/>
+<br/><br/>
+
+
+	<hr>
+	<br/>
+	<small><b>Reference Software Measurement Ontology ()</b></small><br/>
+	<small>Mon Jun 12 15:35:56 BRT 2017</small>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+</BODY>
+</HTML>

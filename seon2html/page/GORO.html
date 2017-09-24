@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<META charset="ISO-8859-1">
+<TITLE>Goal-Oriented Requirements Ontology (GORO)</TITLE>
+<LINK rel="stylesheet" type="text/css" href="style.css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-81695120-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="maphilight.js"></script>
+<script type="text/javascript">
+	$(function() {
+        $('.map').maphilight();
+    });
+</script>
+
+</HEAD>
+<BODY>
+	<h3 align="center">SEON: Networked Ontology Specification</h3>
+	<h1 align="center">Goal-Oriented Requirements Ontology (GORO)</h1>
+
+	<h2>1. Ontology Description</h2>
+	<p align="justify">The Goal-Oriented Requirements Ontology (GORO) intends to represent the nature of the main concepts and relations surrounding Goal-Oriented Requeriments Engineering (GORE) approaches.</p>
+
+	<h2>2. Related Ontologies</h2>
+	<p>Networked ontologies used by GORO:</p>
+	<table border="1" style="width: 100%" cellpadding="6">
+		<tbody>
+			<tr style="background-color: #D8D8D8">
+				<td style="width: 20%"><b>Ontology</b></td>
+				<td style="width: 66%"><b>Relation</b></td>
+				<td style="width: 14%; text-align: center"><b>Integration Level</b></td>
+			</tr>
+			<tr><td><a href="RSRO.html">RSRO - Reference Software Requirements Ontology</a></td><td></td><td style="text-align:center"></td></tr>
+
+		</tbody>
+	</table>
+
+	<h2>3. Ontology Models</h2>
+	<p>Figure 1 presents the conceptual model of the GORO.</p>
+<p align="center"><IMG src="images/GORO.png" width="1200" class="map" usemap="#GORO"><MAP NAME="GORO">
+<area shape="rect" coords="314,152,411,182" href="UFO.html#UFO_Goal" title="">
+<area shape="rect" coords="285,267,440,297" href="RSRO.html#RSRO_Requirement" title="Goal to be achieved, representing a condition or capacity needed for the system users for solving a problem.">
+<area shape="rect" coords="1042,151,1140,181" href="SPO.html#SPO_Stakeholder" title="Agent (Person, Team or Organization) interested or affected by the process activities or results.">
+<area shape="rect" coords="967,214,1190,244" href="RSRO.html#RSRO_Requirements+Stakeholder" title="Stakeholder that provides needs and expectations for the product.">
+<area shape="rect" coords="666,214,846,244" href="RSRO.html#RSRO_Stakeholder+Intention" title="The intention of Requirements Stakeholders that defines requirements to be achieved.">
+<area shape="rect" coords="701,151,827,181" href="UFO.html#UFO_Intention" title="">
+<area shape="rect" coords="292,344,425,374" href="GORO.html#GORO_Requirement" title="A Goal in the scope of a specific problem, that describes environmental conditions to be achieved through a desired solution resulting in satisfaction of the underlying strategic goals. In GORE, these goals can be refined by decomposing them into sub-goals, as well as by defining them by means of alternative goals.">
+<area shape="rect" coords="766,344,814,374" href="GORO.html#GORO_Task" title="A Task is a plan to achieve a goal.">
+<area shape="rect" coords="830,423,931,453" href="GORO.html#GORO_Complex+Task" title="A Complex Task is a Task that is composed in other tasks.">
+<area shape="rect" coords="699,423,790,453" href="GORO.html#GORO_Atomic+Task" title="An Atomic Task is a Task that is not decomposed in other tasks.">
+<area shape="rect" coords="687,286,896,316" href="UFO.html#UFO_Action+Universal+(Plan)" title="">
+<area shape="rect" coords="163,222,234,252" href="GORO.html#GORO_Hardgoal" title="Hardgoal is a proposition that is objectively satisfied by a given set of situations.">
+<area shape="rect" coords="253,222,320,252" href="GORO.html#GORO_Softgoal" title="Softgoal is an initial and temporary vague expression of a goal not suficiently defined yet. It refers to a vague quality region whose exact boundaries are unknown. Thus it is not  possible to determine a priori the set of situations that satisfies the softgoal. Its satisfiability is usually related to an agent's judgement.">
+<area shape="rect" coords="1038,20,1144,50" href="UFO.html#UFO_Agent" title="">
+<area shape="rect" coords="621,476,748,506" href="RSRO.html#RSRO_Assumption" title="Assumptions describe states-of-aaffairs in the environment of interest that the Stakeholders believe to be true, i.e., they are the propositional content of Stakeholders' Beliefs. They express the belief that a specific situation exists in the environment.">
+<area shape="rect" coords="950,423,1113,453" href="RSRO.html#RSRO_Stakeholder+Belief" title="The belief of Requirements Stakeholders regarding the environment of interest that are described in terms of Assumptions.">
+<area shape="rect" coords="10,404,203,434" href="RSRO.html#RSRO_Functional+Requirement" title="Requirement defining a function to be available in the product being built.">
+<area shape="rect" coords="82,453,301,483" href="RSRO.html#RSRO_Non-Functional+Requirement" title="Requirement defining criteria or capabilities for the product.">
+<area shape="rect" coords="669,20,861,50" href="UFO.html#UFO_Intentional+Moment" title="">
+<area shape="rect" coords="683,85,849,115" href="UFO.html#UFO_Mental+Moment" title="">
+<area shape="rect" coords="293,71,434,101" href="UFO.html#UFO_Proposition" title="">
+<area shape="rect" coords="848,151,952,181" href="UFO.html#UFO_Belief" title=""></MAP></p>
+<p align="center"><b>Figure 1. GORO conceptual model.</b></p>
+<p align="justify">In GORE, the domain characterization (and further identification of requirements and so on) is obtained initially by modeling the agents' goals. Agents bear intentional properties such as Beliefs and Intentions. These intentional properties are called Mental Moments. A Goal is a propositional content of an Intention. An Intention represents not only a will but also an internal commitment of the Agent to act towards the Goal, implying in a Plan to accomplish it. In that way, a Goal as an Intention should be associated with a Plan. Thus, Goals with associated Plans to accomplish them (Tasks) are propositional contents of Intentions.<br/><br/>In a Software Engineering process, a requirement does not refer necessarily to software. Hence, a Requirement is a Goal, in the scope of a specific problem, that describes environmental conditions to be achieved through a desired solution resulting in satisfaction of the underlying strategic goals.<br/><br/>Hardgoals are defined as propositions that are objectively satisfied by a given set of situations. In constrast, Softgoals refer to a vague quality region whose exact boundaries are unknown. <br/></p>
+
+
+	<h2>4. Concepts Definition</h2>
+	<p align="justify">The following table shows the definitions for GORO concepts.
+<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->
+	</p>
+	<table style="width: 100%" border="1" cellpadding="6">
+		<tbody>
+			<tr style="background-color: #D8D8D8">
+				<td style="width: 25%"><b>Concept</b></td>
+				<td style="width: 75%"><b>Definition</b></td>
+			</tr>
+			<tr>
+<td><a name="GORO_Atomic+Task"><b>Atomic Task</b></a>
+<a href=#GORO_Atomic+Task_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>An Atomic Task is a Task that is not decomposed in other tasks.
+<br/></td>
+</tr>
+<tr>
+<td><a name="GORO_Complex+Task"><b>Complex Task</b></a>
+<a href=#GORO_Complex+Task_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Complex Task is a Task that is composed in other tasks.
+<br/></td>
+</tr>
+<tr>
+<td><a name="GORO_Hardgoal"><b>Hardgoal</b></a>
+<a href=#GORO_Hardgoal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Hardgoal is a proposition that is objectively satisfied by a given set of situations.
+<br/></td>
+</tr>
+<tr>
+<td><a name="GORO_Requirement"><b>Requirement</b></a>
+<a href=#GORO_Requirement_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Goal in the scope of a specific problem, that describes environmental conditions to be achieved through a desired solution resulting in satisfaction of the underlying strategic goals. In GORE, these goals can be refined by decomposing them into sub-goals, as well as by defining them by means of alternative goals.
+<br/></td>
+</tr>
+<tr>
+<td><a name="GORO_Softgoal"><b>Softgoal</b></a>
+<a href=#GORO_Softgoal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Softgoal is an initial and temporary vague expression of a goal not suficiently defined yet. It refers to a vague quality region whose exact boundaries are unknown. Thus it is not  possible to determine a priori the set of situations that satisfies the softgoal. Its satisfiability is usually related to an agent's judgement.
+<br/></td>
+</tr>
+<tr>
+<td><a name="GORO_Task"><b>Task</b></a>
+<a href=#GORO_Task_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Task is a plan to achieve a goal.
+<br/></td>
+</tr>
+
+		</tbody>
+	</table>
+	<br/>
+	<h2>Detailed Concepts</h2>
+	<a name="GORO_Atomic+Task_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Atomic Task<strong></td></tr>
+</table><br/>
+<b>GORO::Atomic Task</b><br/>
+Specializes GORO::Task<br/><br/>
+An Atomic Task is a Task that is not decomposed in other tasks.<br/>
+<br/>
+<br/>
+<br/>
+<br/><br/>
+
+<a name="GORO_Complex+Task_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Complex Task<strong></td></tr>
+</table><br/>
+<b>GORO::Complex Task</b><br/>
+Specializes GORO::Task<br/><br/>
+A Complex Task is a Task that is composed in other tasks.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Complex Task (0..1) <>-- (2..*) Task<br/>
+</code><br/>
+<br/><br/>
+
+<a name="GORO_Hardgoal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Hardgoal<strong></td></tr>
+</table><br/>
+<b>GORO::Hardgoal</b><br/>
+Specializes UFO::Goal<br/><br/>
+Hardgoal is a proposition that is objectively satisfied by a given set of situations.<br/>
+<br/>
+<br/>
+<br/>
+<br/><br/>
+
+<a name="GORO_Requirement_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Requirement<strong></td></tr>
+</table><br/>
+<b>GORO::Requirement</b><br/>
+Specializes RSRO::Requirement<br/><br/>
+A Goal in the scope of a specific problem, that describes environmental conditions to be achieved through a desired solution resulting in satisfaction of the underlying strategic goals. In GORE, these goals can be refined by decomposing them into sub-goals, as well as by defining them by means of alternative goals.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Requirement (0..1)  (0..*) Requirement<br/>
+Task (0..*) intends to operationalize (1..1) Requirement<br/>
+</code><br/>
+<br/><br/>
+
+<a name="GORO_Softgoal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Softgoal<strong></td></tr>
+</table><br/>
+<b>GORO::Softgoal</b><br/>
+Specializes UFO::Goal<br/><br/>
+Softgoal is an initial and temporary vague expression of a goal not suficiently defined yet. It refers to a vague quality region whose exact boundaries are unknown. Thus it is not  possible to determine a priori the set of situations that satisfies the softgoal. Its satisfiability is usually related to an agent's judgement.<br/>
+<br/>
+<br/>
+<br/>
+<br/><br/>
+
+<a name="GORO_Task_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Task<strong></td></tr>
+</table><br/>
+<b>GORO::Task</b><br/>
+Specializes UFO::Action Universal (Plan)<br/><br/>
+A Task is a plan to achieve a goal.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Task (0..*) intends to operationalize (1..1) Requirement<br/>
+Complex Task (0..1) <>-- (2..*) Task<br/>
+</code><br/>
+<br/><br/>
+
+
+	<hr>
+	<br/>
+	<small><b>Goal-Oriented Requirements Ontology (GORO)</b></small><br/>
+	<small>Tue Jun 13 19:53:58 BRT 2017</small>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+</BODY>
+</HTML>

@@ -1,0 +1,283 @@
+XMI
+  XMI.header
+  XMI.content
+    UML:Model
+      XMI.extension [...]
+      UML:ModelElement.taggedValue [...]
+      UML:Namespace.ownedElement
+        UML:Package (id)...
+          UML:Dependency (id)...
+        UML:Dependency (id)...
+      |
+    |
+    UML: Comment
+    XMI.extension
+      JUDE:Diagram [...] packId
+    |
+  |
+|
+
+# Model: SEON-v1.0
+* Package: 2.Core Level
+* Package: SPO
+* Package: Standard Software Process Definition
+* Package: Standard Process Structure
+  - Activity Universal: Powertype of every Activity Occurrence. It can be a formalized Standard Activity or just a non-formalized Activity plan (not represented).
+  - Process Universal: Powertype of every Process Occurrence. It can be a formalized Standard Process (with a SP Definition Document) or just a non-formalized Process plan (not represented).
+  - Hybrid Standard Process
+  - Organizational Standard Process
+  - Standard Activity
+  - Standard Process
+  - Standard Process Definition Document
+  - Project Standard Process
+  - General Standard Process
+  - Specific Standard Process
+  - Simple Standard Activity
+  - Composite Standard Activity
+* Package: Standard Activity Definition
+* Package: Intended Software Process Definition and Scheduling
+* Package: Intended Process Structure
+  - Intended Process
+  - Intended Activity
+  - General Intended Process
+  - Composite Intended Activity
+  - Simple Intended Activity
+  - Specific Intended Process
+  - Project Process
+  - Organizational Intended Process
+* Package: Intended Activity Definition
+* Package: Scheduled Process
+  - Scheduled Activity
+  - Scheduled Process
+* Package: Allocation
+  - Stakeholder Allocation
+* Package: Software Process Execution
+* Package: Performed Process
+  - Composite Performed Activity
+  - General Performed Process
+  - Performed Activity
+  - Performed Process
+  - Simple Performed Activity
+  - Specific Performed Process
+  - Organizational Performed Process
+  - Project Performed Process
+* Package: Stakeholder Participation
+  - Stakeholder Main Participation
+  - Stakeholder Participation
+* Package: Artifact Participation
+  - Artifact Change
+  - Artifact Creation
+  - Artifact Participation
+  - Artifact Usage
+* Package: Resource Participation
+  - Hardware Resource Participation
+  - Software Resource Participation
+* Package: Procedure Participation
+  - Procedure Participation
+* Package: Process Assets
+* Package: Procedures
+  - Procedure
+  - Method
+  - Method Activity
+  - Method Workflow
+  - Simple Method Activity
+  - Composite Method Activity
+  - Document Template
+  - Technique: T%C3%A9cnica descreve como realizar uma atividade geral (entidade que decidimos n%C3%A3o mostrar em SPO). P.ex., t%C3%A9cnica de teste caixa-preta descreve como realizar atividades de testes em geral e n%C3%A3o uma atividade de teste de um processo padr%C3%A3o. A rela%C3%A7%C3%A3o entre atividades do processo padr%C3%A3o e procedimentos em geral %C3%A9 a rela%C3%A7%C3%A3o "is to be performed adopting" mostrada no diagrama 02.
+* Package: Resources
+  - Hardware Type
+  - Software Product Type
+  - Resource
+  - Software Resource
+  - Hardware Resource
+  - Hardware Equipment
+* Package: Artifacts
+  - Artifact
+  - Artifact Type
+  - Composite Artifact
+  - Document
+  - Document Type
+  - Information Item
+  - Model
+  - Simple Artifact
+  - Software Item
+  - Software Product
+* Package: Stakeholders
+  - Organization Stakeholder
+  - Person Stakeholder
+  - Project Stakeholder
+  - Stakeholder
+  - Team Stakeholder
+* Package: Enterprise Ontology
+  - Organization: Same as UFO::Organization
+  - Organizational Role
+  - Organizational Team
+  - Person: Same as UFO::Human Agent
+  - Project
+  - Team
+  - Team Purpose
+  - Job Plan
+  - Employment
+  - Human Resource
+  - Project Team
+  - Team Member
+  - Team Membership
+* Package: Software Ontology
+* Package: 3.Domain Level
+* Package: Design
+  - Design Document
+* Package: Coding
+  - Programmer
+  - Coding Process
+  - Coding
+  - Code Development
+  - Code Review
+  - Code Review Report
+  - Code
+  - Code Documentation
+  - Code Reviewer
+* Package: Requirements
+* Package: Reference Requirements
+  - Requirement: Goal to be achieved, representing a condition or capacity needed for the system users for solving a problem.
+  - Software Function Type
+  - Functional Requirement
+  - Non-Functional Requirement
+  - Product Quality Requirement
+  - Quality Characteristic
+  - Requirements Engineer
+  - Requirements Stakeholder
+  - Product Requirement
+  - Customer Requirement
+  - Documented Requirement
+  - Requirements Documentation
+  - Requirements Document
+* Package: Requirements Development
+  - Requirements Development Process
+  - Conceptual Modeling
+  - Conceptual Model
+  - Requirements Verification and Validation
+  - Requirements Negotiation and Prioritization
+  - Requirements Evaluation Document
+  - Requirements Elicitation
+  - Requirements Agreement
+  - Requirements Reviewer
+* Package: Testing
+  - Testing Process
+  - Test Planning
+  - Test Case Design
+  - Test Execution
+  - Test Result Analysis
+  - Test Plan
+  - Test Case
+  - Test Result
+  - Test Code
+  - Test Case Design Input
+  - Test Analysis Report
+  - Code To Be Tested
+  - Tester
+  - Test Coding
+  - Level-based Testing
+  - Unit Testing
+  - Integration Testing
+  - System Testing
+  - Test Manager
+* Package: Integration
+  - Requirements Document as Test Case Design  Input
+  - Design Document as Test Case Design Input
+  - Code as Test Case Design Input
+* Package: Others: Figures for Specification
+* Package: 1.Foundational Level
+* Package: UFO
+  - Normative Description
+  - Social Agent
+  - Organization
+  - Social Object
+  - Commitment
+  - Appointment
+  - Event Universal
+  - Action Universal (Plan)
+  - Closed Commitment
+  - Complex Action Universal
+  - Closed Appointment
+  - Complex Closed Commitment
+  - Social Commitment
+  - Intention (Internal Commitment)
+  - Social Moment
+  - Intentional Moment
+  - Proposition
+  - Agent
+  - Mental Moment
+  - Fulfilled
+  - Unfulfilled
+  - Event
+  - Action
+  - Externally Dependent Moment
+  - Intrinsic Moment
+  - Moment
+  - Atomic Action Universal
+  - Complex Closed Appointment
+  - Goal
+  - Appointment Goal
+  - Time Interval
+  - Atomic Event
+  - Complex Event
+  - Participation
+  - Substantial
+  - Participation Universal
+  - Processual Role
+  - Complex Action
+  - Atomic Action
+  - Object
+  - Agent Participation
+  - Object Participation
+  - Social Role
+  - Higher-Order Object Kind
+  - Collective Social Agent
+  - Relator
+  - Role
+  - Delegation
+  - Material Relation
+  - Relation
+  - Formal Relation
+  - Social Relator
+  - Closed Commitment Universal
+  - Commitment Universal
+  - Internal Commitment Universal
+  - Internal Closed Commitment Universal
+  - Object Kind
+  - Action Contribution
+  - Self Appointment
+  - Social Appointment
+  - Entity
+  - Universal
+  - Particular
+  - Concrete Particular
+  - Endurant
+  - Physical Agent
+  - Physical Object
+  - Endurant Universal
+  - Moment Universal
+  - Substantial Universal
+  - Human Agent
+  - Delegatum
+  - Plan Description
+  - High Order Universal
+  - Kind
+  - Complex Commitment
+  - Usage
+  - Creation
+  - Change
+  - Intrisic Moment Universal
+  - Relator Universal
+  - Mixin Universal
+  - Sortal Universal
+  - Anti Rigid Sortal Universal
+  - Rigid Sortal Universal
+  - Phase
+  - Subkind
+  - Function Universal
+  - Quality Universal
+* Package: MLT
+  - 2ndOT
+  - 1stOT
+  - Individual

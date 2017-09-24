@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE>SEON: The Software Engineering Ontology Network</TITLE>
+<BASE target="mainFrame">
+<STYLE>
+.ontology {
+   float: left;
+   margin: 10px;
+   padding: 10px;
+   width: 340px;
+   height: 110px;
+   border: 1px solid gray;
+}
+</STYLE>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-81695120-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</HEAD>
+
+<BODY style="font-family: sans-serif">
+	<h2 style="color: #005A9C"><b>Network Statistics</b></h2>
+	<hr>
+
+	<h3 style="color: #005A9C">Foundational Layer</h3>
+@foundOntology
+<br style="clear:both">
+
+	<h3 style="color: #005A9C">Core Layer</h3>
+@coreOntologies
+<br style="clear:both">
+
+	<h3 style="color: #005A9C">Domain Layer</h3>
+@domainOntologies
+<br style="clear:both">
+	<br><br><br>
+	<small>@date</small>
+</BODY>
+</HTML>

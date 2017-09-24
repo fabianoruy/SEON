@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE>SEON: The Software Engineering Ontology Network</TITLE>
+<LINK rel="stylesheet" type="text/css" href="style.css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-81695120-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="maphilight.js"></script>
+<script type="text/javascript">
+	$(function() {
+        $('.map').maphilight();
+    });
+</script>
+
+</HEAD>
+
+<BODY>
+	<h1 align="center">SEON: The Software Engineering Ontology Network</h1>
+
+	<p>SEON provides a well-grounded network of SE reference
+		ontologies, and mechanisms for deriving and incorporating new
+		integrated subdomain ontologies into the network.</p>
+	<p>SEON results from various efforts on building ontologies for the
+		Software Engineering (SE) field. Although SEON itself is a new
+		proposal, the studies and ontologies developed along the years are
+		important contributions for defining this network. Hence, SEON rises
+		with three main premises:
+	<ol type="i">
+		<li>being based on a well-founded grounding for ontology
+			development;</li>
+		<li>offering mechanisms for easy building and integrating new SE
+			subdomain ontologies to the network; and</li>
+		<li>promoting integration by keeping a consistent semantics for
+			concepts and relations along the whole network.</li>
+	</ol>
+	<p>Currently, the SEON Network is composed of the networked
+		ontologies shown in Figure 1.</p>
+	<p align="center"><IMG src="images/SEON.png" width="1089" class="map" usemap="#SEON"><MAP NAME="SEON">
+<area shape="rect" coords="499,10,651,80" href="UFO.html#UFO_UFO_section" title="">
+<area shape="rect" coords="720,207,872,277" href="SPO.html#SPO_SPO_section" title="">
+<area shape="rect" coords="360,207,512,277" href="SwAO.html#SwAO_SwAO_section" title="">
+<area shape="rect" coords="477,507,573,577" href="CPO.html#CPO_CPO_section" title="">
+<area shape="rect" coords="339,507,435,577" href="DPO.html#DPO_DPO_section" title="">
+<area shape="rect" coords="100,417,196,487" href="RSRO.html#RSRO_RSRO_section" title="">
+<area shape="rect" coords="205,507,301,577" href="RDPO.html#RDPO_RDPO_section" title="">
+<area shape="rect" coords="594,507,690,577" href="ROoST.html#ROoST_ROoST_section" title="">
+<area shape="rect" coords="748,101,844,171" href="EO.html#EO_EO_section" title="">
+<area shape="rect" coords="711,483,807,553" href="QAPO.html#QAPO_QAPO_section" title="">
+<area shape="rect" coords="911,394,1007,464" href="CMPO.html#CMPO_CMPO_section" title="">
+<area shape="rect" coords="962,101,1058,171" href="COM.html#COM_COM_section" title="">
+<area shape="rect" coords="961,320,1057,390" href="RSMO.html#RSMO_RSMO_section" title="">
+<area shape="rect" coords="792,417,888,487" href="SPMO.html#SPMO_SPMO_section" title="">
+<area shape="rect" coords="110,524,187,594" href="GORO.html#GORO_GORO_section" title="">
+<area shape="rect" coords="26,507,92,577" href="RRO.html#RRO_RRO_section" title=""></MAP></p>
+	<h4 align="center">
+		Figure 1. SEON Network view. (<a href="NetworkGraph.html">Network
+			Graph view</a>)
+	</h4>
+	<br>
+
+	<hr>
+	<h2>SEON's Architecture</h2>
+	<p>SEON architecture is organized considering three ontology
+		generality levels as Figure 2 shows.</p>
+	<p align="center">
+		<IMG src="images/SEON.Architecture.png"
+			style="width: 100%; max-width: 640px">
+	</p>
+	<h4 align="center">Figure 2. SEON Architecture.</h4>
+
+	<h3>Foundational layer</h3>
+	<p>
+		At the bottom of SEON, there is the Unified Foundational Ontology
+		(UFO), which is developed based on a number of theories from Formal
+		Ontology, Philosophical Logics, Philosophy of Language, Linguistics
+		and Cognitive Psychology. UFO [<a
+			href="http://doc.utwente.nl/50826/1/thesis_Guizzardi.pdf"
+			target="_blank">1</a>] is divided in three parts: an ontology of
+		endurants (objects), an ontology of perdurants (events), and an
+		ontology of social entities. UFO's ontological distinctions are used
+		for classifying SEON concepts, e.g., as objects, actions,
+		com-mitments, agents, roles, goals and so on. UFO provides the
+		necessary grounding for the concepts and relations of all networked
+		ontologies.
+	</p>
+
+	<h3>Core layer</h3>
+	<p>In the center of SEON, there are two core ontologies: the
+		Software Ontology (SwO) and the Software Process Ontology (SPO). SwO
+		is a core ontology stating that software products have a complex
+		artifactual nature, being constituted by software artifacts (here
+		called software items) of different nature, namely software systems,
+		programs and code. SPO is a core ontology, also grounded in UFO,
+		aiming at establishing a common conceptualization on software
+		processes. SPO builds upon SwO, and its current version is organized
+		as an Ontology Pattern Language (OPL). SPO scope is broader, embracing
+		the following aspects of the software process domain: standard,
+		project and performed processes and their activities, artifacts
+		handled, resources used and procedures adopted by activities, team
+		membership, and stakeholders allocation and participation in
+		activities. For dealing with aspects related to organizations (such as
+		team membership), SPO builds upon a core ontology on enterprises,
+		which we consider external to SEON. SPO has being developed for more
+		than two decades, and has been used as basis to develop several
+		ontologies for many SE subdomains.</p>
+
+	<h3>Domain-specific layer</h3>
+	<p>Over the foundational and core layers, SEON places the domain
+		ontologies. Each networked ontology is grounded in SwO/SPO and also in
+		UFO, and encompasses a SE subdomain (e.g., software requirements,
+		design, configuration management, and measurement). Although not
+		represented in Figure 2, more specific subdomains ontologies can be
+		developed based on other more general subdomain ontology. For
+		instance, an ontology on requirements at runtime was developed based
+		on the Reference Software Requirements Ontology.</p>
+	<p>In a nutshell, the foundational ontology offers the ontological
+		distinctions for the core and domain layers, while the core layer
+		offers the SE core knowledge for building the domain networked
+		ontologies. This way of grounding the ontologies in the network is
+		helpful for engineering the networked ontologies, since it provides
+		ontological consistency and makes a number of modeling decisions
+		easier. In order to offer a better support for building the domain
+		networked ontologies, SEON core layer is represented in a
+		pattern-oriented way. SPO is organized as an OPL, in order to become
+		strongly modular, flexible and reusable. Represented as an OPL, SPO
+		allows the ontology engineer to explore alternative models in the
+		design of specific ontologies for the various SE subdomains, select
+		the ontology fragments relevant to the problem at hands and reuse
+		them.</p>
+
+	<br>
+	<hr>
+	<h2>SEON's Search Mechanism</h2>
+	<p>As SEON grows, the number of network ontologies and their
+		concepts increases. In order to facilitate exploring the network and
+		identifying the concepts for integration or reusing, the SEON
+		Specification provides a simple search mechanism. This feature is able
+		to locate the desired concepts by maching the search string with the
+		concepts' names and definitions.</p>
+
+	<br>
+	<hr>
+	<br>
+	<p align="center">
+		<a href="http://nemo.inf.ufes.br/" target="_blank"><IMG
+			src="images/logo_nemo.svg"></a>
+	</p>
+	<h5 align="center">Powered by NEMO</h5>
+
+</BODY>
+</HTML>
