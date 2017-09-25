@@ -53,7 +53,7 @@ public class SeonParser {
 		owriter.generateSeonOwl(seon);
 		
 		// Reading the Seon Model and generating data for graph
-		GraphDataWriter gdwriter = new GraphDataWriter();
+		DataWriter gdwriter = new DataWriter();
 		gdwriter.generateDataFiles(seon);
 
 		System.out.print("\nTHE END! (" + (System.currentTimeMillis() - start) / 1000.0 + "s)");

@@ -39,54 +39,53 @@
 			</tr>
 			<tr><td><a href="SPO.html">SPO - Software Process Ontology</a></td><td>All DPO concepts extend concepts from SPO.</td><td style="text-align:center">High</td></tr>
 <tr><td><a href="RSRO.html">RSRO - Reference Software Requirements Ontology</a></td><td>DPO reuses an artifact from RDPO.</td><td style="text-align:center">Low</td></tr>
-<tr><td><a href="SwAO.html">SwAO - Software Artifact Ontology</a></td><td></td><td style="text-align:center"></td></tr>
 
 		</tbody>
 	</table>
 
 	<h2>3. Ontology Models</h2>
 	<p>Figure 1 presents the conceptual model of the DPO.</p>
-<p align="center"><IMG src="images/DPO.png" width="1180" class="map" usemap="#DPO"><MAP NAME="DPO">
-<area shape="rect" coords="738,193,847,240" href="SwAO.html#SwAO_Artifact" title="Object intentionally made to serve a given purpose in the context of a software Project or Organization.">
-<area shape="rect" coords="557,335,695,365" href="SwAO.html#SwAO_Composite+Artifact" title="Artifact composed of other Artifacts.">
-<area shape="rect" coords="635,299,747,329" href="SwAO.html#SwAO_Simple+Artifact" title="Artifact that is not decomposed into other Artifacts.">
-<area shape="rect" coords="711,431,817,461" href="SwAO.html#SwAO_Software+Item" title="Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result.">
-<area shape="rect" coords="620,387,745,417" href="SwAO.html#SwAO_Software+Product" title="One or more computer programs together with any accompanying auxiliary items, such as documentation, delivered under a single name, ready for use.">
-<area shape="rect" coords="783,387,909,417" href="SwAO.html#SwAO_Information+Item" title="Relevant information for human use, produced or used by Performed Activity.">
-<area shape="rect" coords="943,387,1001,417" href="SwAO.html#SwAO_Model" title="A representation (abstraction) of a process or system from a particular perspective.">
-<area shape="rect" coords="1004,431,1088,461" href="SwAO.html#SwAO_Document" title="Any written or pictorial, uniquely identified, information related to the software development, usually presented in a predefined format.">
-<area shape="rect" coords="98,10,233,40" href="SPO.html#SPO_Performed+Process" title="Complex Action, composed of other processes or activities, performed in a specific Time Interval, for reaching a goal in a Project or Organization.">
-<area shape="rect" coords="238,327,445,357" href="SPO.html#SPO_Performed+Composite+Activity" title="Performed Activity composed of other Performed Activities.">
-<area shape="rect" coords="344,287,525,317" href="SPO.html#SPO_Performed+Simple+Activity" title="Performed Activity that is not further decomposed into other Performed Activities.">
-<area shape="rect" coords="18,76,204,106" href="SPO.html#SPO_Performed+General+Process" title="The overall Performed Process executed in a specific Project or Organization, which is necessarily composed of Specific Performed Processes.">
-<area shape="rect" coords="122,122,308,152" href="SPO.html#SPO_Performed+Specific+Process" title="Performed Process that is part of the General Performed Process of a Project or Organization, necessarily composed of at least two Performed Activities.">
-<area shape="rect" coords="301,194,436,240" href="SPO.html#SPO_Performed+Activity" title="Action performed, in a specific Time Interval, by a Stakeholder, potentially producing and consuming Artifacts, as part of a Specific Performed Process.">
-<area shape="rect" coords="18,210,112,240" href="SPO.html#SPO_Stakeholder" title="Agent (Person, Team or Organization) interested or affected by the process activities or results.">
-<area shape="rect" coords="158,486,273,516" href="DPO.html#DPO_Design+Process" title="Process for defining and specifying a solution to be implemented for a software product, considering the requirements for it. It is a refinement process starting with the software architecture, and going down to the design of its elements, interfaces, and other characteristics of a software, until achieving the design of implementation units.">
-<area shape="rect" coords="250,546,397,576" href="DPO.html#DPO_Architectural+Design" title="Activity for making the high-level design choices, defining the Software Architecture and involved elements.">
-<area shape="rect" coords="250,720,370,750" href="DPO.html#DPO_Detailed+Design" title="Activity for refining a preliminary software design to the extent that it is sufficiently complete to be implemented. [ISO/IEC/IEEE 24765]">
-<area shape="rect" coords="71,720,147,750" href="DPO.html#DPO_Designer" title="Stakeholder responsible for making the Detailed Design choices for a software.">
-<area shape="rect" coords="24,546,157,576" href="DPO.html#DPO_Software+Architect" title="Stakeholder responsible for designing the Software Architecture.">
-<area shape="rect" coords="790,554,943,584" href="DPO.html#DPO_Software+Architecture" title="Model describing the fundamental structures of a software, including its components, how they are connected, and its internal and external interfaces.">
-<area shape="rect" coords="963,501,1137,531" href="RSRO.html#RSRO_Requirements+Document" title="Document composed of Documented Requirements and related information, as a basis for other technical software processes, including maintenance.">
-<area shape="rect" coords="790,634,943,664" href="DPO.html#DPO_Architectural+Element" title="Model Element referring to an Architectural Component or Connector, and its Interfaces.">
-<area shape="rect" coords="695,764,871,794" href="DPO.html#DPO_Architectural+Component" title="Architectural Element describing a software module as part of an Architecture.">
-<area shape="rect" coords="870,764,1037,794" href="DPO.html#DPO_Architectural+Connector" title="Architectural Element connecting two or more Components in an Architecture.">
-<area shape="rect" coords="588,634,745,664" href="DPO.html#DPO_Interface+Specification" title="Information Item describing an internal or external interface of a software architecture.">
-<area shape="rect" coords="307,590,489,620" href="DPO.html#DPO_Architecture+Development" title="Activity aiming to produce the Software Architecture and specifying its Architectural Components and Connectors.">
-<area shape="rect" coords="250,938,414,968" href="DPO.html#DPO_Design+Documentation" title="Activity for registering the architectural and detailed design choices and decisions, producing a Design Document.">
-<area shape="rect" coords="308,633,500,663" href="DPO.html#DPO_Interface+High-level+Design" title="Activity for specifying the Interfaces between Architectural Components and with external elements (users or other systems).">
-<area shape="rect" coords="307,677,474,707" href="DPO.html#DPO_Data+High-level+Design" title="Activity for establish the high-level choices regarding the software data.">
-<area shape="rect" coords="1001,938,1133,968" href="DPO.html#DPO_Design+Document" title="Document specifying the design of a software, by depicting the software architecture, components, interfaces and data models, as well as other information regarding the design choices and decisions.">
-<area shape="rect" coords="307,764,448,794" href="DPO.html#DPO_Component+Design" title="Activity for refining each Architectural Component of a software.">
-<area shape="rect" coords="307,808,506,838" href="DPO.html#DPO_Component+Interface+Design" title="Activity for refining each Interface Specification of a software.">
-<area shape="rect" coords="307,895,404,925" href="DPO.html#DPO_Data+Design" title="Activity for producing a detailed Data Model for data storage and management.">
-<area shape="rect" coords="250,982,383,1012" href="DPO.html#DPO_Design+Evaluation" title="Activity for evaluating a Design Document, registering the identified issues.">
-<area shape="rect" coords="919,895,1010,925" href="DPO.html#DPO_Data+Model" title="Model containing the physical and logical decisions on how to manage and storage the software data.">
-<area shape="rect" coords="573,851,762,881" href="DPO.html#DPO_User+Interface+Specification" title="Interface Specification focusing on the human-computer interaction.">
-<area shape="rect" coords="307,851,461,881" href="DPO.html#DPO_User+Interface+Design" title="Activity for specifying the User Interfaces in detail.">
-<area shape="rect" coords="943,982,1144,1012" href="DPO.html#DPO_Design+Evaluation+Document" title="Document registering the issues identified in a Design Document evaluation.">
-<area shape="rect" coords="708,677,831,707" href="DPO.html#DPO_Data+Definitions" title="Information Item describing the high-level choices of how the software will manage data."></MAP></p>
+<p align="center"><IMG src="images/DPO.png" width="1174" class="map" usemap="#DPO"><MAP NAME="DPO">
+<area shape="rect" coords="738,193,847,240" href="SPO.html#SPO_Artifact" title="Object intentionally made to serve a given purpose in the context of a software Project or Organization.">
+<area shape="rect" coords="558,335,684,365" href="SPO.html#SPO_Composite+Artifact" title="Artifact composed of other Artifacts.">
+<area shape="rect" coords="636,299,740,329" href="SPO.html#SPO_Simple+Artifact" title="Artifact that is not decomposed into other Artifacts.">
+<area shape="rect" coords="711,431,811,461" href="SPO.html#SPO_Software+Item" title="Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result.">
+<area shape="rect" coords="620,387,740,417" href="SPO.html#SPO_Software+Product" title="One or more computer programs together with any accompanying auxiliary items, such as documentation, delivered under a single name, ready for use.">
+<area shape="rect" coords="784,387,897,417" href="SPO.html#SPO_Information+Item" title="Relevant information for human use, produced or used by Performed Activity.">
+<area shape="rect" coords="943,387,997,417" href="SPO.html#SPO_Model" title="A representation (abstraction) of a process or system from a particular perspective.">
+<area shape="rect" coords="1004,431,1082,461" href="SPO.html#SPO_Document" title="Any written or pictorial, uniquely identified, information related to the software development, usually presented in a predefined format.">
+<area shape="rect" coords="99,10,231,40" href="SPO.html#SPO_Performed+Process" title="Complex Action, composed of other processes or activities, performed in a specific Time Interval, for reaching a goal in a Project or Organization.">
+<area shape="rect" coords="238,327,427,357" href="SPO.html#SPO_Performed+Composite+Activity" title="Performed Activity composed of other Performed Activities.">
+<area shape="rect" coords="345,287,512,317" href="SPO.html#SPO_Performed+Simple+Activity" title="Performed Activity that is not further decomposed into other Performed Activities.">
+<area shape="rect" coords="18,76,197,106" href="SPO.html#SPO_Performed+General+Process" title="The overall Performed Process executed in a specific Project or Organization, which is necessarily composed of Specific Performed Processes.">
+<area shape="rect" coords="122,122,303,152" href="SPO.html#SPO_Performed+Specific+Process" title="Performed Process that is part of the General Performed Process of a Project or Organization, necessarily composed of at least two Performed Activities.">
+<area shape="rect" coords="302,194,437,240" href="SPO.html#SPO_Performed+Activity" title="Action performed, in a specific Time Interval, by a Stakeholder, potentially producing and consuming Artifacts, as part of a Specific Performed Process.">
+<area shape="rect" coords="18,210,107,240" href="SPO.html#SPO_Stakeholder" title="Agent (Person, Team or Organization) interested or affected by the process activities or results.">
+<area shape="rect" coords="158,486,268,516" href="DPO.html#DPO_Design+Process" title="Process for defining and specifying a solution to be implemented for a software product, considering the requirements for it. It is a refinement process starting with the software architecture, and going down to the design of its elements, interfaces, and other characteristics of a software, until achieving the design of implementation units.">
+<area shape="rect" coords="250,546,386,576" href="DPO.html#DPO_Architectural+Design" title="Activity for making the high-level design choices, defining the Software Architecture and involved elements.">
+<area shape="rect" coords="250,720,358,750" href="DPO.html#DPO_Detailed+Design" title="Activity for refining a preliminary software design to the extent that it is sufficiently complete to be implemented. [ISO/IEC/IEEE 24765]">
+<area shape="rect" coords="71,720,142,750" href="DPO.html#DPO_Designer" title="Stakeholder responsible for making the Detailed Design choices for a software.">
+<area shape="rect" coords="24,546,151,576" href="DPO.html#DPO_Software+Architect" title="Stakeholder responsible for designing the Software Architecture.">
+<area shape="rect" coords="790,554,936,584" href="DPO.html#DPO_Software+Architecture" title="Model describing the fundamental structures of a software, including its components, how they are connected, and its internal and external interfaces.">
+<area shape="rect" coords="963,501,1124,531" href="RSRO.html#RSRO_Requirements+Document" title="Document composed of Documented Requirements and related information, as a basis for other technical software processes, including maintenance.">
+<area shape="rect" coords="790,634,933,664" href="DPO.html#DPO_Architectural+Element" title="Model Element referring to an Architectural Component or Connector, and its Interfaces.">
+<area shape="rect" coords="695,764,857,794" href="DPO.html#DPO_Architectural+Component" title="Architectural Element describing a software module as part of an Architecture.">
+<area shape="rect" coords="870,764,1026,794" href="DPO.html#DPO_Architectural+Connector" title="Architectural Element connecting two or more Components in an Architecture.">
+<area shape="rect" coords="588,634,736,664" href="DPO.html#DPO_Interface+Specification" title="Information Item describing an internal or external interface of a software architecture.">
+<area shape="rect" coords="307,590,475,620" href="DPO.html#DPO_Architecture+Development" title="Activity aiming to produce the Software Architecture and specifying its Architectural Components and Connectors.">
+<area shape="rect" coords="250,938,398,968" href="DPO.html#DPO_Design+Documentation" title="Activity for registering the architectural and detailed design choices and decisions, producing a Design Document.">
+<area shape="rect" coords="308,633,479,663" href="DPO.html#DPO_Interface+High-level+Design" title="Activity for specifying the Interfaces between Architectural Components and with external elements (users or other systems).">
+<area shape="rect" coords="307,677,453,707" href="DPO.html#DPO_Data+High-level+Design" title="Activity for establish the high-level choices regarding the software data.">
+<area shape="rect" coords="1001,938,1121,968" href="DPO.html#DPO_Design+Document" title="Document specifying the design of a software, by depicting the software architecture, components, interfaces and data models, as well as other information regarding the design choices and decisions.">
+<area shape="rect" coords="307,764,434,794" href="DPO.html#DPO_Component+Design" title="Activity for refining each Architectural Component of a software.">
+<area shape="rect" coords="307,808,488,838" href="DPO.html#DPO_Component+Interface+Design" title="Activity for refining each Interface Specification of a software.">
+<area shape="rect" coords="307,895,395,925" href="DPO.html#DPO_Data+Design" title="Activity for producing a detailed Data Model for data storage and management.">
+<area shape="rect" coords="250,982,370,1012" href="DPO.html#DPO_Design+Evaluation" title="Activity for evaluating a Design Document, registering the identified issues.">
+<area shape="rect" coords="920,895,1003,925" href="DPO.html#DPO_Data+Model" title="Model containing the physical and logical decisions on how to manage and storage the software data.">
+<area shape="rect" coords="573,851,751,881" href="DPO.html#DPO_User+Interface+Specification" title="Interface Specification focusing on the human-computer interaction.">
+<area shape="rect" coords="307,851,450,881" href="DPO.html#DPO_User+Interface+Design" title="Activity for specifying the User Interfaces in detail.">
+<area shape="rect" coords="943,982,1124,1012" href="DPO.html#DPO_Design+Evaluation+Document" title="Document registering the issues identified in a Design Document evaluation.">
+<area shape="rect" coords="708,677,817,707" href="DPO.html#DPO_Data+Definitions" title="Information Item describing the high-level choices of how the software will manage data."></MAP></p>
 <p align="center"><b>Figure 1. DPO conceptual model.</b></p>
 <p align="justify">The Design Process is a Process with the purpose of defining the architecture, elements, interfaces, and other characteristics of a software, aiming at its implementation.<br/>Some notions are important for this process. Software Architecture is a model describing the fundamental structures of a software. It is composed of Architectural Elements, which can be a Component, describing a software module, or a Connector, connecting two or more components. Architectural Elements have Interfaces, which can be internal or external. The Design is a refinement process involving several design choices. It starts defining an architecture and follows by detailing each element to the extent it can be implemented.<br/>The Design Process is composed of four main Activities. (1) Architectural Design makes the high-level design choices, defining a Software Architecture and involved elements. Its three sub-activities are Architecture Development, for producing the architecture and specifying its components and connectors; Interface High-level Design, for specifying the interfaces between components and with external elements (users or other systems); and Data High-level Design, for establishing the high-level choices regarding the software data. (2) Detailed Design refines a preliminary software design to the extent that it is sufficiently complete to be implemented. It has four sub-activities: Component Design, for refining each architectural component; Component Interface Design, for detailing each software interface; User Interface Design, specifically for detailing the user interfaces; and Data Design, for producing a detailed Data Model for data storage and management. (3) Design Documentation registers the architectural and detailed design choices made, producing a Design Document. (4) Finally, Design Evaluation evaluates a Design Document, registering the identified issues.<br/>The process has two main Stakeholders, the Software Architect, responsible for making the high-level design choices, and establishing a software architecture; and the Designer, responsible for making the detailed design choices.</p>
 
@@ -261,8 +260,8 @@ Architectural Element describing a software module as part of an Architecture.<b
 <br/>
 Relations:<br/>
 <code>Architectural Component (0..1) <>-- (0..*) Architectural Component<br/>
-Architectural Connector (1..*) conects (2..*) Architectural Component<br/>
 Component Design changes Architectural Component<br/>
+Architectural Connector (1..*) conects (2..*) Architectural Component<br/>
 </code><br/>
 <br/><br/>
 
@@ -294,8 +293,8 @@ Relations:<br/>
 Architectural Design <>-- Architecture Development<br/>
 Architectural Design <>-- Data High-level Design<br/>
 Architectural Design <>-- Interface High-level Design<br/>
-Software Architect is in charge of Architectural Design<br/>
 Design Process <>-- Architectural Design<br/>
+Software Architect is in charge of Architectural Design<br/>
 </code><br/>
 <br/><br/>
 
@@ -364,13 +363,13 @@ Detailed Design <>-- Component Interface Design<br/>
 <strong>Data Definitions<strong></td></tr>
 </table><br/>
 <b>DPO::Data Definitions</b><br/>
-Specializes SwAO::Information Item<br/><br/>
+Specializes SPO::Information Item<br/><br/>
 Information Item describing the high-level choices of how the software will manage data.<br/>
 <br/>
 <br/>
 Relations:<br/>
-<code>Data Design uses Data Definitions<br/>
-Data High-level Design creates Data Definitions<br/>
+<code>Data High-level Design creates Data Definitions<br/>
+Data Design uses Data Definitions<br/>
 </code><br/>
 <br/><br/>
 
@@ -410,13 +409,13 @@ Architectural Design <>-- Data High-level Design<br/>
 <strong>Data Model<strong></td></tr>
 </table><br/>
 <b>DPO::Data Model</b><br/>
-Specializes SwAO::Model<br/><br/>
+Specializes SPO::Model<br/><br/>
 Model containing the physical and logical decisions on how to manage and storage the software data.<br/>
 Ex.:<i> a database schema.</i><br/>
 <br/>
 Relations:<br/>
-<code>Data Design creates Data Model<br/>
-Design Document depicts Data Model<br/>
+<code>Design Document depicts Data Model<br/>
+Data Design creates Data Model<br/>
 </code><br/>
 <br/><br/>
 
@@ -425,7 +424,7 @@ Design Document depicts Data Model<br/>
 <strong>Design Document<strong></td></tr>
 </table><br/>
 <b>DPO::Design Document</b><br/>
-Specializes SwAO::Composite Artifact, SwAO::Document<br/><br/>
+Specializes SPO::Composite Artifact, SPO::Document<br/><br/>
 Document specifying the design of a software, by depicting the software architecture, components, interfaces and data models, as well as other information regarding the design choices and decisions.<br/>
 <br/>
 <br/>
@@ -433,10 +432,10 @@ Relations:<br/>
 <code>Design Document depicts Software Architecture<br/>
 Design Document depicts User Interface Specification<br/>
 Design Document depicts Data Model<br/>
-Design Evaluation uses Design Document<br/>
 Design Documentation creates Design Document<br/>
-Code Review uses Design Document<br/>
 Coding uses Design Document<br/>
+Design Evaluation uses Design Document<br/>
+Code Review uses Design Document<br/>
 </code><br/>
 <br/><br/>
 
@@ -451,9 +450,9 @@ Activity for registering the architectural and detailed design choices and decis
 <br/>
 Relations:<br/>
 <code>Design Documentation creates Design Document<br/>
-Software Architect participates in Design Documentation<br/>
 Designer participates in Design Documentation<br/>
 Design Process <>-- Design Documentation<br/>
+Software Architect participates in Design Documentation<br/>
 </code><br/>
 <br/><br/>
 
@@ -470,9 +469,9 @@ Relations:<br/>
 <code>Design Evaluation creates Design Evaluation Document<br/>
 Design Evaluation uses Design Document<br/>
 Design Evaluation uses Requirements Document<br/>
-Software Architect participates in Design Evaluation<br/>
 Designer participates in Design Evaluation<br/>
 Design Process <>-- Design Evaluation<br/>
+Software Architect participates in Design Evaluation<br/>
 </code><br/>
 <br/><br/>
 
@@ -481,7 +480,7 @@ Design Process <>-- Design Evaluation<br/>
 <strong>Design Evaluation Document<strong></td></tr>
 </table><br/>
 <b>DPO::Design Evaluation Document</b><br/>
-Specializes SwAO::Document<br/><br/>
+Specializes SPO::Document<br/><br/>
 Document registering the issues identified in a Design Document evaluation.<br/>
 <br/>
 <br/>
@@ -564,14 +563,14 @@ Architectural Design <>-- Interface High-level Design<br/>
 <strong>Interface Specification<strong></td></tr>
 </table><br/>
 <b>DPO::Interface Specification</b><br/>
-Specializes SwAO::Information Item<br/><br/>
+Specializes SPO::Information Item<br/><br/>
 Information Item describing an internal or external interface of a software architecture.<br/>
 <br/>
 <br/>
 Relations:<br/>
-<code>Architectural Element (1..1) has (1..*) Interface Specification<br/>
-Component Interface Design changes Interface Specification<br/>
+<code>Component Interface Design changes Interface Specification<br/>
 Interface High-level Design creates Interface Specification<br/>
+Architectural Element (1..1) has (1..*) Interface Specification<br/>
 </code><br/>
 <br/><br/>
 
@@ -596,7 +595,7 @@ Software Architect participates in Design Evaluation<br/>
 <strong>Software Architecture<strong></td></tr>
 </table><br/>
 <b>DPO::Software Architecture</b><br/>
-Specializes SwAO::Model<br/><br/>
+Specializes SPO::Model<br/><br/>
 Model describing the fundamental structures of a software, including its components, how they are connected, and its internal and external interfaces.<br/>
 <br/>
 <br/>
@@ -633,8 +632,8 @@ Interface Specification focusing on the human-computer interaction.<br/>
 <br/>
 <br/>
 Relations:<br/>
-<code>User Interface Design creates User Interface Specification<br/>
-Design Document depicts User Interface Specification<br/>
+<code>Design Document depicts User Interface Specification<br/>
+User Interface Design creates User Interface Specification<br/>
 </code><br/>
 <br/><br/>
 
@@ -642,7 +641,7 @@ Design Document depicts User Interface Specification<br/>
 	<hr>
 	<br/>
 	<small><b>Design Process Ontology (DPO)</b></small><br/>
-	<small>Tue Jun 13 19:53:57 BRT 2017</small>
+	<small>Sun Sep 24 18:30:40 BRT 2017</small>
 	<br/>
 	<br/>
 	<br/>

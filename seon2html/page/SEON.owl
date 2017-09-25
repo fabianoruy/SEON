@@ -156,7 +156,7 @@
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#\intends_to_satisfy.Program+Requirement_Artifact">
         <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RSRO::Requirement_Artifact"/>
-        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Program"/>
+        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Program"/>
     </owl:ObjectProperty>
     
 
@@ -408,7 +408,7 @@
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#applies_to.Document_Template+Document_Type">
         <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document_Template"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document_Type"/>
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document_Type"/>
     </owl:ObjectProperty>
     
 
@@ -642,7 +642,7 @@
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#changes.Code_Documentation+Code">
         <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#CPO::Code_Documentation"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Code"/>
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Code"/>
     </owl:ObjectProperty>
     
 
@@ -668,8 +668,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#changes.Intended_Activity+Artifact_Type -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#changes.Intended_Activity+Artifact_Type">
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact_Type"/>
         <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Intended_Activity"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact_Type"/>
     </owl:ObjectProperty>
     
 
@@ -686,8 +686,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#changes.Performed_Activity+Artifact -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#changes.Performed_Activity+Artifact">
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact"/>
         <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Performed_Activity"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact"/>
     </owl:ObjectProperty>
     
 
@@ -731,8 +731,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#changes.Standard_Activity+Artifact_Type -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#changes.Standard_Activity+Artifact_Type">
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact_Type"/>
         <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Standard_Activity"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact_Type"/>
     </owl:ObjectProperty>
     
 
@@ -1001,8 +1001,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#composed_of.Composite_Artifact+Artifact -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#composed_of.Composite_Artifact+Artifact">
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact"/>
-        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Composite_Artifact"/>
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact"/>
+        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Composite_Artifact"/>
     </owl:ObjectProperty>
     
 
@@ -1610,10 +1610,10 @@
     
 
 
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#composed_of.Software_Measurement_Planning_Item+Measure__Description -->
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#composed_of.Software_Measurement_Planning_Item+Measure_Description -->
 
-    <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#composed_of.Software_Measurement_Planning_Item+Measure__Description">
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Measure__Description"/>
+    <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#composed_of.Software_Measurement_Planning_Item+Measure_Description">
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Measure_Description"/>
         <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Software_Measurement_Planning_Item"/>
     </owl:ObjectProperty>
     
@@ -1820,8 +1820,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#constituted_of.Program+Code -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#constituted_of.Program+Code">
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Code"/>
-        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Program"/>
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Code"/>
+        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Program"/>
     </owl:ObjectProperty>
     
 
@@ -1829,8 +1829,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#constituted_of.Software_Product+Software_System -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#constituted_of.Software_Product+Software_System">
-        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Software_Product"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Software_System"/>
+        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Software_Product"/>
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Software_System"/>
     </owl:ObjectProperty>
     
 
@@ -1838,8 +1838,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#constituted_of.Software_System+Program -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#constituted_of.Software_System+Program">
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Program"/>
-        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Software_System"/>
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Program"/>
+        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Software_System"/>
     </owl:ObjectProperty>
     
 
@@ -1938,7 +1938,7 @@
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#creates.Code_Development+Code">
         <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#CPO::Code_Development"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Code"/>
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Code"/>
     </owl:ObjectProperty>
     
 
@@ -2045,8 +2045,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#creates.Intended_Activity+Artifact_Type -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#creates.Intended_Activity+Artifact_Type">
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact_Type"/>
         <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Intended_Activity"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact_Type"/>
     </owl:ObjectProperty>
     
 
@@ -2078,10 +2078,10 @@
     
 
 
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#creates.Measures_Identification+Measure__Description -->
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#creates.Measures_Identification+Measure_Description -->
 
-    <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#creates.Measures_Identification+Measure__Description">
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Measure__Description"/>
+    <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#creates.Measures_Identification+Measure_Description">
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Measure_Description"/>
         <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Measures_Identification"/>
     </owl:ObjectProperty>
     
@@ -2117,8 +2117,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#creates.Performed_Activity+Artifact -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#creates.Performed_Activity+Artifact">
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact"/>
         <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Performed_Activity"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact"/>
     </owl:ObjectProperty>
     
 
@@ -2189,8 +2189,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#creates.Standard_Activity+Artifact_Type -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#creates.Standard_Activity+Artifact_Type">
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact_Type"/>
         <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Standard_Activity"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact_Type"/>
     </owl:ObjectProperty>
     
 
@@ -2306,8 +2306,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#depends_on.Artifact+Artifact -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#depends_on.Artifact+Artifact">
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact"/>
-        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact"/>
+        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact"/>
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact"/>
     </owl:ObjectProperty>
     
 
@@ -2465,33 +2465,6 @@
     
 
 
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#depicts.Document+Artifact -->
-
-    <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#depicts.Document+Artifact">
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact"/>
-        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#depicts.Requirements_Document+Conceptual_Model -->
-
-    <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#depicts.Requirements_Document+Conceptual_Model">
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RDPO::Conceptual_Model"/>
-        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RSRO::Requirements_Document"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#depicts.Software_Measurement_Plan+Software_Measurement_Planning_Item -->
-
-    <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#depicts.Software_Measurement_Plan+Software_Measurement_Planning_Item">
-        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Software_Measurement_Plan"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Software_Measurement_Planning_Item"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#derived_from.Derived_Measure+Measure -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#derived_from.Derived_Measure+Measure">
@@ -2510,6 +2483,15 @@
     
 
 
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#describes.Document+Artifact -->
+
+    <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#describes.Document+Artifact">
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact"/>
+        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#describes.Information_Need_Description+Information_Need -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#describes.Information_Need_Description+Information_Need">
@@ -2519,10 +2501,10 @@
     
 
 
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#describes.Measure__Description+Software-Related_Measure -->
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#describes.Measure_Description+Software-Related_Measure -->
 
-    <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#describes.Measure__Description+Software-Related_Measure">
-        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Measure__Description"/>
+    <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#describes.Measure_Description+Software-Related_Measure">
+        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Measure_Description"/>
         <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Software-Related_Measure"/>
     </owl:ObjectProperty>
     
@@ -2550,7 +2532,7 @@
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#describes.Program_Specification+Software_Function_Universal">
         <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RSRO::Software_Function_Universal"/>
-        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Program_Specification"/>
+        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Program_Specification"/>
     </owl:ObjectProperty>
     
 
@@ -2564,11 +2546,29 @@
     
 
 
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#describes.Requirements_Document+Conceptual_Model -->
+
+    <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#describes.Requirements_Document+Conceptual_Model">
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RDPO::Conceptual_Model"/>
+        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RSRO::Requirements_Document"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#describes.Software_Measurement_Goal_Description+Software_Measurement_Goal -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#describes.Software_Measurement_Goal_Description+Software_Measurement_Goal">
         <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Software_Measurement_Goal"/>
         <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Software_Measurement_Goal_Description"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#describes.Software_Measurement_Plan+Software_Measurement_Planning_Item -->
+
+    <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#describes.Software_Measurement_Plan+Software_Measurement_Planning_Item">
+        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Software_Measurement_Plan"/>
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Software_Measurement_Planning_Item"/>
     </owl:ObjectProperty>
     
 
@@ -2684,8 +2684,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#generated_from.Machine_Code+Source_Code -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#generated_from.Machine_Code+Source_Code">
-        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Machine_Code"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Source_Code"/>
+        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Machine_Code"/>
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Source_Code"/>
     </owl:ObjectProperty>
     
 
@@ -2756,8 +2756,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#implements.Code+Program_Specification -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#implements.Code+Program_Specification">
-        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Code"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Program_Specification"/>
+        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Code"/>
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Program_Specification"/>
     </owl:ObjectProperty>
     
 
@@ -2766,7 +2766,7 @@
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#implements.Program+Software_Function_Universal">
         <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RSRO::Software_Function_Universal"/>
-        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Program"/>
+        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Program"/>
     </owl:ObjectProperty>
     
 
@@ -2915,15 +2915,6 @@
     
 
 
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#instanceOf.Artifact+Artifact_Type -->
-
-    <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#instanceOf.Artifact+Artifact_Type">
-        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact_Type"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#instanceOf.Level-based_Testing+Testing_Level -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#instanceOf.Level-based_Testing+Testing_Level">
@@ -2942,11 +2933,20 @@
     
 
 
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#instance_of.Artifact+Artifact_Type -->
+
+    <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#instance_of.Artifact+Artifact_Type">
+        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact"/>
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact_Type"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#instance_of.Document+Document_Type -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#instance_of.Document+Document_Type">
-        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document_Type"/>
+        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document"/>
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document_Type"/>
     </owl:ObjectProperty>
     
 
@@ -3008,8 +3008,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#instance_of.Software_Product+Software_Product_Type -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#instance_of.Software_Product+Software_Product_Type">
-        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Software_Product"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Software_Product_Type"/>
+        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Software_Product"/>
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Software_Product_Type"/>
     </owl:ObjectProperty>
     
 
@@ -3017,8 +3017,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#intends_to_implement.Program+Program_Specification -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#intends_to_implement.Program+Program_Specification">
-        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Program"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Program_Specification"/>
+        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Program"/>
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Program_Specification"/>
     </owl:ObjectProperty>
     
 
@@ -3026,8 +3026,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#intends_to_implement.Software_System+System_Specification -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#intends_to_implement.Software_System+System_Specification">
-        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Software_System"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::System_Specification"/>
+        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Software_System"/>
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::System_Specification"/>
     </owl:ObjectProperty>
     
 
@@ -3045,7 +3045,7 @@
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#intends_to_satisfy.Program_Specification+Requirement_Artifact">
         <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RSRO::Requirement_Artifact"/>
-        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Program_Specification"/>
+        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Program_Specification"/>
     </owl:ObjectProperty>
     
 
@@ -3053,8 +3053,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#intends_to_satisfy.Program_Specification+System_Specification -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#intends_to_satisfy.Program_Specification+System_Specification">
-        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Program_Specification"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::System_Specification"/>
+        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Program_Specification"/>
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::System_Specification"/>
     </owl:ObjectProperty>
     
 
@@ -3477,7 +3477,7 @@
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#materialization_of.Loaded_Program_Copy+Program">
         <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RRO::Loaded_Program_Copy"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Program"/>
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Program"/>
     </owl:ObjectProperty>
     
 
@@ -3662,6 +3662,15 @@
     
 
 
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#participates_in.Project_Team+Adherence_Evaluation -->
+
+    <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#participates_in.Project_Team+Adherence_Evaluation">
+        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#EO::Project_Team"/>
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#QAPO::Adherence_Evaluation"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#participates_in.Requirements_Engineer+Requirements_Verification_and_Validation -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#participates_in.Requirements_Engineer+Requirements_Verification_and_Validation">
@@ -3737,8 +3746,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#participation_of.Artifact_Participation+Artifact -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#participation_of.Artifact_Participation+Artifact">
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact"/>
         <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact_Participation"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact"/>
     </owl:ObjectProperty>
     
 
@@ -4008,7 +4017,7 @@
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#requires.Intended_Activity+Software_Product_Type">
         <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Intended_Activity"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Software_Product_Type"/>
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Software_Product_Type"/>
     </owl:ObjectProperty>
     
 
@@ -4025,8 +4034,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#requires.Standard_Activity+Software_Product_Type -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#requires.Standard_Activity+Software_Product_Type">
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Software_Product_Type"/>
         <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Standard_Activity"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Software_Product_Type"/>
     </owl:ObjectProperty>
     
 
@@ -4043,8 +4052,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#responsible_for.Stakeholder+Artifact -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#responsible_for.Stakeholder+Artifact">
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact"/>
         <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Stakeholder"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact"/>
     </owl:ObjectProperty>
     
 
@@ -4251,7 +4260,7 @@
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#uses.Code_Review+Code">
         <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#CPO::Code_Review"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Code"/>
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Code"/>
     </owl:ObjectProperty>
     
 
@@ -4367,8 +4376,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#uses.Intended_Activity+Artifact_Type -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#uses.Intended_Activity+Artifact_Type">
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact_Type"/>
         <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Intended_Activity"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact_Type"/>
     </owl:ObjectProperty>
     
 
@@ -4421,8 +4430,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#uses.Performed_Activity+Artifact -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#uses.Performed_Activity+Artifact">
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact"/>
         <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Performed_Activity"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact"/>
     </owl:ObjectProperty>
     
 
@@ -4502,8 +4511,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#uses.Standard_Activity+Artifact_Type -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#uses.Standard_Activity+Artifact_Type">
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact_Type"/>
         <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Standard_Activity"/>
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact_Type"/>
     </owl:ObjectProperty>
     
 
@@ -4556,8 +4565,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#written_in.Source_Code+Programming_Language -->
 
     <owl:ObjectProperty rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#written_in.Source_Code+Programming_Language">
-        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Programming_Language"/>
-        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Source_Code"/>
+        <rdfs:range rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Programming_Language"/>
+        <rdfs:domain rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Source_Code"/>
     </owl:ObjectProperty>
     
 
@@ -4577,7 +4586,7 @@
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#CMPO::Artifact_CI">
         <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#CMPO::Configuration_Item_(CI)"/>
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artifact whose configuration is being managed.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMPO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">role</stereotype>
@@ -4588,7 +4597,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#CMPO::Artifact_Copy -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#CMPO::Artifact_Copy">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMPO</ontology>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copy of an Artifact that is under version control.</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">category</stereotype>
@@ -4599,7 +4608,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#CMPO::Baseline -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#CMPO::Baseline">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Information_Item"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Information_Item"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMPO</ontology>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information Item packaging a set of Configuration Items&apos; Versions at a specific time in the product&apos;s life (for a product delivery or to establish a relevant point in the Project).</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -4786,7 +4795,7 @@
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#CMPO::Configuration_Audit_Report">
         <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#QAPO::Evaluation_Report"/>
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMPO</ontology>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Document reporting the results of a Quality Audit Performing, including Noncompliance and Corrective Action Registers.</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -4830,7 +4839,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#CMPO::Configuration_Management_Plan -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#CMPO::Configuration_Management_Plan">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMPO</ontology>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Document describing the configuration management parameters for conducting the process, including the identified Configuration Items types, the configuration systems and the planned Baselines, Configuration Audits, and Products Deliveries.</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -4885,7 +4894,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#CMPO::Deliverable_Product -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#CMPO::Deliverable_Product">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Software_Product"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Software_Product"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMPO</ontology>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software Product ready to be delivered to the client.</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -4971,7 +4980,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#CMPO::Change_Request_(CR) -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#CMPO::Change_Request_(CR)">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Information_Item"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Information_Item"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMPO</ontology>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information Item describing a request for modification on a set of Configuration Items.</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -5004,7 +5013,7 @@
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#COM::Base_Measure">
         <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#COM::Measure"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COM</ontology>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measure used to quantify a Directly Measurable Element. </rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measure used to quantify a Directly Measurable Element.</rdfs:comment>
     </owl:Class>
     
 
@@ -5043,7 +5052,7 @@
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#COM::Derived_Measure">
         <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#COM::Measure"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COM</ontology>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measure used to quantify an Indirectly Measurable Element. </rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measure used to quantify an Indirectly Measurable Element.</rdfs:comment>
     </owl:Class>
     
 
@@ -5298,7 +5307,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#CPO::Code_Review_Report -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#CPO::Code_Review_Report">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CPO</ontology>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Document pointing out problems identified in the Code during review activities.</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -5430,7 +5439,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#DPO::Data_Definitions -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#DPO::Data_Definitions">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Information_Item"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Information_Item"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DPO</ontology>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information Item describing the high-level choices of how the software will manage data.</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -5463,7 +5472,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#DPO::Data_Model -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#DPO::Data_Model">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Model"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Model"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DPO</ontology>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model containing the physical and logical decisions on how to manage and storage the software data.</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -5474,8 +5483,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#DPO::Design_Document -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#DPO::Design_Document">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Composite_Artifact"/>
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Composite_Artifact"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DPO</ontology>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Document specifying the design of a software, by depicting the software architecture, components, interfaces and data models, as well as other information regarding the design choices and decisions.</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -5508,7 +5517,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#DPO::Design_Evaluation_Document -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#DPO::Design_Evaluation_Document">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DPO</ontology>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Document registering the issues identified in a Design Document evaluation.</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -5563,7 +5572,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#DPO::Interface_Specification -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#DPO::Interface_Specification">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Information_Item"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Information_Item"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DPO</ontology>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information Item describing an internal or external interface of a software architecture.</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -5585,7 +5594,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#DPO::Software_Architecture -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#DPO::Software_Architecture">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Model"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Model"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DPO</ontology>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model describing the fundamental structures of a software, including its components, how they are connected, and its internal and external interfaces.</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -5857,6 +5866,7 @@
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#EO::Project_Team">
         <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#EO::Team"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Team_Stakeholder"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -6016,7 +6026,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#QAPO::Evaluated_Artifact -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#QAPO::Evaluated_Artifact">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artifact objectively evaluated.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QAPO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">role</stereotype>
@@ -6038,7 +6048,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#QAPO::Evaluation_Report -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#QAPO::Evaluation_Report">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Document describing the evaluation results and identified issues.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QAPO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -6082,7 +6092,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#QAPO::Noncompliance_Register -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#QAPO::Noncompliance_Register">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Information_Item"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Information_Item"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information Item describing a noncompliance (a failure or refusal to conform to an applicable requirement) in a process or artifact, and related information to solve it.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QAPO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -6104,7 +6114,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#QAPO::Noncompliance_Responsible -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#QAPO::Noncompliance_Responsible">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Stakeholder"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Person_Stakeholder"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QAPO</ontology>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stakeholder responsible for solving a noncompliance.</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">role</stereotype>
@@ -6126,7 +6136,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#QAPO::Quality_Assurance_Plan -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#QAPO::Quality_Assurance_Plan">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Document registering the planed quality assurance activities, processes and artifacts to be evaluated and involved personnel.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QAPO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -6137,6 +6147,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#QAPO::Quality_Assurance_Planning -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#QAPO::Quality_Assurance_Planning">
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Performed_Activity"/>
         <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Performed_Composite_Activity"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity for planning the quality assurance activities, resulting in a Quality Assurance Plan.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QAPO</ontology>
@@ -6159,7 +6170,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#QAPO::Quality_Auditor -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#QAPO::Quality_Auditor">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Stakeholder"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Person_Stakeholder"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QAPO</ontology>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stakeholder responsible for conducting objective evaluations.</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">role</stereotype>
@@ -6170,7 +6181,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#RDPO::Conceptual_Model -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#RDPO::Conceptual_Model">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Model"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Model"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model describing the Product Requirements under different and relevant views.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDPO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -6192,7 +6203,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#RDPO::Requirements_Agreement -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#RDPO::Requirements_Agreement">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Information_Item"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Information_Item"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information Item representing the agreement achieved by the Stakeholders, regarding the Requirements for the product.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDPO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -6236,7 +6247,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#RDPO::Requirements_Evaluation_Document -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#RDPO::Requirements_Evaluation_Document">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Document pointing out problems identified in Documented Requirements and Conceptual Models registered in a Requirements Document.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDPO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -6291,7 +6302,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Code_To_Be_Tested -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Code_To_Be_Tested">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Code"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Code"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Portion of Code (software module) to be tested by a Test Case.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ROoST</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">role</stereotype>
@@ -6302,7 +6313,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Incident_Management_Tool -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Incident_Management_Tool">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Software_Product"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Software_Product"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ROoST</ontology>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software product that manages and maintains lists of issues as needed by an organization (adapted from Wikipedia).</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -6313,7 +6324,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Incident_Report -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Incident_Report">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Information_Item"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Information_Item"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ROoST</ontology>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Report describing the occurrence, nature, and status of an incident (adapted from ISO/IEC/IEEE 29119-1:2013 Software and systems engineering--Software testing--Part 1: Concepts and definitions, 4.18).</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -6390,7 +6401,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Test_Analysis_Report -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Test_Analysis_Report">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Document containing the analysis of Test Results and how they succeed.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ROoST</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -6401,7 +6412,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Test_Case -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Test_Case">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Document containing the input data, expected results, steps and general conditions for testing some situation regarding a Code To Be Tested.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ROoST</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -6412,7 +6423,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Test_Case_Actual_Result -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Test_Case_Actual_Result">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Information_Item"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Information_Item"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ROoST</ontology>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The actual result obtained from the execution of a test case.</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -6434,7 +6445,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Test_Case_Design_Input -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Test_Case_Design_Input">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ROoST</ontology>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Some Artifact defined as an input for the Test Case Design.</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rolemixin</stereotype>
@@ -6456,7 +6467,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Test_Case_Expected_Result -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Test_Case_Expected_Result">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Information_Item"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Information_Item"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ROoST</ontology>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The result expected from the execution of a test case.</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -6467,7 +6478,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Test_Code -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Test_Code">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Code"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Code"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Code produced for implementing a Test Case.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ROoST</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -6533,7 +6544,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Test_Input -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Test_Input">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Information_Item"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Information_Item"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Descriptions of the parameters and values to be used in a test case, in order to produce an expected result.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ROoST</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -6544,7 +6555,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Test_Management_Tool -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Test_Management_Tool">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Software_Product"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Software_Product"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ROoST</ontology>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software Product used to store information on how testing is to be done, plan testing activities and report the status of testing activities (adpated from Wikipedia).</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -6566,7 +6577,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Test_Plan -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Test_Plan">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Document describing how the tests should be performed, providing a roadmap for the testing activities.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ROoST</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -6588,7 +6599,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Test_Result -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Test_Result">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Document containing the actual results and identified issues relative to a Test Case execution.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ROoST</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -6632,7 +6643,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Test_Suite -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#ROoST::Test_Suite">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collection of test cases that are intended to be used to test a software program to show that it has some specified set of behaviours (Wikipedia).</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ROoST</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -6749,7 +6760,7 @@
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#RRO::Change_Runtime_Requirement_Artifact">
         <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RRO::Runtime_Requirement_Artifact"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Change Runtime Requirement Artifact specifies changes on the systems behavior, in order for the software system to keep fulfilling the goals it has been designed for.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Change Runtime Requirement Artifact specifies changes on the system&apos;s behavior, in order for the software system to keep fulfilling the goals it has been designed for.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RRO</ontology>
     </owl:Class>
     
@@ -6818,7 +6829,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#RRO::Loaded_Program_Copy -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#RRO::Loaded_Program_Copy">
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Loaded Program Copy is the materialization of a Program, inhering in a Machine. @E.g.: a copy of a program loaded in primary memory of my computer.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Loaded Program Copy is the materialization of a Program, inhering in a Machine.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RRO</ontology>
     </owl:Class>
     
@@ -6884,7 +6895,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#RRO::RRT_Program -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#RRO::RRT_Program">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Program"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Program"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An RRT Program is a Program that is built intending to satisfy at least one Runtime Requirement Artifact.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RRO</ontology>
     </owl:Class>
@@ -6933,7 +6944,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#RRO::Target_Program -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#RRO::Target_Program">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Program"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Program"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RRO</ontology>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Target Program is the role a Program plays when it is the targer of a RRT Program, i.e., the RRT Program are built to act over (monitor/change) the Target Program.</rdfs:comment>
     </owl:Class>
@@ -6953,7 +6964,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Analysis_Result_Description -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Analysis_Result_Description">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Information_Item"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Information_Item"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information Item that records the Analysis Result produced in a Software Measurement Analysis.  </rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSMO</ontology>
     </owl:Class>
@@ -6992,7 +7003,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Information_Need_Description -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Information_Need_Description">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Information_Item"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Information_Item"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information Item that documents the description of an Information Need.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSMO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -7004,7 +7015,7 @@
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Information_Needs_Identification">
         <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Performed_Simple_Activity"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity for identifying and recording the Information Needs to be included in the Software Measurement Plan. Information Needs are identified from the established Software Measurement Goals. </rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity for identifying and recording the Information Needs to be included in the Software Measurement Plan. Information Needs are identified from the established Software Measurement Goals.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSMO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">event</stereotype>
     </owl:Class>
@@ -7031,10 +7042,10 @@
     
 
 
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Measure__Description -->
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Measure_Description -->
 
-    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Measure__Description">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Information_Item"/>
+    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Measure_Description">
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Information_Item"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information Item that documents the description of  a Software-Related Measure.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSMO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -7045,7 +7056,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Measured_Value_Description -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Measured_Value_Description">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Information_Item"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Information_Item"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information Item that records a Measured Value.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSMO</ontology>
     </owl:Class>
@@ -7066,7 +7077,7 @@
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Measurement_Analyst">
         <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Stakeholder"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSMO</ontology>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Role played by the Stakeholder in charge of Software Measurement Analysis. </rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Role played by the Stakeholder in charge of Software Measurement Analysis.</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">role</stereotype>
     </owl:Class>
     
@@ -7086,7 +7097,7 @@
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Measurement_Executor">
         <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Stakeholder"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSMO</ontology>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Role played by the Stakeholder in charge of Software Measurement Execution. </rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Role played by the Stakeholder in charge of Software Measurement Execution. It does not include automated measurement (by tools).</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">role</stereotype>
     </owl:Class>
     
@@ -7108,7 +7119,7 @@
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Measurement_Manager">
         <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Stakeholder"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSMO</ontology>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Role played by the Stakeholder in charge of Software Measurement Planning. </rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Role played by the Stakeholder in charge of Software Measurement Planning.</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">role</stereotype>
     </owl:Class>
     
@@ -7159,7 +7170,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Operational_Definition_of_Measure -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Operational_Definition_of_Measure">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Information_Item"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Information_Item"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information Item that specifies information regarding data collection and analysis of a Software-Related Measure. An Operational Definition of Measure indicates: Measurement Procedure, Measurement Periodicity, Measurement Moment, Measurement Responsible, Measurement Analysis Procedure, Measurement Analysis Periodicity, Measurement Analysis Moment, and Measurement Analysis Responsible. </rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSMO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -7294,7 +7305,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Software_Measurement_Goal_Description -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Software_Measurement_Goal_Description">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Information_Item"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Information_Item"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information Item that documents the description of a Software Measurement Goal.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSMO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -7305,7 +7316,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Software_Measurement_Plan -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Software_Measurement_Plan">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Document produced during Software Measurement Planning. It is composed of Software Measurement Planning Items.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSMO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -7318,7 +7329,7 @@
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Software_Measurement_Planning">
         <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#COM::Measurement_Planning"/>
         <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Performed_Composite_Activity"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity for planning the software measurement, i.e., for determining the Software Measurement Goals to be monitored, the Information Needs to be considered, the Software-Related Measures to be collected to meet the Information Needs and the Operational Definition of Measure to be considered.  </rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity for planning the software measurement, i.e., for determining the Software Measurement Goals to be monitored, the Information Needs to be considered, the Software-Related Measures to be collected to meet the Information Needs and the Operational Definition of Measure to be considered. </rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSMO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">event</stereotype>
     </owl:Class>
@@ -7329,7 +7340,7 @@
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Software_Measurement_Planning_Item">
         <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#COM::Measurement_Planning_Item"/>
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Information_Item"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Information_Item"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement Planning Item related to software. It is an Information Item produced during Software Measurement Planning and it is composed of a Software Measurement Goal Description, an Information Need Description, a Measure Description and an Operational Definition of Measure.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSMO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -7422,8 +7433,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#RSRO::Requirement_Artifact -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#RSRO::Requirement_Artifact">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Information_Item"/>
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Simple_Artifact"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Information_Item"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Simple_Artifact"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information Item describing a Requirement.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSRO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -7434,8 +7445,8 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#RSRO::Requirements_Document -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#RSRO::Requirements_Document">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Composite_Artifact"/>
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Composite_Artifact"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Document composed of Documented Requirements and related information, as a basis for other technical software processes, including maintenance.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSRO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -7496,7 +7507,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SPMO::Corrective_Action_Register -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SPMO::Corrective_Action_Register">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Information_Item"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Information_Item"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information Item describing an action to eliminate the cause or reduce the likelihood of recurrence of a detected nonconformity or other undesirable situation. [ISO/IEC/IEEE 24765]</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPMO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -7604,7 +7615,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SPMO::Project_Manager -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SPMO::Project_Manager">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Stakeholder"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Person_Stakeholder"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPMO</ontology>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stakeholder responsible for managing a Project.</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">role</stereotype>
@@ -7615,7 +7626,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SPMO::Project_Plan -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SPMO::Project_Plan">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Document describing the planning of a Project, to be used as the basis for project management.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPMO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
@@ -7683,6 +7694,17 @@
     
 
 
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact -->
+
+    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact">
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Measurable_Software-Related_Entity"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Object intentionally made to serve a given purpose in the context of a software Project or Organization.</rdfs:comment>
+        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPO</ontology>
+        <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">category</stereotype>
+    </owl:Class>
+    
+
+
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact_Change -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact_Change">
@@ -7715,6 +7737,16 @@
     
 
 
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact_Type -->
+
+    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact_Type">
+        <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2ndOT</stereotype>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Object Kind which is the powertype of Artifact, classifying its specializations.</rdfs:comment>
+        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPO</ontology>
+    </owl:Class>
+    
+
+
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact_Usage -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact_Usage">
@@ -7722,6 +7754,28 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artifact Participation in which an existing Artifact is used, but not modified.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">event</stereotype>
+    </owl:Class>
+    
+
+
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::CASE_Tool -->
+
+    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::CASE_Tool">
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Software_Product"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPO</ontology>
+        <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
+    </owl:Class>
+    
+
+
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Composite_Artifact -->
+
+    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Composite_Artifact">
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artifact composed of other Artifacts.</rdfs:comment>
+        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPO</ontology>
+        <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">category</stereotype>
     </owl:Class>
     
 
@@ -7759,6 +7813,17 @@
     
 
 
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document -->
+
+    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document">
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any written or pictorial, uniquely identified, information related to the software development, usually presented in a predefined format.</rdfs:comment>
+        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPO</ontology>
+        <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kind</stereotype>
+    </owl:Class>
+    
+
+
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document_Template -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document_Template">
@@ -7766,6 +7831,17 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Procedure aiming to establish a uniform way for preparing a Document, providing a predefined format and a defined structure for filling with the expected information.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kind</stereotype>
+    </owl:Class>
+    
+
+
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document_Type -->
+
+    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document_Type">
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact_Type"/>
+        <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2ndOT</stereotype>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artifact Type which is the powertype of Document, classifying its specializations.</rdfs:comment>
+        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPO</ontology>
     </owl:Class>
     
 
@@ -7855,6 +7931,17 @@
     
 
 
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Information_Item -->
+
+    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Information_Item">
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relevant information for human use, produced or used by Performed Activity.</rdfs:comment>
+        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPO</ontology>
+        <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kind</stereotype>
+    </owl:Class>
+    
+
+
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Intended_Activity -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Intended_Activity">
@@ -7904,6 +7991,17 @@
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2ndOT</stereotype>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Complex Action type denoting a set of steps (Method Activities) to be used when a Method is adopted.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPO</ontology>
+    </owl:Class>
+    
+
+
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Model -->
+
+    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Model">
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A representation (abstraction) of a process or system from a particular perspective.</rdfs:comment>
+        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPO</ontology>
+        <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kind</stereotype>
     </owl:Class>
     
 
@@ -8156,6 +8254,17 @@
     
 
 
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Simple_Artifact -->
+
+    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Simple_Artifact">
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artifact that is not decomposed into other Artifacts.</rdfs:comment>
+        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPO</ontology>
+        <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">category</stereotype>
+    </owl:Class>
+    
+
+
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Simple_Intended_Activity -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Simple_Intended_Activity">
@@ -8189,6 +8298,17 @@
     
 
 
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Software_Item -->
+
+    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Software_Item">
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result.</rdfs:comment>
+        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPO</ontology>
+        <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kind</stereotype>
+    </owl:Class>
+    
+
+
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Software_Organization -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Software_Organization">
@@ -8198,9 +8318,33 @@
     
 
 
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Software_Product -->
+
+    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Software_Product">
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Composite_Artifact"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One or more computer programs together with any accompanying auxiliary items, such as documentation, delivered under a single name, ready for use.</rdfs:comment>
+        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPO</ontology>
+        <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kind</stereotype>
+    </owl:Class>
+    
+
+
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Software_Product_Type -->
+
+    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Software_Product_Type">
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Artifact_Type"/>
+        <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2ndOT</stereotype>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artifact Type which is the powertype of Software Product, classifying its specializations.</rdfs:comment>
+        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPO</ontology>
+    </owl:Class>
+    
+
+
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Software_Project -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Software_Project">
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#EO::Project"/>
         <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Measurable_Software-Related_Entity"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Project related to software development or maintenance.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPO</ontology>
@@ -8213,7 +8357,7 @@
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Software_Resource">
         <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Resource"/>
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Software_Product"/>
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Software_Product"/>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPO</ontology>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software Product when used as Resource of some process activity.</rdfs:comment>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">role</stereotype>
@@ -8361,220 +8505,88 @@
     
 
 
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact -->
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Code -->
 
-    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#RSMO::Measurable_Software-Related_Entity"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Object intentionally made to serve a given purpose in the context of a software Project or Organization.</rdfs:comment>
-        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwAO</ontology>
-        <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">category</stereotype>
-    </owl:Class>
-    
-
-
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact_Type -->
-
-    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact_Type">
-        <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2ndOT</stereotype>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Object Kind which is the powertype of Artifact, classifying its specializations.</rdfs:comment>
-        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwAO</ontology>
-    </owl:Class>
-    
-
-
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::CASE_Tool -->
-
-    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::CASE_Tool">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Software_Product"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
-        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwAO</ontology>
-        <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
-    </owl:Class>
-    
-
-
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Code -->
-
-    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Code">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Software_Item"/>
+    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Code">
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Software_Item"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software Item representing a set of computer instructions and data definitions expressed in a programming language or in a form output by an assembler, compiler, or other translator (SEVOCAB).</rdfs:comment>
-        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwAO</ontology>
+        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
     </owl:Class>
     
 
 
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Composite_Artifact -->
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Machine_Code -->
 
-    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Composite_Artifact">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artifact composed of other Artifacts.</rdfs:comment>
-        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwAO</ontology>
-        <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">category</stereotype>
-    </owl:Class>
-    
-
-
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document -->
-
-    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any written or pictorial, uniquely identified, information related to the software development, usually presented in a predefined format.</rdfs:comment>
-        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwAO</ontology>
-        <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kind</stereotype>
-    </owl:Class>
-    
-
-
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document_Type -->
-
-    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document_Type">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact_Type"/>
-        <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2ndOT</stereotype>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artifact Type which is the powertype of Document, classifying its specializations.</rdfs:comment>
-        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwAO</ontology>
-    </owl:Class>
-    
-
-
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Information_Item -->
-
-    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Information_Item">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relevant information for human use, produced or used by Performed Activity.</rdfs:comment>
-        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwAO</ontology>
-        <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kind</stereotype>
-    </owl:Class>
-    
-
-
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Machine_Code -->
-
-    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Machine_Code">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Code"/>
+    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Machine_Code">
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Code"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer instructions and data definitions expressed in a form output by an assembler, compiler, or other translator, which can be recognized by the processing unit of a computer machine.</rdfs:comment>
-        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwAO</ontology>
+        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
     </owl:Class>
     
 
 
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Model -->
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Program -->
 
-    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Model">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A representation (abstraction) of a process or system from a particular perspective.</rdfs:comment>
-        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwAO</ontology>
-        <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kind</stereotype>
-    </owl:Class>
-    
-
-
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Program -->
-
-    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Program">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Software_Item"/>
+    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Program">
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Software_Item"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software Item which aims at producing a certain result through execution on a computer, in a particular way, given by the Program Specification. A Program is constituted by code, but it is not identical to code. Code can be changed without altering the identity of its program, which is anchored to the program&apos;s essential property: its intended specification (Program Specification).</rdfs:comment>
-        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwAO</ontology>
+        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
     </owl:Class>
     
 
 
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Program_Specification -->
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Program_Specification -->
 
-    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Program_Specification">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document"/>
+    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Program_Specification">
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A document that describes the purpose (structure and functions) of a program in sufficient detail to permit coding and to facilitate maintenance.</rdfs:comment>
-        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwAO</ontology>
+        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
     </owl:Class>
     
 
 
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Programming_Language -->
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Programming_Language -->
 
-    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Programming_Language">
+    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Programming_Language">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A language used to express computer programs.</rdfs:comment>
-        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwAO</ontology>
+        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kind</stereotype>
     </owl:Class>
     
 
 
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Simple_Artifact -->
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Software_System -->
 
-    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Simple_Artifact">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artifact that is not decomposed into other Artifacts.</rdfs:comment>
-        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwAO</ontology>
-        <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">category</stereotype>
-    </owl:Class>
-    
-
-
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Software_Item -->
-
-    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Software_Item">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result.</rdfs:comment>
-        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwAO</ontology>
-        <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kind</stereotype>
-    </owl:Class>
-    
-
-
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Software_Product -->
-
-    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Software_Product">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact"/>
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Composite_Artifact"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One or more computer programs together with any accompanying auxiliary items, such as documentation, delivered under a single name, ready for use.</rdfs:comment>
-        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwAO</ontology>
-        <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kind</stereotype>
-    </owl:Class>
-    
-
-
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Software_Product_Type -->
-
-    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Software_Product_Type">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Artifact_Type"/>
-        <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2ndOT</stereotype>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artifact Type which is the powertype of Software Product, classifying its specializations.</rdfs:comment>
-        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwAO</ontology>
-    </owl:Class>
-    
-
-
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Software_System -->
-
-    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Software_System">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Software_Item"/>
+    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Software_System">
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Software_Item"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software Item that aims at satisfying a specification (System Specification), concerning a desired change in a data structure inside a computer, abstracting away from the behavior.</rdfs:comment>
-        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwAO</ontology>
+        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
     </owl:Class>
     
 
 
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Source_Code -->
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Source_Code -->
 
-    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Source_Code">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Code"/>
+    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Source_Code">
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::Code"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A well-formed sequence of computer instructions and data definitions expressed in a programming language, in a form suitable for input to an assembler, compiler, or other translator.</rdfs:comment>
-        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwAO</ontology>
+        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
     </owl:Class>
     
 
 
-    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::System_Specification -->
+    <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::System_Specification -->
 
-    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::System_Specification">
-        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SwAO::Document"/>
+    <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#SwO::System_Specification">
+        <rdfs:subClassOf rdf:resource="dev.nemo.inf.ufes.br/seon/SEON.owl#SPO::Document"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
-        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwAO</ontology>
+        <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwO</ontology>
         <stereotype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkind</stereotype>
     </owl:Class>
 </rdf:RDF>

@@ -1,380 +1,380 @@
 Id;Label;Layer;Stereotype;CoreType;UFOType;Ontology
-001;Organizational Standard Process;CORE;2ndOT;;;SPO
-002;Measurement Analysis;CORE;;;;COM
-003;Requirements Development Process;DOMAIN;event;;;RDPO
-004;Hybrid Standard Process;CORE;2ndOT;;;SPO
-005;Change Control;DOMAIN;event;;;CMPO
-006;Artifact Participation;CORE;event;;;SPO
-007;Design Evaluation Document;DOMAIN;subkind;;;DPO
-008;Selection of Measures for Analysis;DOMAIN;event;;;RSMO
-009;Test Case Design Input;DOMAIN;rolemixin;;;ROoST
-010;Test Script;DOMAIN;subkind;;;ROoST
-011;Evaluated Artifact;DOMAIN;role;;;QAPO
-012;Interval Scale;CORE;;;;COM
-013;Runtime Requirement Artifact;DOMAIN;;;;RRO
-014;Indicator;CORE;;;;COM
-015;Artifact Copy;DOMAIN;category;;;CMPO
-016;Project Process;CORE;mode;;;SPO
-017;Document;CORE;kind;;;SwAO
-018;Loaded Adaptation Program Copy;DOMAIN;;;;RRO
-019;Test Input;DOMAIN;subkind;;;ROoST
-020;Practical Result;DOMAIN;;;;SPMO
-021;Unit Testing;DOMAIN;event;;;ROoST
-022;Measurement Planning Item;CORE;;;;COM
-023;Measure;CORE;;;;COM
-024;Tester;DOMAIN;role;;;ROoST
-025;Architecture Development;DOMAIN;event;;;DPO
-026;Software Project Measurement Plan;DOMAIN;;;;RSMO
-027;Test Incident Report;DOMAIN;subkind;;;ROoST
-028;Method Workflow;CORE;2ndOT;;;SPO
-029;Indirectly Measurable Element;CORE;;;;COM
-030;Software System;CORE;subkind;;;SwAO
-031;Document Type;CORE;2ndOT;;;SwAO
-032;Change Runtime Requirement Artifact;DOMAIN;;;;RRO
-033;Software Resource Participation;CORE;event;;;SPO
-034;Planning Item Documentation;DOMAIN;event;;;RSMO
-035;Measurable Element;CORE;;;;COM
-036;Quality Assurance Plan;DOMAIN;subkind;;;QAPO
-037;Complex Task;DOMAIN;;;;GORO
-038;Software-Related Measure;DOMAIN;;;;RSMO
-039;Base Measure;CORE;;;;COM
-040;Software Project;CORE;subkind;;;SPO
-041;Architectural Design;DOMAIN;event;;;DPO
-042;Information Needs Identification;DOMAIN;event;;;RSMO
-043;Software Measurement Goal Description;DOMAIN;subkind;;;RSMO
-044;Software Function Universal;DOMAIN;2ndOT;;;RSRO
-045;Process Evaluation;DOMAIN;event;;;QAPO
-046;Machine Code;CORE;subkind;;;SwAO
-047;Software Product Type;CORE;2ndOT;;;SwAO
-048;Baseline;DOMAIN;subkind;;;CMPO
-049;Standard Activity;CORE;2ndOT;;;SPO
-050;Selection of Entity for Measurement;DOMAIN;event;;;RSMO
-051;Monitoring Runtime Requirement Artifact;DOMAIN;;;;RRO
-052;Requirements Negotiation and Prioritization;DOMAIN;event;;;RDPO
-053;Level-based Testing;DOMAIN;event;;;ROoST
-054;Measure Unit;CORE;;;;COM
-055;Loaded RRT Program Copy;DOMAIN;;;;RRO
-056;Code Reviewer;DOMAIN;role;;;CPO
-057;Organization Stakeholder;CORE;role;;;SPO
-058;RRT Program Copy Execution;DOMAIN;;;;RRO
-059;Complex Goal;CORE;;;;COM
-060;User Interface Design;DOMAIN;event;;;DPO
-061;Employment;CORE;relator;;;EO
-062;Technique;CORE;kind;;;SPO
-063;Team;CORE;kind;;;EO
-064;Program Copy Execution;DOMAIN;;;;RRO
-065;Complex Standalone Formal Organization;CORE;;;;EO
-066;Test Suite;DOMAIN;subkind;;;ROoST
-067;Programming Language;CORE;kind;;;SwAO
-068;Data Design;DOMAIN;event;;;DPO
-069;Organizational Unit;CORE;kind;;;EO
-070;Requirement;DOMAIN;;;;GORO
-071;Adherence Evaluation;DOMAIN;event;;;QAPO
-072;Change Request Closing;DOMAIN;event;;;CMPO
-073;Testing Environment;DOMAIN;collective;;;ROoST
-074;Stub;DOMAIN;subkind;;;ROoST
-075;Performed Project Activity;CORE;;;;SPO
-076;Testing Level;DOMAIN;2ndOT;;;ROoST
-077;Team Purpose;CORE;mode;;;EO
-078;Scale;CORE;;;;COM
-079;Checkout;DOMAIN;event;;;CMPO
-080;Performed Composite Activity;CORE;event;;;SPO
-081;Test Manager;DOMAIN;role;;;ROoST
-082;Loaded Program Copy;DOMAIN;;;;RRO
-083;Scale Value;CORE;;;;COM
-084;Noncompliance Responsible;DOMAIN;role;;;QAPO
-085;Measurement;CORE;;;;COM
-086;Adaptation Program;DOMAIN;;;;RRO
-087;Test Code;DOMAIN;subkind;;;ROoST
-088;Interface Specification;DOMAIN;subkind;;;DPO
-089;Design Time Requirement Artifact;DOMAIN;;;;RRO
-090;Employment Type;CORE;2ndOT;;;EO
-091;Programmer;DOMAIN;role;;;CPO
-092;General Intended Process;CORE;mode;;;SPO
-093;Performed Simple Activity;CORE;event;;;SPO
-094;Composite Intended Activity;CORE;mode;;;SPO
-095;Data Model;DOMAIN;subkind;;;DPO
-096;Activity Universal;CORE;2ndOT;;;SPO
-097;Testing Technique;DOMAIN;subkind;;;ROoST
-098;Requirements Stakeholder;DOMAIN;role;;;RSRO
-099;Quality Auditor;DOMAIN;role;;;QAPO
-100;Project Team;CORE;subkind;;;EO
-101;Architectural Element;DOMAIN;subkind;;;DPO
-102;Stakeholder;CORE;rolemixin;;;SPO
-103;Directly Measurable Element;CORE;;;;COM
-104;Scheduled Activity;CORE;mode;;;SPO
-105;Change Requester;DOMAIN;role;;;CMPO
-106;Measurement Plan Item Selection;DOMAIN;event;;;RSMO
-107;Measurable Software-Related Entity;DOMAIN;;;;RSMO
-108;OU Assignment Type;CORE;2ndOT;;;EO
-109;Conceptual Modeling;DOMAIN;event;;;RDPO
-110;Stakeholder Participation;CORE;event;;;SPO
-111;Simple Method Activity;CORE;2ndOT;;;SPO
-112;Product Quality Requirement;DOMAIN;mode;;;RSRO
-113;Tracked Process;DOMAIN;;;;SPMO
-114;Derivative Measurement Procedure;CORE;;;;COM
-115;Project;CORE;kind;;;EO
-116;Information Item;CORE;kind;;;SwAO
-117;Change Requesting;DOMAIN;event;;;CMPO
-118;Organizational Intended Process;CORE;mode;;;SPO
-119;Requirements Elicitation;DOMAIN;event;;;RDPO
-120;Procedure;CORE;category;;;SPO
-121;Artifact Change;CORE;event;;;SPO
-122;Test Case Actual Result;DOMAIN;subkind;;;ROoST
-123;Target Program Copy Execution;DOMAIN;;;;RRO
-124;Configuration Auditor;DOMAIN;role;;;CMPO
-125;Checkin;DOMAIN;event;;;CMPO
-126;Code Development;DOMAIN;event;;;CPO
-127;Change Review;DOMAIN;event;;;CMPO
-128;Project Activity;CORE;;;;SPO
-129;Noncompliance Control;DOMAIN;event;;;QAPO
-130;Software Measurement Plan;DOMAIN;subkind;;;RSMO
-131;Black-box Testing Technique;DOMAIN;subkind;;;ROoST
-132;Operational Definition of Measure;DOMAIN;subkind;;;RSMO
-133;Incident Report;DOMAIN;subkind;;;ROoST
-134;Process Universal;CORE;2ndOT;;;SPO
-135;Requirements Evaluation Document;DOMAIN;subkind;;;RDPO
-136;Hardware Type;CORE;2ndOT;;;SPO
-137;Project Stakeholder;CORE;rolemixin;;;SPO
-138;Design Evaluation;DOMAIN;event;;;DPO
-139;Organizational Unit Type;CORE;2ndOT;;;EO
-140;Architectural Connector;DOMAIN;subkind;;;DPO
-141;Measured Value;CORE;;;;COM
-142;Request Evaluation;DOMAIN;event;;;CMPO
-143;Compliance Program;DOMAIN;;;;RRO
-144;System Testing;DOMAIN;event;;;ROoST
-145;Formal Organization Employer;CORE;role;;;EO
-146;Test Result Analysis;DOMAIN;event;;;ROoST
-147;Estimated Process;DOMAIN;;;;SPMO
-148;Adaptation Program Copy Execution;DOMAIN;;;;RRO
-149;Software Architect;DOMAIN;role;;;DPO
-150;Human Resource;CORE;role;;;EO
-151;System Specification;CORE;subkind;;;SwAO
-152;Testing Process;DOMAIN;event;;;ROoST
-153;Solved CR;DOMAIN;phase;;;CMPO
-154;Functional Requirement;DOMAIN;mode;;;RSRO
-155;Component Design;DOMAIN;event;;;DPO
-156;Business Goal;DOMAIN;;;;RSMO
-157;Configuration Manager;DOMAIN;role;;;CMPO
-158;Quality Characteristic;DOMAIN;2ndOT;;;RSRO
-159;Noncompliance Closing;DOMAIN;event;;;QAPO
-160;Estimated Activity;DOMAIN;;;;SPMO
-161;Softgoal;DOMAIN;;;;GORO
-162;Composite Standard Activity;CORE;2ndOT;;;SPO
-163;Artifact;CORE;category;;;SwAO
-164;Document Template;CORE;kind;;;SPO
-165;Measurement Manager;DOMAIN;role;;;RSMO
-166;Loaded Target Program Copy;DOMAIN;;;;RRO
-167;Software Measurement Planning Item;DOMAIN;subkind;;;RSMO
-168;Project Standard Process;CORE;2ndOT;;;SPO
-169;Performed General Process;CORE;event;;;SPO
-170;Project Manager;DOMAIN;role;;;SPMO
-171;Configuration Item (CI);DOMAIN;rolemixin;;;CMPO
-172;Tracked Stakeholder Participation;DOMAIN;;;;SPMO
-173;Version;DOMAIN;mode;;;CMPO
-174;Change Reviewer;DOMAIN;role;;;CMPO
-175;Measurable Entity;CORE;;;;COM
-176;Test Hardware Resource;DOMAIN;role;;;ROoST
-177;Requirements Reviewer;DOMAIN;role;;;RDPO
-178;Measurement Analysis Procedure;DOMAIN;;;;RSMO
-179;Task;DOMAIN;;;;GORO
-180;Measurable Entity Type;CORE;;;;COM
-181;Stakeholder Intention;DOMAIN;;;;RSRO
-182;Data Definitions;DOMAIN;subkind;;;DPO
-183;Project Plan;DOMAIN;subkind;;;SPMO
-184;CR Being Solved;DOMAIN;phase;;;CMPO
-185;Stakeholder Main Participation;CORE;event;;;SPO
-186;Machine;DOMAIN;;;;RRO
-187;Organization;CORE;category;;;EO
-188;Performed Process;CORE;event;;;SPO
-189;Measured Value Description;DOMAIN;;;;RSMO
-190;Test Case Expected Result;DOMAIN;subkind;;;ROoST
-191;Team Member;CORE;role;;;EO
-192;Requirements Document;DOMAIN;subkind;;;RSRO
-193;Code;CORE;subkind;;;SwAO
-194;Software Product;CORE;kind;;;SwAO
-195;Software Architecture;DOMAIN;subkind;;;DPO
-196;Organizational Role;CORE;2ndOT;;;EO
-197;Model;CORE;kind;;;SwAO
-198;Configuration Auditing;DOMAIN;event;;;CMPO
-199;Software Item;CORE;kind;;;SwAO
-200;Hardgoal;DOMAIN;;;;GORO
-201;Person Stakeholder;CORE;role;;;SPO
-202;Software Measurement Execution;DOMAIN;event;;;RSMO
-203;Hardware Resource Participation;CORE;event;;;SPO
-204;Design Documentation;DOMAIN;event;;;DPO
-205;Method;CORE;kind;;;SPO
-206;Configuration Items Identification;DOMAIN;event;;;CMPO
-207;Configuration Audit Report;DOMAIN;subkind;;;CMPO
-208;Artifact Creation;CORE;event;;;SPO
-209;Communicated CR;DOMAIN;phase;;;CMPO
-210;Test Case Design;DOMAIN;event;;;ROoST
-211;Ordinal Scale;CORE;;;;COM
-212;Noncompliance Identification;DOMAIN;event;;;QAPO
-213;Performed Project Process;CORE;event;;;SPO
-214;Software Measurement Planning;DOMAIN;event;;;RSMO
-215;Derived Measure;CORE;;;;COM
-216;Work Package;DOMAIN;;;;SPMO
-217;Corrective Action Register;DOMAIN;subkind;;;SPMO
-218;Loaded Compliance Program Copy;DOMAIN;;;;RRO
-219;Design Document;DOMAIN;subkind;;;DPO
-220;Measurement Procedure;CORE;;;;COM
-221;Measurement Analyst;DOMAIN;role;;;RSMO
-222;Analysis Result Description;DOMAIN;;;;RSMO
-223;Test Management Tool;DOMAIN;subkind;;;ROoST
-224;Formal Organization Member Type;CORE;2ndOT;;;EO
-225;Standalone Formal Organization;CORE;;;;EO
-226;Data Collection;DOMAIN;event;;;RSMO
-227;Software Goal;DOMAIN;;;;RSMO
-228;Test Planning;DOMAIN;event;;;ROoST
-229;Deliverable Product;DOMAIN;subkind;;;CMPO
-230;Tracked Activity;DOMAIN;;;;SPMO
-231;Software Function;DOMAIN;;;;RRO
-232;Target Program;DOMAIN;;;;RRO
-233;Simple Organizational Unit;CORE;;;;EO
-234;Measurement Planning;CORE;;;;COM
-235;Item;DOMAIN;mixin;;;CMPO
-236;Stakeholder Belief;DOMAIN;;;;RSRO
-237;Configuration Management Plan;DOMAIN;subkind;;;CMPO
-238;Specific Standard Process;CORE;2ndOT;;;SPO
-239;Cost Estimated Process;DOMAIN;;;;SPMO
-240;Data Analysis;DOMAIN;event;;;RSMO
-241;Human Resource Role;CORE;2ndOT;;;EO
-242;Atomic Task;DOMAIN;;;;GORO
-243;Quality Assurance Planning;DOMAIN;event;;;QAPO
-244;Simple Intended Activity;CORE;mode;;;SPO
-245;Standard Process;CORE;2ndOT;;;SPO
-246;Source Code;CORE;subkind;;;SwAO
-247;Test Case Designer;DOMAIN;role;;;ROoST
-248;Software Measurement Process;DOMAIN;;;;RSMO
-249;Assumption;DOMAIN;;;;RSRO
-250;Code Review;DOMAIN;event;;;CPO
-251;Team Stakeholder;CORE;role;;;SPO
-252;Rational Scale;CORE;;;;COM
-253;Coding;DOMAIN;event;;;CPO
-254;Release Management and Delivery;DOMAIN;event;;;CMPO
-255;Change Request Evaluator;DOMAIN;role;;;CMPO
-256;Analysis Result;CORE;;;;COM
-257;Selection of Measurement Goals for Analysis;DOMAIN;event;;;RSMO
-258;Complex Organizational Unit;CORE;;;;EO
-259;Compliance Program Copy Execution;DOMAIN;;;;RRO
-260;Change Request (CR);DOMAIN;subkind;;;CMPO
-261;Software Measurement Goal;DOMAIN;;;;RSMO
-262;Organizational Team;CORE;subkind;;;EO
-263;RRT Program;DOMAIN;;;;RRO
-264;Team Membership;CORE;relator;;;EO
-265;CASE Tool;CORE;subkind;;;SwAO
-266;Job Plan;CORE;kind;;;EO
-267;Simple Standalone Formal Organization;CORE;;;;EO
-268;Periodicity;DOMAIN;;;;RSMO
-269;User Interface Specification;DOMAIN;subkind;;;DPO
-270;Multi Formal Organization;CORE;;;;EO
-271;Stakeholder Allocation;CORE;relator;;;SPO
-272;Test Result;DOMAIN;subkind;;;ROoST
-273;Data High-level Design;DOMAIN;event;;;DPO
-274;Requirements Documentation;DOMAIN;event;;;RDPO
-275;Controller;DOMAIN;;;;RRO
-276;Selection of Data for Analysis;DOMAIN;event;;;RSMO
-277;Requirements Verification and Validation;DOMAIN;event;;;RDPO
-278;Artifact Type;CORE;2ndOT;;;SwAO
-279;Code Review Report;DOMAIN;subkind;;;CPO
-280;Target Execution State;DOMAIN;;;;RRO
-281;Basic Measurement Procedure;CORE;;;;COM
-282;Integration Testing;DOMAIN;event;;;ROoST
-283;White-box Testing Technique;DOMAIN;subkind;;;ROoST
-284;Evaluated Process;DOMAIN;role;;;QAPO
-285;Resource;CORE;rolemixin;;;SPO
-286;Evaluated CR;DOMAIN;phase;;;CMPO
-287;Measurement Executor;DOMAIN;role;;;RSMO
-288;Operational Definition of Measure Establishment;DOMAIN;event;;;RSMO
-289;Procedure Participation;CORE;event;;;SPO
-290;Noncompliance Register;DOMAIN;subkind;;;QAPO
-291;General Project Process;CORE;;;;SPO
-292;Configuration Management Process;DOMAIN;event;;;CMPO
-293;Specific Project Process;CORE;;;;SPO
-294;Program;CORE;subkind;;;SwAO
-295;Simple Standard Activity;CORE;2ndOT;;;SPO
-296;Component Interface Design;DOMAIN;event;;;DPO
-297;Coding Process;DOMAIN;event;;;CPO
-298;Detailed Design;DOMAIN;event;;;DPO
-299;Code To Be Tested;DOMAIN;role;;;ROoST
-300;Measurement Goals Establishment;DOMAIN;event;;;RSMO
-301;Estimated Stakeholder Allocation;DOMAIN;;;;SPMO
-302;Standard Process Definition Document;CORE;kind;;;SPO
-303;Reviewed CR;DOMAIN;phase;;;CMPO
-304;Noncompliance Resolution;DOMAIN;event;;;QAPO
-305;OU Assignment;CORE;relator;;;EO
-306;Measurement Planning Start;DOMAIN;event;;;RSMO
-307;Code Documentation;DOMAIN;event;;;CPO
-308;Mutation Testing Technique;DOMAIN;subkind;;;ROoST
-309;Architectural Component;DOMAIN;subkind;;;DPO
-310;Baseline Establishment;DOMAIN;event;;;CMPO
-311;Change Accomplishment;DOMAIN;event;;;CMPO
-312;Simple Artifact;CORE;category;;;SwAO
-313;Interface High-level Design;DOMAIN;event;;;DPO
-314;Measurement Result Reporting;DOMAIN;event;;;RSMO
-315;Measurement Goal;CORE;;;;COM
-316;Configuration Management System Establishment;DOMAIN;event;;;CMPO
-317;Duration Estimated Activity;DOMAIN;;;;SPMO
-318;Testing Technique Type;DOMAIN;2ndOT;;;ROoST
-319;Observable State;DOMAIN;;;;RRO
-320;Information Need Description;DOMAIN;subkind;;;RSMO
-321;Requirements Agreement;DOMAIN;subkind;;;RDPO
-322;Deliverable;DOMAIN;mode;;;SPMO
-323;Measure  Description;DOMAIN;subkind;;;RSMO
-324;Hardware Resource;CORE;role;;;SPO
-325;Artifact Usage;CORE;event;;;SPO
-326;Composite Method Activity;CORE;2ndOT;;;SPO
-327;General Standard Process;CORE;2ndOT;;;SPO
-328;Allocation Unit;CORE;role;;;EO
-329;Performed Activity;CORE;event;;;SPO
-330;Measurement Context;DOMAIN;;;;RSMO
-331;Hardware Equipment;CORE;kind;;;SPO
-332;Change Implementer;DOMAIN;role;;;CMPO
-333;Requirements Engineer;DOMAIN;role;;;RSRO
-334;Cost Estimated Activity;DOMAIN;;;;SPMO
-335;Performed Specific Process;CORE;event;;;SPO
-336;Designer;DOMAIN;role;;;DPO
-337;Non-Functional Requirement;DOMAIN;mode;;;RSRO
-338;Formal Organization Type;CORE;2ndOT;;;EO
-339;Measurable Software-Related Entity Type;DOMAIN;;;;RSMO
-340;Composite Artifact;CORE;category;;;SwAO
-341;Incident Management Tool;DOMAIN;subkind;;;ROoST
-342;Intended Process;CORE;mode;;;SPO
-343;Test Plan;DOMAIN;subkind;;;ROoST
-344;Model-based Testing Technique;DOMAIN;subkind;;;ROoST
-345;Duration Estimated Process;DOMAIN;;;;SPMO
-346;Test Driver;DOMAIN;subkind;;;ROoST
-347;Closed CR;DOMAIN;phase;;;CMPO
-348;Test Coding;DOMAIN;event;;;ROoST
-349;Software Resource;CORE;role;;;SPO
-350;Evaluation Report;DOMAIN;subkind;;;QAPO
-351;Measures Identification;DOMAIN;event;;;RSMO
-352;Method Activity;CORE;2ndOT;;;SPO
-353;Requirement Artifact;DOMAIN;subkind;;;RSRO
-354;Intended Activity;CORE;mode;;;SPO
-355;Program Specification;CORE;subkind;;;SwAO
-356;Simple Goal;CORE;;;;COM
-357;Test Execution;DOMAIN;event;;;ROoST
-358;Software Organization;CORE;;;;SPO
-359;Test Analysis Report;DOMAIN;subkind;;;ROoST
-360;Information Need;CORE;;;;COM
-361;Design Process;DOMAIN;event;;;DPO
-362;Requirement;DOMAIN;mode;;;RSRO
-363;Scope Estimated Activity;DOMAIN;;;;SPMO
-364;Scheduled Process;CORE;mode;;;SPO
-365;Conceptual Model;DOMAIN;subkind;;;RDPO
-366;Business Role;CORE;2ndOT;;;EO
-367;Formal Organization;CORE;kind;;;EO
-368;Artifact Evaluation;DOMAIN;event;;;QAPO
-369;Change Implementation;DOMAIN;event;;;CMPO
-370;OU Member;CORE;role;;;EO
-371;Quality Assurance Process;DOMAIN;event;;;QAPO
-372;Configuration Management Planning;DOMAIN;event;;;CMPO
-373;Test Software Resource;DOMAIN;role;;;ROoST
-374;Measurement Formula;CORE;;;;COM
-375;Performed Organizational Process;CORE;event;;;SPO
-376;Test Case;DOMAIN;subkind;;;ROoST
-377;Specific Intended Process;CORE;mode;;;SPO
-378;Artifact CI;DOMAIN;role;;;CMPO
-379;Software Measurement Analysis;DOMAIN;event;;;RSMO
+001;Ordinal Scale;CORE;;;;COM
+002;Measurement Context;DOMAIN;;;;RSMO
+003;Configuration Items Identification;DOMAIN;event;;;CMPO
+004;Indirectly Measurable Element;CORE;;;;COM
+005;Measurable Entity;CORE;;;;COM
+006;Indicator;CORE;;;;COM
+007;Derived Measure;CORE;;;;COM
+008;Change Control;DOMAIN;event;;;CMPO
+009;Program;DOMAIN;subkind;;;SwO
+010;Testing Level;DOMAIN;2ndOT;;;ROoST
+011;Checkout;DOMAIN;event;;;CMPO
+012;Item;DOMAIN;mixin;;;CMPO
+013;Document Template;CORE;kind;;;SPO
+014;Quality Assurance Planning;DOMAIN;event;;;QAPO
+015;Design Documentation;DOMAIN;event;;;DPO
+016;Test Coding;DOMAIN;event;;;ROoST
+017;Adaptation Program;DOMAIN;;;;RRO
+018;Cost Estimated Process;DOMAIN;;;;SPMO
+019;Test Driver;DOMAIN;subkind;;;ROoST
+020;Runtime Requirement Artifact;DOMAIN;;;;RRO
+021;Communicated CR;DOMAIN;phase;;;CMPO
+022;Testing Environment;DOMAIN;collective;;;ROoST
+023;Configuration Audit Report;DOMAIN;subkind;;;CMPO
+024;Method;CORE;kind;;;SPO
+025;Configuration Manager;DOMAIN;role;;;CMPO
+026;Measurement Goals Establishment;DOMAIN;event;;;RSMO
+027;Testing Process;DOMAIN;event;;;ROoST
+028;Software Project;CORE;subkind;;;SPO
+029;Artifact Evaluation;DOMAIN;event;;;QAPO
+030;Performed Specific Process;CORE;event;;;SPO
+031;Simple Method Activity;CORE;2ndOT;;;SPO
+032;Document Type;CORE;2ndOT;;;SPO
+033;Hardware Resource;CORE;role;;;SPO
+034;Requirements Engineer;DOMAIN;role;;;RSRO
+035;Planning Item Documentation;DOMAIN;event;;;RSMO
+036;RRT Program Copy Execution;DOMAIN;;;;RRO
+037;Loaded Adaptation Program Copy;DOMAIN;;;;RRO
+038;Software Measurement Execution;DOMAIN;event;;;RSMO
+039;Selection of Measurement Goals for Analysis;DOMAIN;event;;;RSMO
+040;Coding;DOMAIN;event;;;CPO
+041;Configuration Management System Establishment;DOMAIN;event;;;CMPO
+042;Project;CORE;kind;;;EO
+043;Software Architecture;DOMAIN;subkind;;;DPO
+044;Data Collection;DOMAIN;event;;;RSMO
+045;Measurement Analysis Procedure;DOMAIN;;;;RSMO
+046;Programming Language;DOMAIN;kind;;;SwO
+047;Team;CORE;kind;;;EO
+048;Software Measurement Goal Description;DOMAIN;subkind;;;RSMO
+049;Project Team;CORE;subkind;;;EO
+050;Data Analysis;DOMAIN;event;;;RSMO
+051;Formal Organization;CORE;kind;;;EO
+052;Black-box Testing Technique;DOMAIN;subkind;;;ROoST
+053;Information Needs Identification;DOMAIN;event;;;RSMO
+054;Process Evaluation;DOMAIN;event;;;QAPO
+055;Tracked Activity;DOMAIN;;;;SPMO
+056;Noncompliance Responsible;DOMAIN;role;;;QAPO
+057;Stakeholder Allocation;CORE;relator;;;SPO
+058;Human Resource;CORE;role;;;EO
+059;Design Evaluation Document;DOMAIN;subkind;;;DPO
+060;Task;DOMAIN;;;;GORO
+061;Artifact Creation;CORE;event;;;SPO
+062;Product Quality Requirement;DOMAIN;mode;;;RSRO
+063;Noncompliance Identification;DOMAIN;event;;;QAPO
+064;Architectural Component;DOMAIN;subkind;;;DPO
+065;Program Copy Execution;DOMAIN;;;;RRO
+066;Requirements Reviewer;DOMAIN;role;;;RDPO
+067;Change Request Evaluator;DOMAIN;role;;;CMPO
+068;Evaluated Artifact;DOMAIN;role;;;QAPO
+069;Estimated Process;DOMAIN;;;;SPMO
+070;Component Design;DOMAIN;event;;;DPO
+071;Artifact Type;CORE;2ndOT;;;SPO
+072;Operational Definition of Measure;DOMAIN;subkind;;;RSMO
+073;Compliance Program;DOMAIN;;;;RRO
+074;Cost Estimated Activity;DOMAIN;;;;SPMO
+075;Requirements Documentation;DOMAIN;event;;;RDPO
+076;Team Membership;CORE;relator;;;EO
+077;Derivative Measurement Procedure;CORE;;;;COM
+078;Composite Artifact;CORE;category;;;SPO
+079;Measurement Plan Item Selection;DOMAIN;event;;;RSMO
+080;Change Requesting;DOMAIN;event;;;CMPO
+081;Composite Intended Activity;CORE;mode;;;SPO
+082;Software Measurement Planning Item;DOMAIN;subkind;;;RSMO
+083;Performed Organizational Process;CORE;event;;;SPO
+084;Selection of Data for Analysis;DOMAIN;event;;;RSMO
+085;Source Code;DOMAIN;subkind;;;SwO
+086;Loaded Compliance Program Copy;DOMAIN;;;;RRO
+087;Change Implementer;DOMAIN;role;;;CMPO
+088;Software Measurement Plan;DOMAIN;subkind;;;RSMO
+089;Measurement Analysis;CORE;;;;COM
+090;White-box Testing Technique;DOMAIN;subkind;;;ROoST
+091;Hardgoal;DOMAIN;;;;GORO
+092;Test Manager;DOMAIN;role;;;ROoST
+093;Quality Assurance Process;DOMAIN;event;;;QAPO
+094;Designer;DOMAIN;role;;;DPO
+095;Artifact;CORE;category;;;SPO
+096;Simple Intended Activity;CORE;mode;;;SPO
+097;Adherence Evaluation;DOMAIN;event;;;QAPO
+098;Specific Intended Process;CORE;mode;;;SPO
+099;Software System;DOMAIN;subkind;;;SwO
+100;Performed Project Process;CORE;event;;;SPO
+101;Organization Stakeholder;CORE;role;;;SPO
+102;Project Process;CORE;mode;;;SPO
+103;Information Need;CORE;;;;COM
+104;Mutation Testing Technique;DOMAIN;subkind;;;ROoST
+105;System Testing;DOMAIN;event;;;ROoST
+106;Operational Definition of Measure Establishment;DOMAIN;event;;;RSMO
+107;Activity Universal;CORE;2ndOT;;;SPO
+108;Test Case Design;DOMAIN;event;;;ROoST
+109;Tester;DOMAIN;role;;;ROoST
+110;Duration Estimated Activity;DOMAIN;;;;SPMO
+111;Simple Organizational Unit;CORE;;;;EO
+112;Technique;CORE;kind;;;SPO
+113;Simple Artifact;CORE;category;;;SPO
+114;Test Case Expected Result;DOMAIN;subkind;;;ROoST
+115;Software Measurement Process;DOMAIN;;;;RSMO
+116;Release Management and Delivery;DOMAIN;event;;;CMPO
+117;System Specification;DOMAIN;subkind;;;SwO
+118;Target Program Copy Execution;DOMAIN;;;;RRO
+119;Functional Requirement;DOMAIN;mode;;;RSRO
+120;Performed Project Activity;CORE;;;;SPO
+121;Non-Functional Requirement;DOMAIN;mode;;;RSRO
+122;Test Management Tool;DOMAIN;subkind;;;ROoST
+123;Software Resource Participation;CORE;event;;;SPO
+124;Noncompliance Closing;DOMAIN;event;;;QAPO
+125;OU Assignment;CORE;relator;;;EO
+126;Work Package;DOMAIN;;;;SPMO
+127;Measurable Element;CORE;;;;COM
+128;Measurement Manager;DOMAIN;role;;;RSMO
+129;Simple Standard Activity;CORE;2ndOT;;;SPO
+130;Stakeholder Intention;DOMAIN;;;;RSRO
+131;Software Goal;DOMAIN;;;;RSMO
+132;Incident Management Tool;DOMAIN;subkind;;;ROoST
+133;Composite Method Activity;CORE;2ndOT;;;SPO
+134;Change Request Closing;DOMAIN;event;;;CMPO
+135;Test Case Actual Result;DOMAIN;subkind;;;ROoST
+136;Software Measurement Analysis;DOMAIN;event;;;RSMO
+137;Organizational Intended Process;CORE;mode;;;SPO
+138;Artifact CI;DOMAIN;role;;;CMPO
+139;Requirements Agreement;DOMAIN;subkind;;;RDPO
+140;Basic Measurement Procedure;CORE;;;;COM
+141;Change Review;DOMAIN;event;;;CMPO
+142;Hardware Equipment;CORE;kind;;;SPO
+143;Performed Activity;CORE;event;;;SPO
+144;Corrective Action Register;DOMAIN;subkind;;;SPMO
+145;Deliverable Product;DOMAIN;subkind;;;CMPO
+146;Design Process;DOMAIN;event;;;DPO
+147;RRT Program;DOMAIN;;;;RRO
+148;Simple Standalone Formal Organization;CORE;;;;EO
+149;Request Evaluation;DOMAIN;event;;;CMPO
+150;Change Implementation;DOMAIN;event;;;CMPO
+151;Measure Unit;CORE;;;;COM
+152;Model-based Testing Technique;DOMAIN;subkind;;;ROoST
+153;Loaded Target Program Copy;DOMAIN;;;;RRO
+154;Requirement;DOMAIN;mode;;;RSRO
+155;Complex Organizational Unit;CORE;;;;EO
+156;Hardware Resource Participation;CORE;event;;;SPO
+157;Complex Standalone Formal Organization;CORE;;;;EO
+158;Design Evaluation;DOMAIN;event;;;DPO
+159;Stakeholder Participation;CORE;event;;;SPO
+160;Team Member;CORE;role;;;EO
+161;Test Input;DOMAIN;subkind;;;ROoST
+162;Test Software Resource;DOMAIN;role;;;ROoST
+163;Requirements Negotiation and Prioritization;DOMAIN;event;;;RDPO
+164;Stakeholder;CORE;rolemixin;;;SPO
+165;Measurement Planning Start;DOMAIN;event;;;RSMO
+166;Standard Activity;CORE;2ndOT;;;SPO
+167;Atomic Task;DOMAIN;;;;GORO
+168;Duration Estimated Process;DOMAIN;;;;SPMO
+169;Practical Result;DOMAIN;;;;SPMO
+170;Conceptual Modeling;DOMAIN;event;;;RDPO
+171;Software Organization;CORE;;;;SPO
+172;Measurement Goal;CORE;;;;COM
+173;Interval Scale;CORE;;;;COM
+174;Resource;CORE;rolemixin;;;SPO
+175;Software Architect;DOMAIN;role;;;DPO
+176;Code;DOMAIN;subkind;;;SwO
+177;Formal Organization Employer;CORE;role;;;EO
+178;Organizational Role;CORE;2ndOT;;;EO
+179;General Intended Process;CORE;mode;;;SPO
+180;Baseline;DOMAIN;subkind;;;CMPO
+181;Code Reviewer;DOMAIN;role;;;CPO
+182;Software Project Measurement Plan;DOMAIN;;;;RSMO
+183;Scale;CORE;;;;COM
+184;Employment Type;CORE;2ndOT;;;EO
+185;Evaluation Report;DOMAIN;subkind;;;QAPO
+186;Code Review Report;DOMAIN;subkind;;;CPO
+187;Configuration Management Process;DOMAIN;event;;;CMPO
+188;Software Resource;CORE;role;;;SPO
+189;Estimated Stakeholder Allocation;DOMAIN;;;;SPMO
+190;Testing Technique Type;DOMAIN;2ndOT;;;ROoST
+191;Allocation Unit;CORE;role;;;EO
+192;Architecture Development;DOMAIN;event;;;DPO
+193;Configuration Auditor;DOMAIN;role;;;CMPO
+194;General Project Process;CORE;;;;SPO
+195;Test Suite;DOMAIN;subkind;;;ROoST
+196;Requirements Evaluation Document;DOMAIN;subkind;;;RDPO
+197;Quality Characteristic;DOMAIN;2ndOT;;;RSRO
+198;Information Need Description;DOMAIN;subkind;;;RSMO
+199;Change Reviewer;DOMAIN;role;;;CMPO
+200;Configuration Auditing;DOMAIN;event;;;CMPO
+201;Code Development;DOMAIN;event;;;CPO
+202;Test Result Analysis;DOMAIN;event;;;ROoST
+203;Evaluated Process;DOMAIN;role;;;QAPO
+204;Job Plan;CORE;kind;;;EO
+205;Measurement Planning;CORE;;;;COM
+206;CR Being Solved;DOMAIN;phase;;;CMPO
+207;Test Execution;DOMAIN;event;;;ROoST
+208;Design Time Requirement Artifact;DOMAIN;;;;RRO
+209;Software Function Universal;DOMAIN;2ndOT;;;RSRO
+210;Level-based Testing;DOMAIN;event;;;ROoST
+211;Evaluated CR;DOMAIN;phase;;;CMPO
+212;Baseline Establishment;DOMAIN;event;;;CMPO
+213;Noncompliance Control;DOMAIN;event;;;QAPO
+214;Requirements Elicitation;DOMAIN;event;;;RDPO
+215;Code To Be Tested;DOMAIN;role;;;ROoST
+216;Design Document;DOMAIN;subkind;;;DPO
+217;Quality Assurance Plan;DOMAIN;subkind;;;QAPO
+218;Organizational Standard Process;CORE;2ndOT;;;SPO
+219;Integration Testing;DOMAIN;event;;;ROoST
+220;Code Review;DOMAIN;event;;;CPO
+221;Tracked Process;DOMAIN;;;;SPMO
+222;Business Goal;DOMAIN;;;;RSMO
+223;Requirements Development Process;DOMAIN;event;;;RDPO
+224;Software Product Type;CORE;2ndOT;;;SPO
+225;Artifact Change;CORE;event;;;SPO
+226;Analysis Result;CORE;;;;COM
+227;Compliance Program Copy Execution;DOMAIN;;;;RRO
+228;Noncompliance Resolution;DOMAIN;event;;;QAPO
+229;Organizational Unit;CORE;kind;;;EO
+230;Measures Identification;DOMAIN;event;;;RSMO
+231;Software Measurement Goal;DOMAIN;;;;RSMO
+232;Requirements Verification and Validation;DOMAIN;event;;;RDPO
+233;Change Accomplishment;DOMAIN;event;;;CMPO
+234;Test Analysis Report;DOMAIN;subkind;;;ROoST
+235;Person Stakeholder;CORE;role;;;SPO
+236;Information Item;CORE;kind;;;SPO
+237;Stakeholder Main Participation;CORE;event;;;SPO
+238;Measurable Software-Related Entity Type;DOMAIN;;;;RSMO
+239;Target Program;DOMAIN;;;;RRO
+240;Code Documentation;DOMAIN;event;;;CPO
+241;Change Requester;DOMAIN;role;;;CMPO
+242;Project Manager;DOMAIN;role;;;SPMO
+243;Performed Process;CORE;event;;;SPO
+244;Measurement Formula;CORE;;;;COM
+245;Softgoal;DOMAIN;;;;GORO
+246;Software Product;CORE;kind;;;SPO
+247;Software-Related Measure;DOMAIN;;;;RSMO
+248;Base Measure;CORE;;;;COM
+249;Performed General Process;CORE;event;;;SPO
+250;Rational Scale;CORE;;;;COM
+251;Adaptation Program Copy Execution;DOMAIN;;;;RRO
+252;Standard Process;CORE;2ndOT;;;SPO
+253;Target Execution State;DOMAIN;;;;RRO
+254;Measurement Executor;DOMAIN;role;;;RSMO
+255;Formal Organization Member Type;CORE;2ndOT;;;EO
+256;Scope Estimated Activity;DOMAIN;;;;SPMO
+257;Change Runtime Requirement Artifact;DOMAIN;;;;RRO
+258;Monitoring Runtime Requirement Artifact;DOMAIN;;;;RRO
+259;Configuration Management Planning;DOMAIN;event;;;CMPO
+260;Performed Simple Activity;CORE;event;;;SPO
+261;OU Member;CORE;role;;;EO
+262;Standalone Formal Organization;CORE;;;;EO
+263;Project Plan;DOMAIN;subkind;;;SPMO
+264;Intended Activity;CORE;mode;;;SPO
+265;Program Specification;DOMAIN;subkind;;;SwO
+266;Stakeholder Belief;DOMAIN;;;;RSRO
+267;Measured Value;CORE;;;;COM
+268;Scheduled Process;CORE;mode;;;SPO
+269;Controller;DOMAIN;;;;RRO
+270;Loaded Program Copy;DOMAIN;;;;RRO
+271;Test Plan;DOMAIN;subkind;;;ROoST
+272;Observable State;DOMAIN;;;;RRO
+273;Software Measurement Planning;DOMAIN;event;;;RSMO
+274;Measurement Result Reporting;DOMAIN;event;;;RSMO
+275;Component Interface Design;DOMAIN;event;;;DPO
+276;Measurement Procedure;CORE;;;;COM
+277;Measured Value Description;DOMAIN;;;;RSMO
+278;Coding Process;DOMAIN;event;;;CPO
+279;Method Workflow;CORE;2ndOT;;;SPO
+280;Employment;CORE;relator;;;EO
+281;Testing Technique;DOMAIN;subkind;;;ROoST
+282;Organizational Team;CORE;subkind;;;EO
+283;Specific Project Process;CORE;;;;SPO
+284;Measurement Analyst;DOMAIN;role;;;RSMO
+285;Selection of Measures for Analysis;DOMAIN;event;;;RSMO
+286;Data High-level Design;DOMAIN;event;;;DPO
+287;Simple Goal;CORE;;;;COM
+288;Complex Goal;CORE;;;;COM
+289;Model;CORE;kind;;;SPO
+290;Artifact Copy;DOMAIN;category;;;CMPO
+291;Measurement Planning Item;CORE;;;;COM
+292;Formal Organization Type;CORE;2ndOT;;;EO
+293;Checkin;DOMAIN;event;;;CMPO
+294;Analysis Result Description;DOMAIN;;;;RSMO
+295;Test Hardware Resource;DOMAIN;role;;;ROoST
+296;Stub;DOMAIN;subkind;;;ROoST
+297;Software Function;DOMAIN;;;;RRO
+298;Team Purpose;CORE;mode;;;EO
+299;Project Standard Process;CORE;2ndOT;;;SPO
+300;Quality Auditor;DOMAIN;role;;;QAPO
+301;Data Model;DOMAIN;subkind;;;DPO
+302;Business Role;CORE;2ndOT;;;EO
+303;Detailed Design;DOMAIN;event;;;DPO
+304;Requirements Document;DOMAIN;subkind;;;RSRO
+305;Composite Standard Activity;CORE;2ndOT;;;SPO
+306;Configuration Item (CI);DOMAIN;rolemixin;;;CMPO
+307;Test Case Design Input;DOMAIN;rolemixin;;;ROoST
+308;OU Assignment Type;CORE;2ndOT;;;EO
+309;Directly Measurable Element;CORE;;;;COM
+310;Noncompliance Register;DOMAIN;subkind;;;QAPO
+311;Artifact Participation;CORE;event;;;SPO
+312;Method Activity;CORE;2ndOT;;;SPO
+313;Document;CORE;kind;;;SPO
+314;Scale Value;CORE;;;;COM
+315;Loaded RRT Program Copy;DOMAIN;;;;RRO
+316;Unit Testing;DOMAIN;event;;;ROoST
+317;Project Activity;CORE;;;;SPO
+318;Procedure Participation;CORE;event;;;SPO
+319;Process Universal;CORE;2ndOT;;;SPO
+320;Hardware Type;CORE;2ndOT;;;SPO
+321;Test Planning;DOMAIN;event;;;ROoST
+322;Reviewed CR;DOMAIN;phase;;;CMPO
+323;Closed CR;DOMAIN;phase;;;CMPO
+324;Team Stakeholder;CORE;role;;;SPO
+325;Multi Formal Organization;CORE;;;;EO
+326;Periodicity;DOMAIN;;;;RSMO
+327;Human Resource Role;CORE;2ndOT;;;EO
+328;Scheduled Activity;CORE;mode;;;SPO
+329;Estimated Activity;DOMAIN;;;;SPMO
+330;Architectural Connector;DOMAIN;subkind;;;DPO
+331;Standard Process Definition Document;CORE;kind;;;SPO
+332;Complex Task;DOMAIN;;;;GORO
+333;Machine;DOMAIN;;;;RRO
+334;Requirements Stakeholder;DOMAIN;role;;;RSRO
+335;Test Result;DOMAIN;subkind;;;ROoST
+336;Measurement;CORE;;;;COM
+337;Data Design;DOMAIN;event;;;DPO
+338;Incident Report;DOMAIN;subkind;;;ROoST
+339;General Standard Process;CORE;2ndOT;;;SPO
+340;Configuration Management Plan;DOMAIN;subkind;;;CMPO
+341;Measurable Entity Type;CORE;;;;COM
+342;Test Case Designer;DOMAIN;role;;;ROoST
+343;Selection of Entity for Measurement;DOMAIN;event;;;RSMO
+344;Machine Code;DOMAIN;subkind;;;SwO
+345;Version;DOMAIN;mode;;;CMPO
+346;Measure Description;DOMAIN;subkind;;;RSMO
+347;Interface High-level Design;DOMAIN;event;;;DPO
+348;Programmer;DOMAIN;role;;;CPO
+349;User Interface Design;DOMAIN;event;;;DPO
+350;Test Incident Report;DOMAIN;subkind;;;ROoST
+351;Tracked Stakeholder Participation;DOMAIN;;;;SPMO
+352;Change Request (CR);DOMAIN;subkind;;;CMPO
+353;Intended Process;CORE;mode;;;SPO
+354;Test Case;DOMAIN;subkind;;;ROoST
+355;Organization;CORE;category;;;EO
+356;Test Code;DOMAIN;subkind;;;ROoST
+357;CASE Tool;CORE;subkind;;;SPO
+358;Organizational Unit Type;CORE;2ndOT;;;EO
+359;Measure;CORE;;;;COM
+360;Requirement Artifact;DOMAIN;subkind;;;RSRO
+361;Architectural Design;DOMAIN;event;;;DPO
+362;Requirement;DOMAIN;;;;GORO
+363;Procedure;CORE;category;;;SPO
+364;Interface Specification;DOMAIN;subkind;;;DPO
+365;Solved CR;DOMAIN;phase;;;CMPO
+366;Assumption;DOMAIN;;;;RSRO
+367;Performed Composite Activity;CORE;event;;;SPO
+368;Conceptual Model;DOMAIN;subkind;;;RDPO
+369;Hybrid Standard Process;CORE;2ndOT;;;SPO
+370;Artifact Usage;CORE;event;;;SPO
+371;Specific Standard Process;CORE;2ndOT;;;SPO
+372;Architectural Element;DOMAIN;subkind;;;DPO
+373;Measurable Software-Related Entity;DOMAIN;;;;RSMO
+374;Software Item;CORE;kind;;;SPO
+375;Deliverable;DOMAIN;mode;;;SPMO
+376;Test Script;DOMAIN;subkind;;;ROoST
+377;User Interface Specification;DOMAIN;subkind;;;DPO
+378;Data Definitions;DOMAIN;subkind;;;DPO
+379;Project Stakeholder;CORE;rolemixin;;;SPO

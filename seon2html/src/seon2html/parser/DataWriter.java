@@ -12,7 +12,7 @@ import seon2html.model.Package;
 import seon2html.model.Relation;
 
 /* Responsible for generate the CSV files to plot a Network Graph of concepts and relations. */
-public class GraphDataWriter {
+public class DataWriter {
 	private static final boolean	FOUND			= false;
 	private static final boolean	CORE			= true;
 	private static final boolean	DOMAIN			= true;
@@ -23,11 +23,14 @@ public class GraphDataWriter {
 	/* Generates all the HTML Seon Pages. */
 	public void generateDataFiles(Package seon) {
 
-		// Generating the nodes file
+		// Generating the nodes file for the graph
 		generateNodesFile();
 
-		// Generating the edges file
+		// Generating the edges file for the graph
 		generateEdgesFile();
+
+		// Generating the info file for review
+		generateInfoFile();
 	}
 
 	/* Reads the SEON Concepts and generates the Nodes CSV File. */
@@ -53,7 +56,8 @@ public class GraphDataWriter {
 					String core = "";
 					String found = "";
 					String onto = concept.getMainOntology().getShortName();
-					//System.out.println(cid + ";" + name + ";" + layer + ";" + ster + ";" + core + ";" + found + ";" + onto);
+					// System.out.println(cid + ";" + name + ";" + layer + ";" + ster + ";" + core + ";" + found + ";" +
+					// onto);
 					writer.println(cid + ";" + name + ";" + layer + ";" + ster + ";" + core + ";" + found + ";" + onto);
 					concepts.add(concept);
 					id++;
@@ -94,7 +98,7 @@ public class GraphDataWriter {
 						cid = String.format("%03d", id);
 						sid = String.format("%03d", concepts.indexOf(source) + 1);
 						tid = String.format("%03d", concepts.indexOf(target) + 1);
-						//System.out.println(sid + ";" + tid + ";" + type + ";" + cid + ";" + reltype);
+						// System.out.println(sid + ";" + tid + ";" + type + ";" + cid + ";" + reltype);
 						writer.println(sid + ";" + tid + ";" + type + ";" + cid + ";" + reltype);
 						id++;
 					}
@@ -114,7 +118,7 @@ public class GraphDataWriter {
 							if (isIncluded(general)) {
 								cid = String.format("%03d", id);
 								tid = String.format("%03d", concepts.indexOf(general) + 1);
-								//System.out.println(sid + ";" + tid + ";" + type + ";" + cid + ";" + reltype);
+								// System.out.println(sid + ";" + tid + ";" + type + ";" + cid + ";" + reltype);
 								writer.println(sid + ";" + tid + ";" + type + ";" + cid + ";" + reltype);
 								id++;
 							}
@@ -125,6 +129,43 @@ public class GraphDataWriter {
 				System.out.println(count + " generalizations");
 			}
 
+			writer.close();
+		} catch (FileNotFoundException | UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+	}
+
+	/* Reads the SEON Concepts and generates the Info CSV File. */
+	private void generateInfoFile() {
+		System.out.print("\nGenerating the Info CSV File: ");
+		PrintWriter writer;
+		try {
+			// Creating the file
+			writer = new PrintWriter("./data/info.csv", "UTF-8");
+			// writer.println("Id;Label;Layer;Stereotype;CoreType;UFOType;Ontology");
+			writer.println("Layer;Ontology;Path;Concept;Stereotype;Generalizations;Definition;Example;Relations");
+
+			// Reaching the Concepts
+			List<Concept> allConcepts = Concept.getAllConcepts();
+
+			// Getting the concepts info
+			for (Concept concept : allConcepts) {
+				String layer = concept.getMainOntology().getLevel().name();
+				String onto = concept.getMainOntology().getShortName();
+				String path = concept.getOntology().getPath().replaceAll("/", ":").replaceAll(" Level:",":");
+				path = path.substring(0, path.length()-1);
+				String conc = concept.getName();
+				String ster = concept.getStereotype();
+				String def = concept.getDefinition().replaceAll("\n", " ").replaceAll(";", ",");
+				String example = (concept.getExample() == null ? "" : concept.getExample().replaceAll("\n", " ").replaceAll(";", ","));
+				int relations = concept.getRelations().size();
+				String gens = "";
+				for (Concept gen : concept.getGeneralizations()) {
+					gens += gen.getMainOntology().getName() + ":" + gen.getName() + "   ";
+				}
+				writer.println(layer + ";" + onto + ";" + path + ";" + conc + ";" + ster + ";" + gens + ";" + def + ";" + example + ";" + relations);
+			}
+			System.out.println(allConcepts.size() + " concepts");
 			writer.close();
 		} catch (FileNotFoundException | UnsupportedEncodingException e) {
 			e.printStackTrace();
