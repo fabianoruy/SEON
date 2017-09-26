@@ -44,7 +44,7 @@
 	<h2>3. Ontology Models</h2>
 	
 <h3><a name="UFO_MLT_section">3.1.  MLT</a></h3>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 <p>Figure 1 presents the conceptual model of the MLT subontology.</p>
 <p align="center"><IMG src="images/MLT.png" width="1210" class="map" usemap="#MLT"><MAP NAME="MLT">
 <area shape="rect" coords="1024,290,1177,416" href="UFO.html#UFO_Individual" title="">
@@ -53,10 +53,10 @@
 <area shape="rect" coords="238,290,391,416" href="UFO.html#UFO_3rdOT" title="">
 <area shape="rect" coords="576,124,627,154" href="UFO.html#UFO_Entity" title=""></MAP></p>
 <p align="center"><b>Figure 1. MLT conceptual model.</b></p>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 
 <h3><a name="UFO_UFO-A_section">3.2.  UFO-A</a></h3>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 <p>Figure 2 presents the conceptual model of the UFO-A subontology.</p>
 <p align="center"><IMG src="images/UFO-A.png" width="1269" class="map" usemap="#UFO-A"><MAP NAME="UFO-A">
 <area shape="rect" coords="938,200,1069,230" href="UFO.html#UFO_Concrete+Particular" title="">
@@ -96,13 +96,13 @@
 <area shape="rect" coords="768,302,883,332" href="UFO.html#UFO_Material+Relation" title="">
 <area shape="rect" coords="639,302,747,332" href="UFO.html#UFO_Formal+Relation" title=""></MAP></p>
 <p align="center"><b>Figure 2. UFO-A conceptual model.</b></p>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 
 <h4><a name="UFO_UFO-A+Qualities_section">3.2.1.  UFO-A Qualities</a></h4>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 
 <h3><a name="UFO_UFO-B_section">3.3.  UFO-B</a></h3>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 <p>Figure 3 presents the conceptual model of the UFO-B subontology.</p>
 <p align="center"><IMG src="images/UFO-B.png" width="698" class="map" usemap="#UFO-B"><MAP NAME="UFO-B">
 <area shape="rect" coords="369,221,420,251" href="UFO.html#UFO_Event" title="">
@@ -117,10 +117,10 @@
 <area shape="rect" coords="329,124,460,154" href="UFO.html#UFO_Concrete+Particular" title="">
 <area shape="rect" coords="31,215,138,245" href="UFO.html#UFO_Event+Universal" title=""></MAP></p>
 <p align="center"><b>Figure 3. UFO-B conceptual model.</b></p>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 
 <h3><a name="UFO_UFO-C_section">3.4.  UFO-C</a></h3>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 <p>Figure 4 presents the conceptual model of the Mental Moments subontology.</p>
 <p align="center"><IMG src="images/Mental Moments.png" width="671" class="map" usemap="#Mental Moments"><MAP NAME="Mental Moments">
 <area shape="rect" coords="10,21,63,51" href="UFO.html#UFO_Agent" title="">
@@ -132,7 +132,7 @@
 <area shape="rect" coords="569,21,661,51" href="UFO.html#UFO_Proposition" title="">
 <area shape="rect" coords="591,253,636,283" href="UFO.html#UFO_Goal" title=""></MAP></p>
 <p align="center"><b>Figure 4. Mental Moments conceptual model.</b></p>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 
 
 	<h2>4. Concepts Definition</h2>
@@ -911,9 +911,9 @@ Specializes UFO::Entity<br/><br/>
 Relations:<br/>
 <code>1stOT (Universal) (1..*) iof (1..*) 2ndOT<br/>
 1stOT (Universal) proper specializes (0..*) 1stOT (Universal)<br/>
-Individual (1..*) iof (1..*) 1stOT (Universal)<br/>
 2ndOT (1..1) is powertype of (0..1) 1stOT (Universal)<br/>
 2ndOT (0..*) categorizes (0..*) 1stOT (Universal)<br/>
+Individual (1..*) iof (1..*) 1stOT (Universal)<br/>
 </code><br/>
 <br/><br/>
 
@@ -1000,10 +1000,10 @@ Specializes UFO::Event Universal<br/><br/>
 <br/>
 <br/>
 Relations:<br/>
-<code>Complex Action Universal (0..*) <>-- (2..*) Action Universal (Plan)<br/>
-Action instance of Action Universal (Plan)<br/>
+<code>Action instance of Action Universal (Plan)<br/>
 Closed Commitment Universal based on (1..1) Action Universal (Plan)<br/>
 Closed Commitment (0..*) based on (1..1) Action Universal (Plan)<br/>
+Complex Action Universal (0..*) <>-- (2..*) Action Universal (Plan)<br/>
 </code><br/>
 <br/><br/>
 
@@ -1016,9 +1016,9 @@ Specializes UFO::Substantial<br/><br/>
 <br/>
 <br/>
 Relations:<br/>
-<code>Social Commitment (0..*) external dependence (1..*) Agent<br/>
-Intentional Moment (1..*) inheres in (1..1) Agent<br/>
+<code>Intentional Moment (1..*) inheres in (1..1) Agent<br/>
 Agent Participation (0..*) participation of (1..1) Agent<br/>
+Social Commitment (0..*) external dependence (1..*) Agent<br/>
 </code><br/>
 <br/><br/>
 
@@ -1259,9 +1259,9 @@ Specializes UFO::Action Universal (Plan)<br/><br/>
 <br/>
 Relations:<br/>
 <code>Complex Action Universal (0..*) <>-- (2..*) Action Universal (Plan)<br/>
+Complex Closed Commitment based on Complex Action Universal<br/>
 Complex Action instance of (0..1) Complex Action Universal<br/>
 Plan Description (0..1) describes (1..*) Complex Action Universal<br/>
-Complex Closed Commitment based on Complex Action Universal<br/>
 </code><br/>
 <br/><br/>
 
@@ -2428,12 +2428,12 @@ Specializes <br/><br/>
 <br/>
 <br/>
 Relations:<br/>
-<code>Stakeholder Allocation (1..*) framed by (1..1) Time Interval<br/>
+<code>Scheduled Activity (0..*) refers to (1..1) Time Interval<br/>
 Event (0..*) framed by (1..1) Time Interval<br/>
 Scheduled Process (0..*) refers to (1..1) Time Interval<br/>
-Scheduled Activity (0..*) refers to (1..1) Time Interval<br/>
-Appointment Goal (0..*) refers to (1..1) Time Interval<br/>
+Stakeholder Allocation (1..*) framed by (1..1) Time Interval<br/>
 Appointment (0..*) /refers to (1..1) Time Interval<br/>
+Appointment Goal (0..*) refers to (1..1) Time Interval<br/>
 </code><br/>
 <br/><br/>
 
@@ -2487,7 +2487,7 @@ Specializes UFO::Social Agent<br/><br/>
 	<hr>
 	<br/>
 	<small><b>Unified Foundational Ontology (UFO)</b></small><br/>
-	<small>Sun Sep 24 18:30:41 BRT 2017</small>
+	<small>Mon Sep 25 21:34:15 BRT 2017</small>
 	<br/>
 	<br/>
 	<br/>

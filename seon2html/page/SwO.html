@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<META charset="ISO-8859-1">
+<TITLE>Software Ontology (SwO)</TITLE>
+<LINK rel="stylesheet" type="text/css" href="style.css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-81695120-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="maphilight.js"></script>
+<script type="text/javascript">
+	$(function() {
+        $('.map').maphilight();
+    });
+</script>
+
+</HEAD>
+<BODY>
+	<h3 align="center">SEON: Networked Ontology Specification</h3>
+	<h1 align="center">Software Ontology (SwO)</h1>
+
+	<h2>1. Ontology Description</h2>
+	<p align="justify"></p>
+
+	<h2>2. Related Ontologies</h2>
+	<p>Networked ontologies used by SwO:</p>
+	<table border="1" style="width: 100%" cellpadding="6">
+		<tbody>
+			<tr style="background-color: #D8D8D8">
+				<td style="width: 20%"><b>Ontology</b></td>
+				<td style="width: 66%"><b>Relation</b></td>
+				<td style="width: 14%; text-align: center"><b>Integration Level</b></td>
+			</tr>
+			<tr><td><a href="SPO.html">SPO - Software Process Ontology</a></td><td></td><td style="text-align:center"></td></tr>
+
+		</tbody>
+	</table>
+
+	<h2>3. Ontology Models</h2>
+	<p>Figure 1 presents the conceptual model of the SwO.</p>
+<p align="center"><IMG src="images/SwO.png" width="940" class="map" usemap="#SwO"><MAP NAME="SwO">
+<area shape="rect" coords="384,300,454,330" href="SwO.html#SwO_Program" title="Software Item which aims at producing a certain result through execution on a computer, in a particular way, given by the Program Specification. A Program is constituted by code, but it is not identical to code. Code can be changed without altering the identity of its program, which is anchored to the program's essential property: its intended specification (Program Specification).">
+<area shape="rect" coords="43,300,161,330" href="SwO.html#SwO_Software+System" title="Software Item that aims at satisfying a specification (System Specification), concerning a desired change in a data structure inside a computer, abstracting away from the behavior.">
+<area shape="rect" coords="581,399,674,429" href="SwO.html#SwO_Source+Code" title="A well-formed sequence of computer instructions and data definitions expressed in a programming language, in a form suitable for input to an assembler, compiler,
+or other translator.">
+<area shape="rect" coords="777,399,877,429" href="SwO.html#SwO_Machine+Code" title="Computer instructions and data definitions expressed in a form output by an assembler, compiler, or other translator, which can be recognized by the processing unit of a computer machine.">
+<area shape="rect" coords="345,423,492,453" href="SwO.html#SwO_Program+Specification" title="A document that describes the purpose (structure and functions) of a program in sufficient detail to permit coding and to facilitate maintenance.">
+<area shape="rect" coords="33,423,173,453" href="SwO.html#SwO_System+Specification" title="">
+<area shape="rect" coords="711,300,760,330" href="SwO.html#SwO_Code" title="Software Item representing a set of computer instructions and data definitions expressed in a programming language or in a form output by an assembler, compiler, or other translator (SEVOCAB).">
+<area shape="rect" coords="852,181,930,211" href="SPO.html#SPO_Document" title="Any written or pictorial, uniquely identified, information related to the software development, usually presented in a predefined format.">
+<area shape="rect" coords="428,181,528,211" href="SPO.html#SPO_Software+Item" title="Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result.">
+<area shape="rect" coords="43,181,163,211" href="SPO.html#SPO_Software+Product" title="One or more computer programs together with any accompanying auxiliary items, such as documentation, delivered under a single name, ready for use.">
+<area shape="rect" coords="182,111,286,141" href="SPO.html#SPO_Simple+Artifact" title="Artifact that is not decomposed into other Artifacts.">
+<area shape="rect" coords="268,181,322,211" href="SPO.html#SPO_Model" title="A representation (abstraction) of a process or system from a particular perspective.">
+<area shape="rect" coords="633,181,746,211" href="SPO.html#SPO_Information+Item" title="Relevant information for human use, produced or used by Performed Activity.">
+<area shape="rect" coords="447,20,509,50" href="SPO.html#SPO_Artifact" title="Object intentionally made to serve a given purpose in the context of a software Project or Organization.">
+<area shape="rect" coords="30,111,156,141" href="SPO.html#SPO_Composite+Artifact" title="Artifact composed of other Artifacts.">
+<area shape="rect" coords="720,453,877,483" href="SwO.html#SwO_Programming+Language" title="A language used to express computer programs."></MAP></p>
+<p align="center"><b>Figure 1. SwO conceptual model.</b></p>
+<p align="justify">The Software Ontology (SwO) captures that software products have  a complex artifactual nature, being constituted of software artifacts of different nature, including software  systems, programs and code. </p>
+
+
+	<h2>4. Concepts Definition</h2>
+	<p align="justify">The following table shows the definitions for SwO concepts.
+<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->
+	</p>
+	<table style="width: 100%" border="1" cellpadding="6">
+		<tbody>
+			<tr style="background-color: #D8D8D8">
+				<td style="width: 25%"><b>Concept</b></td>
+				<td style="width: 75%"><b>Definition</b></td>
+			</tr>
+			<tr>
+<td><a name="SwO_Code"><b>Code</b></a>
+<a href=#SwO_Code_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Software Item representing a set of computer instructions and data definitions expressed in a programming language or in a form output by an assembler, compiler, or other translator (SEVOCAB).
+<br/></td>
+</tr>
+<tr>
+<td><a name="SwO_Machine+Code"><b>Machine Code</b></a>
+<a href=#SwO_Machine+Code_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Computer instructions and data definitions expressed in a form output by an assembler, compiler, or other translator, which can be recognized by the processing unit of a computer machine.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SwO_Program"><b>Program</b></a>
+<a href=#SwO_Program_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Software Item which aims at producing a certain result through execution on a computer, in a particular way, given by the Program Specification. A Program is constituted by code, but it is not identical to code. Code can be changed without altering the identity of its program, which is anchored to the program's essential property: its intended specification (Program Specification).
+<br/></td>
+</tr>
+<tr>
+<td><a name="SwO_Program+Specification"><b>Program Specification</b></a>
+<a href=#SwO_Program+Specification_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A document that describes the purpose (structure and functions) of a program in sufficient detail to permit coding and to facilitate maintenance.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SwO_Programming+Language"><b>Programming Language</b></a>
+<a href=#SwO_Programming+Language_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A language used to express computer programs.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SwO_Software+System"><b>Software System</b></a>
+<a href=#SwO_Software+System_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Software Item that aims at satisfying a specification (System Specification), concerning a desired change in a data structure inside a computer, abstracting away from the behavior.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SwO_Source+Code"><b>Source Code</b></a>
+<a href=#SwO_Source+Code_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A well-formed sequence of computer instructions and data definitions expressed in a programming language, in a form suitable for input to an assembler, compiler,<br/>or other translator.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SwO_System+Specification"><b>System Specification</b></a>
+<a href=#SwO_System+Specification_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+
+		</tbody>
+	</table>
+	<br/>
+	<h2>Detailed Concepts</h2>
+	<a name="SwO_Code_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Code<strong></td></tr>
+</table><br/>
+<b>SwO::Code</b><br/>
+Specializes SPO::Software Item<br/><br/>
+Software Item representing a set of computer instructions and data definitions expressed in a programming language or in a form output by an assembler, compiler, or other translator (SEVOCAB).<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Code (0..*) implements (0..1) Program Specification<br/>
+Code Documentation changes Code<br/>
+Code Development creates Code<br/>
+Code Review uses Code<br/>
+Program (0..1) constituted of (1..*) Code<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SwO_Machine+Code_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Machine Code<strong></td></tr>
+</table><br/>
+<b>SwO::Machine Code</b><br/>
+Specializes SwO::Code<br/><br/>
+Computer instructions and data definitions expressed in a form output by an assembler, compiler, or other translator, which can be recognized by the processing unit of a computer machine.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Machine Code (0..*) generated from (1..1) Source Code<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SwO_Program_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Program<strong></td></tr>
+</table><br/>
+<b>SwO::Program</b><br/>
+Specializes SPO::Software Item<br/><br/>
+Software Item which aims at producing a certain result through execution on a computer, in a particular way, given by the Program Specification. A Program is constituted by code, but it is not identical to code. Code can be changed without altering the identity of its program, which is anchored to the program's essential property: its intended specification (Program Specification).<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Program (0..1) constituted of (1..*) Code<br/>
+Program (0..1) intends to implement (1..1) Program Specification<br/>
+Program (0..*) implements (1..*) Software Function Universal<br/>
+Program (0..*) \intends to satisfy (1..*) Requirement Artifact<br/>
+Loaded Program Copy (0..*) materialization of (1..1) Program<br/>
+Software System (0..*) constituted of (1..*) Program<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SwO_Program+Specification_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Program Specification<strong></td></tr>
+</table><br/>
+<b>SwO::Program Specification</b><br/>
+Specializes SPO::Document<br/><br/>
+A document that describes the purpose (structure and functions) of a program in sufficient detail to permit coding and to facilitate maintenance.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Program Specification (0..*) intends to satisfy (0..*) System Specification<br/>
+Program Specification (0..*) intends to satisfy (1..*) Requirement Artifact<br/>
+Program Specification (0..*) describes (1..*) Software Function Universal<br/>
+Code (0..*) implements (0..1) Program Specification<br/>
+Program (0..1) intends to implement (1..1) Program Specification<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SwO_Programming+Language_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltkind&gt&gt</code><br/>
+<strong>Programming Language<strong></td></tr>
+</table><br/>
+<b>SwO::Programming Language</b><br/>
+Specializes UFO::Social Object<br/><br/>
+A language used to express computer programs.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Source Code (0..*) written in (1..*) Programming Language<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SwO_Software+System_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Software System<strong></td></tr>
+</table><br/>
+<b>SwO::Software System</b><br/>
+Specializes SPO::Software Item<br/><br/>
+Software Item that aims at satisfying a specification (System Specification), concerning a desired change in a data structure inside a computer, abstracting away from the behavior.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Software System (0..*) constituted of (1..*) Program<br/>
+Software System (0..1) intends to implement (1..1) System Specification<br/>
+Software Product (0..1) constituted of (1..*) Software System<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SwO_Source+Code_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Source Code<strong></td></tr>
+</table><br/>
+<b>SwO::Source Code</b><br/>
+Specializes SwO::Code<br/><br/>
+A well-formed sequence of computer instructions and data definitions expressed in a programming language, in a form suitable for input to an assembler, compiler,<br/>or other translator.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Source Code (0..*) written in (1..*) Programming Language<br/>
+Machine Code (0..*) generated from (1..1) Source Code<br/>
+</code><br/>
+<br/><br/>
+
+<a name="SwO_System+Specification_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>System Specification<strong></td></tr>
+</table><br/>
+<b>SwO::System Specification</b><br/>
+Specializes SPO::Document<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Program Specification (0..*) intends to satisfy (0..*) System Specification<br/>
+Software System (0..1) intends to implement (1..1) System Specification<br/>
+</code><br/>
+<br/><br/>
+
+
+	<hr>
+	<br/>
+	<small><b>Software Ontology (SwO)</b></small><br/>
+	<small>Mon Sep 25 21:34:14 BRT 2017</small>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+</BODY>
+</HTML>

@@ -7371,7 +7371,7 @@
     <!-- dev.nemo.inf.ufes.br/seon/SEON.owl#RSRO::Assumption -->
 
     <owl:Class rdf:about="dev.nemo.inf.ufes.br/seon/SEON.owl#RSRO::Assumption">
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Assumptions describe states-of-aaffairs in the environment of interest that the Stakeholders believe to be true, i.e., they are the propositional content of Stakeholders&apos; Beliefs. They express the belief that a specific situation exists in the environment.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Assumptions describe states-of-affairs in the environment of interest that the Stakeholders believe to be true, i.e., they are the propositional content of Stakeholders&apos; Beliefs. They express the belief that a specific situation exists in the environment.</rdfs:comment>
         <ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSRO</ontology>
     </owl:Class>
     

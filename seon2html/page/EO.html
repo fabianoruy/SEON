@@ -76,10 +76,10 @@ A human Physical Agent.">
 <area shape="rect" coords="30,120,122,150" href="EO.html#EO_Organization" title="Same as UFO::Organization.
 A Social Agent involving people and other agents and facilities with an arrangement of responsibilities, authorities and relationships."></MAP></p>
 <p align="center"><b>Figure 2. Job Plan and Roles conceptual model.</b></p>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 
 <h3><a name="EO_Organizational+Structure_section">3.1.  Organizational Structure</a></h3>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 <p>Figure 3 presents the conceptual model of the Organizational Structure subontology.</p>
 <p align="center"><IMG src="images/Organizational Structure.png" width="1206" class="map" usemap="#Organizational Structure"><MAP NAME="Organizational Structure">
 <area shape="rect" coords="503,126,617,164" href="EO.html#EO_Organization" title="Same as UFO::Organization.
@@ -96,10 +96,10 @@ A Social Agent involving people and other agents and facilities with an arrangem
 <area shape="rect" coords="856,411,1025,441" href="EO.html#EO_Simple+Organizational+Unit" title="">
 <area shape="rect" coords="735,347,915,377" href="EO.html#EO_Complex+Organizational+Unit" title=""></MAP></p>
 <p align="center"><b>Figure 3. Organizational Structure conceptual model.</b></p>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 
 <h3><a name="EO_Human+Resource+Management_section">3.2.  Human Resource Management</a></h3>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 <p>Figure 4 presents the conceptual model of the HR Management subontology.</p>
 <p align="center"><IMG src="images/HR Management.png" width="1295" class="map" usemap="#HR Management"><MAP NAME="HR Management">
 <area shape="rect" coords="494,78,598,116" href="UFO.html#UFO_Physical+Agent" title="">
@@ -123,7 +123,7 @@ A Social Agent involving people and other agents and facilities with an arrangem
 <area shape="rect" coords="1050,524,1226,562" href="EO.html#EO_Organizational+Unit+Type" title="">
 <area shape="rect" coords="436,524,588,562" href="EO.html#EO_OU+Assignment+Type" title=""></MAP></p>
 <p align="center"><b>Figure 4. HR Management conceptual model.</b></p>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 
 
 	<h2>4. Concepts Definition</h2>
@@ -398,8 +398,8 @@ Relations:<br/>
 <code>Employment (0..*) made by (1..1) Formal Organization Employer  &lt&ltmediation&gt&gt<br/>
 Employment (1..*) employs (1..1) Human Resource  &lt&ltmediation&gt&gt<br/>
 Employment (0..*) to act as (1..1) Organizational Role  &lt&ltmediation&gt&gt<br/>
-OU Assignment (0..*) refers to (1..1) Employment<br/>
 Employment Type (1..1)  (0..*) Employment  &lt&ltinstantiation&gt&gt<br/>
+OU Assignment (0..*) refers to (1..1) Employment<br/>
 </code><br/>
 <br/><br/>
 
@@ -580,9 +580,9 @@ Specializes EO::Human Resource<br/><br/>
 <br/>
 <br/>
 Relations:<br/>
-<code>OU Assignment (1..*) assigns (1..1) OU Member  &lt&ltmediation&gt&gt<br/>
+<code>Business Role (1..*)  (0..*) OU Member  &lt&ltinstantiation&gt&gt<br/>
 Allocation Unit <>-- OU Member  &lt&ltmemberOf&gt&gt<br/>
-Business Role (1..*)  (0..*) OU Member  &lt&ltinstantiation&gt&gt<br/>
+OU Assignment (1..*) assigns (1..1) OU Member  &lt&ltmediation&gt&gt<br/>
 </code><br/>
 <br/><br/>
 
@@ -597,10 +597,10 @@ Ex.:<i> A company, an enterprise, a software house.</i><br/>
 <br/>
 Relations:<br/>
 <code>Organization (1..1) has (0..*) Organizational Team<br/>
+Standard Process Definition Document (0..*) recognized by (1..*) Organization<br/>
+Job Plan (0..*) recognized by (1..1) Organization<br/>
 Performed Organizational Process (0..*) performed in (1..1) Organization<br/>
 Organizational Intended Process (0..*) defined for (1..1) Organization<br/>
-Job Plan (0..*) recognized by (1..1) Organization<br/>
-Standard Process Definition Document (0..*) recognized by (1..*) Organization<br/>
 </code><br/>
 <br/><br/>
 
@@ -614,13 +614,13 @@ A Social Role, recognized by the Organization, assigned to Agents when they are 
 Ex.:<i> System Analyst, Designer, Programmer, Client Organization.</i><br/>
 <br/>
 Relations:<br/>
-<code>Stakeholder Allocation (0..*) to act as (1..1) Organizational Role  &lt&ltmaterial&gt&gt<br/>
-Operational Definition of Measure (0..*) indicates (0..1) Organizational Role<br/>
-Team Membership (0..*) is to play (1..1) Organizational Role  &lt&ltmediation&gt&gt<br/>
-Stakeholder Participation (0..*) acts as (1..1) Organizational Role<br/>
-Standard Activity (0..*) is to be performed by (0..*) Organizational Role<br/>
+<code>Standard Activity (0..*) is to be performed by (0..*) Organizational Role<br/>
 Job Plan (1..1) defines (1..*) Organizational Role<br/>
 Intended Activity (0..*) is to be performed by (0..*) Organizational Role<br/>
+Team Membership (0..*) is to play (1..1) Organizational Role  &lt&ltmediation&gt&gt<br/>
+Stakeholder Allocation (0..*) to act as (1..1) Organizational Role  &lt&ltmaterial&gt&gt<br/>
+Stakeholder Participation (0..*) acts as (1..1) Organizational Role<br/>
+Operational Definition of Measure (0..*) indicates (0..1) Organizational Role<br/>
 Employment (0..*) to act as (1..1) Organizational Role  &lt&ltmediation&gt&gt<br/>
 </code><br/>
 <br/><br/>
@@ -649,8 +649,8 @@ Specializes EO::Organization<br/><br/>
 <br/>
 <br/>
 Relations:<br/>
-<code>Complex Standalone Formal Organization (1..1) <>-- (2..*) Organizational Unit  &lt&ltmaterial&gt&gt<br/>
-Organizational Unit Type (1..*)  (0..*) Organizational Unit  &lt&ltinstantiation&gt&gt<br/>
+<code>Organizational Unit Type (1..*)  (0..*) Organizational Unit  &lt&ltinstantiation&gt&gt<br/>
+Complex Standalone Formal Organization (1..1) <>-- (2..*) Organizational Unit  &lt&ltmaterial&gt&gt<br/>
 </code><br/>
 <br/><br/>
 
@@ -695,7 +695,7 @@ Specializes EO::Team, SPO::Team Stakeholder<br/><br/>
 <br/>
 <br/>
 Relations:<br/>
-<code><span style='color:red' title='Relation to a lower level (EO-->QAPO)'>Project Team participates in Adherence Evaluation</span><br/>
+<code>Project Team participates in Adherence Evaluation<br/>
 Project (1..1) has (0..*) Project Team<br/>
 </code><br/>
 <br/><br/>
@@ -777,8 +777,8 @@ Specializes UFO::Social Relator<br/><br/>
 <br/>
 Relations:<br/>
 <code>Team Membership (0..*) is to play (1..1) Organizational Role  &lt&ltmediation&gt&gt<br/>
-Team (1..1) done for (1..*) Team Membership  &lt&ltmediation&gt&gt<br/>
 Team Member (1..1) allocates (1..*) Team Membership  &lt&ltmediation&gt&gt<br/>
+Team (1..1) done for (1..*) Team Membership  &lt&ltmediation&gt&gt<br/>
 </code><br/>
 <br/><br/>
 
@@ -800,7 +800,7 @@ Relations:<br/>
 	<hr>
 	<br/>
 	<small><b>Enterprise Ontology (external) (EO)</b></small><br/>
-	<small>Sun Sep 24 18:30:40 BRT 2017</small>
+	<small>Mon Sep 25 21:34:13 BRT 2017</small>
 	<br/>
 	<br/>
 	<br/>

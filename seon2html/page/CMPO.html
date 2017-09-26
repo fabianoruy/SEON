@@ -360,9 +360,9 @@ Ex.:<i> Documents, Models, Software Products under Configuration Management.</i>
 <br/>
 Relations:<br/>
 <code>Change Review uses Artifact CI<br/>
+Change Request (CR) (0..*) addresses (1..*) Artifact CI<br/>
 Checkin changes Artifact CI<br/>
 Checkin creates Artifact CI<br/>
-Change Request (CR) (0..*) addresses (1..*) Artifact CI<br/>
 </code><br/>
 <br/><br/>
 
@@ -378,8 +378,8 @@ Copy of an Artifact that is under version control.<br/>
 Relations:<br/>
 <code>Artifact Copy (0..*) based on (1..1) Version<br/>
 Checkout creates Artifact Copy<br/>
-Change Implementation changes Artifact Copy<br/>
 Checkin uses Artifact Copy<br/>
+Change Implementation changes Artifact Copy<br/>
 </code><br/>
 <br/><br/>
 
@@ -394,9 +394,9 @@ Ex.:<i> Release 01 Baseline, established for the first delivered product for the
 <br/>
 Relations:<br/>
 <code>Baseline (0..*) packages (1..*) Version<br/>
-Release Management and Delivery uses Baseline<br/>
-Configuration Auditing uses Baseline<br/>
 Baseline Establishment creates Baseline<br/>
+Configuration Auditing uses Baseline<br/>
+Release Management and Delivery uses Baseline<br/>
 </code><br/>
 <br/><br/>
 
@@ -411,10 +411,10 @@ Activity for establishing a Baseline embracing a planned set of Configuration It
 <br/>
 Relations:<br/>
 <code>Baseline Establishment creates Baseline<br/>
-Configuration Manager is in charge of Baseline Establishment<br/>
-Release Management and Delivery depends on Baseline Establishment<br/>
-Configuration Management Process <>-- Baseline Establishment<br/>
 Configuration Auditing depends on Baseline Establishment<br/>
+Release Management and Delivery depends on Baseline Establishment<br/>
+Configuration Manager is in charge of Baseline Establishment<br/>
+Configuration Management Process <>-- Baseline Establishment<br/>
 </code><br/>
 <br/><br/>
 
@@ -446,9 +446,9 @@ Change Accomplishment <>-- Checkin<br/>
 Change Accomplishment depends on Request Evaluation<br/>
 Change Accomplishment uses Evaluated CR<br/>
 Change Accomplishment changes Solved CR<br/>
+Change Review depends on Change Accomplishment<br/>
 Change Control <>-- Change Accomplishment<br/>
 Change Implementer is in charge of Change Accomplishment<br/>
-Change Review depends on Change Accomplishment<br/>
 </code><br/>
 <br/><br/>
 
@@ -574,8 +574,8 @@ Activity for requesting the modification of a set of Configuration Items.<br/>
 Relations:<br/>
 <code>Change Requesting creates Communicated CR<br/>
 Change Control <>-- Change Requesting<br/>
-Request Evaluation depends on Change Requesting<br/>
 Change Requester is in charge of Change Requesting<br/>
+Request Evaluation depends on Change Requesting<br/>
 </code><br/>
 <br/><br/>
 
@@ -593,8 +593,8 @@ Relations:<br/>
 Change Review changes Reviewed CR<br/>
 Change Review uses Artifact CI<br/>
 Change Control <>-- Change Review<br/>
-Change Request Closing depends on Change Review<br/>
 Change Reviewer is in charge of Change Review<br/>
+Change Request Closing depends on Change Review<br/>
 </code><br/>
 <br/><br/>
 
@@ -641,8 +641,8 @@ Activity for accessing defined versions of Configuration Items from a version co
 <br/>
 Relations:<br/>
 <code>Checkout creates Artifact Copy<br/>
-Change Implementation depends on Checkout<br/>
 Change Accomplishment <>-- Checkout<br/>
+Change Implementation depends on Checkout<br/>
 </code><br/>
 <br/><br/>
 
@@ -778,9 +778,9 @@ Relations:<br/>
 <code>Configuration Management Planning creates Configuration Management Plan<br/>
 Configuration Management Planning <>-- Configuration Management System Establishment<br/>
 Configuration Management Planning <>-- Configuration Items Identification<br/>
-Change Control depends on Configuration Management Planning<br/>
 Configuration Manager is in charge of Configuration Management Planning<br/>
 Configuration Management Process <>-- Configuration Management Planning<br/>
+Change Control depends on Configuration Management Planning<br/>
 </code><br/>
 <br/><br/>
 
@@ -844,8 +844,8 @@ Software Product ready to be delivered to the client.<br/>
 <br/>
 <br/>
 Relations:<br/>
-<code>Release Management and Delivery creates Deliverable Product<br/>
-Configuration Auditing uses Deliverable Product<br/>
+<code>Configuration Auditing uses Deliverable Product<br/>
+Release Management and Delivery creates Deliverable Product<br/>
 </code><br/>
 <br/><br/>
 
@@ -859,8 +859,8 @@ Change Request evaluated and set as authorized or rejected.<br/>
 <br/>
 <br/>
 Relations:<br/>
-<code>Request Evaluation changes Evaluated CR<br/>
-Change Accomplishment uses Evaluated CR<br/>
+<code>Change Accomplishment uses Evaluated CR<br/>
+Request Evaluation changes Evaluated CR<br/>
 </code><br/>
 <br/><br/>
 
@@ -907,8 +907,8 @@ Relations:<br/>
 <code>Request Evaluation changes Evaluated CR<br/>
 Request Evaluation depends on Change Requesting<br/>
 Change Control <>-- Request Evaluation<br/>
-Change Request Evaluator is in charge of Request Evaluation<br/>
 Change Accomplishment depends on Request Evaluation<br/>
+Change Request Evaluator is in charge of Request Evaluation<br/>
 </code><br/>
 <br/><br/>
 
@@ -950,8 +950,8 @@ Each identified release of a Configuration Item submitted to a version control r
 Ex.:<i> Project Plan of Project Alfa, version 01; Requirements Document of Project Alfa, version 03.</i><br/>
 <br/>
 Relations:<br/>
-<code>Baseline (0..*) packages (1..*) Version<br/>
-Artifact Copy (0..*) based on (1..1) Version<br/>
+<code>Artifact Copy (0..*) based on (1..1) Version<br/>
+Baseline (0..*) packages (1..*) Version<br/>
 Configuration Item (CI) (1..1) has (1..*) Version<br/>
 </code><br/>
 <br/><br/>
@@ -960,7 +960,7 @@ Configuration Item (CI) (1..1) has (1..*) Version<br/>
 	<hr>
 	<br/>
 	<small><b>Configuration Management Process Ontology (CMPO)</b></small><br/>
-	<small>Sun Sep 24 18:30:41 BRT 2017</small>
+	<small>Mon Sep 25 21:34:14 BRT 2017</small>
 	<br/>
 	<br/>
 	<br/>

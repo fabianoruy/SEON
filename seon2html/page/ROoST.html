@@ -51,10 +51,10 @@
 <area shape="rect" coords="339,10,551,80" href="ROoST.html#ROoST_Testing+Techniques_section" title="">
 <area shape="rect" coords="339,282,551,352" href="ROoST.html#ROoST_Testing+Stakeholders_section" title=""></MAP></p>
 <p align="center"><b>Figure 1. ROoST Modularization.</b></p>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 
 <h3><a name="ROoST_Testing+Artifacts_section">3.1.  Testing Artifacts</a></h3>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 <p>Figure 2 presents the conceptual model of the Testing Artifacts subontology.</p>
 <p align="center"><IMG src="images/Testing Artifacts.png" width="1257" class="map" usemap="#Testing Artifacts"><MAP NAME="Testing Artifacts">
 <area shape="rect" coords="1121,581,1247,619" href="ROoST.html#ROoST_Code+To+Be+Tested" title="Portion of Code (software module) to be tested by a Test Case.">
@@ -81,7 +81,7 @@
 <p align="justify">Testing activities handle with several artifacts, which can present different nature and composition. Among the documents produced by testing activities the following detach: Test Plan, Test Suite, Test Case, Test Result and Test Analysis Report. Test Plans describe how the tests should be performed, providing a roadmap for the testing activities. Test Suites are collection of test cases that are intended to be used to test a software program to show that it has some specified set of behaviours. Test Cases are most important testing artifacts. They describe the input data, expected results, steps and general conditions for testing some situation regarding a Code To Be Tested. Some test cases are implemented by some Test Code, such as Test Driver, Stub or Test Script. Test Results documents the execution of a test case, and includes the Test Case Actual Result, and optionally a Test Incident Report. Finally, Test Analysis Reports documents the analyses done from a set of Test Results.</p>
 
 <h3><a name="ROoST_Testing+Stakeholders_section">3.2.  Testing Stakeholders</a></h3>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 <p>Figure 3 presents the conceptual model of the Testing Stakeholders subontology.</p>
 <p align="center"><IMG src="images/Testing Stakeholders.png" width="362" class="map" usemap="#Testing Stakeholders"><MAP NAME="Testing Stakeholders">
 <area shape="rect" coords="130,104,261,142" href="ROoST.html#ROoST_Test+Case+Designer" title="Stakeholder responsible for designing test cases and analysing test results.">
@@ -92,7 +92,7 @@
 <p align="justify">The main stakeholders involved in testing activities include Test Manager, Test Case Designer and Tester. These are roles that can be played by people, teams or even by organizations.</p>
 
 <h3><a name="ROoST_Testing+Techniques_section">3.3.  Testing Techniques</a></h3>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 <p>Figure 4 presents the conceptual model of the Testing Techniques subontology.</p>
 <p align="center"><IMG src="images/Testing Techniques.png" width="629" class="map" usemap="#Testing Techniques"><MAP NAME="Testing Techniques">
 <area shape="rect" coords="346,10,425,48" href="SPO.html#SPO_Technique" title="Procedure that provides heuristics to perform an activity (but in a less rigid and detailed way than a method, since it does not prescribe a set of activities).">
@@ -107,7 +107,7 @@
 <p align="justify">For designing test case, several testing techniques apply. These testing techniques are classified according to Testing Technique Types, such as black-box, white-box, model-based and mutation testing techniques. Some Testing Techniques Types applies only to certain testing levels. For instance, white-box testing typically applies to unit testing. </p>
 
 <h3><a name="ROoST_Testing+Process_section">3.4.  Testing Process</a></h3>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 <p>Figure 5 presents the conceptual model of the Testing Process and Activities subontology.</p>
 <p align="center"><IMG src="images/Testing Process and Activities.png" width="1295" class="map" usemap="#Testing Process and Activities"><MAP NAME="Testing Process and Activities">
 <area shape="rect" coords="325,501,422,531" href="ROoST.html#ROoST_Test+Planning" title="Composite Performed Activity for planning how the testing activities should be performed, and documenting it in a Test Plan.">
@@ -154,7 +154,7 @@
 <p align="justify">Testing Process is a Performed Process with the purpose of conducting dynamic software testing related activities, from planning to results analysis. It is composed of two main activities: Test Planning and Level-based Testing, performed respectively by the Test Manager and the Tester stakeholders. The former activity creates a Test Plan as a roadmap for conducting the following testing activities (such as testing design and execution). The Level-based Testing can be classified according to the testing level into: Unit Testing, Integration Testing and System Testing (among other). Level-based Testing activities are composed of the following testing activities: Test Case Design, Test Coding, Test Execution and Test Result Analysis. Thus, the testing activities can be performed according to the different testing levels (e.g. a Test Case Design focusing on Integration Testing). Concerning artifacts produced and used: (i) Test Case Design uses a Test Case Design Input (e.g. a requirements or a design document) for designing a Test Case containing the information for running the test; (ii) Test Coding creates Test Code implementing the defined Test Cases; (iii) Test Execution uses the Test Code for effectively testing the established Code To Be Tested, producing Test Results relative to the Test Cases; and, finally, (iv) Test Result Analysis produces a Test Analysis Report by examining the Test Results and determining whether the tests have been successful in identifying defects.</p>
 
 <h3><a name="ROoST_Testing+Environment_section">3.5.  Testing Environment</a></h3>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 <p>Figure 6 presents the conceptual model of the Testing Environment subontology.</p>
 <p align="center"><IMG src="images/Testing Environment.png" width="783" class="map" usemap="#Testing Environment"><MAP NAME="Testing Environment">
 <area shape="rect" coords="260,419,410,457" href="ROoST.html#ROoST_Testing+Environment" title="The set of resources (Hardware and Software Resources) that are used to perform testing activities of a Project.">
@@ -597,11 +597,11 @@ Relations:<br/>
 Test Case (1..*) <>-- (1..*) Test Case Expected Result<br/>
 Test Case (1..*) <>-- (1..*) Test Input<br/>
 Test Case (0..*) built applying (0..1) Testing Technique<br/>
-Test Coding (0..*) uses (1..*) Test Case<br/>
 Test Case Design (1..1) creates (1..*) Test Case<br/>
 Test Suite (0..*) <>-- (2..*) Test Case<br/>
-Test Execution (0..*) executes (1..*) Test Case<br/>
 Test Result (0..*) relative to (1..1) Test Case<br/>
+Test Coding (0..*) uses (1..*) Test Case<br/>
+Test Execution (0..*) executes (1..*) Test Case<br/>
 Test Code (0..*) implements (1..*) Test Case<br/>
 </code><br/>
 <br/><br/>
@@ -713,8 +713,8 @@ Simple Performed Activity for implementing the Test Cases as Code artifacts (Tes
 Relations:<br/>
 <code>Test Coding (1..1) creates (1..*) Test Code<br/>
 Test Coding (0..*) uses (1..*) Test Case<br/>
-Tester is in charge of Test Coding<br/>
 Level-based Testing <>-- Test Coding<br/>
+Tester is in charge of Test Coding<br/>
 </code><br/>
 <br/><br/>
 
@@ -744,8 +744,8 @@ Relations:<br/>
 Test Execution (0..*) uses (1..*) Test Code<br/>
 Test Execution (0..*) executes (1..*) Test Case<br/>
 Test Execution (0..*) uses (1..*) Code To Be Tested<br/>
-Tester is in charge of Test Execution<br/>
 Level-based Testing <>-- Test Execution<br/>
+Tester is in charge of Test Execution<br/>
 </code><br/>
 <br/><br/>
 
@@ -759,8 +759,8 @@ Hardware Resource that comprises the Testing Environment of a Project.<br/>
 <br/>
 <br/>
 Relations:<br/>
-<code>Testing Environment (1..*) <>-- (1..*) Test Hardware Resource<br/>
-Level-based Testing uses Test Hardware Resource<br/>
+<code>Level-based Testing uses Test Hardware Resource<br/>
+Testing Environment (1..*) <>-- (1..*) Test Hardware Resource<br/>
 </code><br/>
 <br/><br/>
 
@@ -846,9 +846,9 @@ Composite Performed Activity for planning how the testing activities should be p
 <br/>
 Relations:<br/>
 <code>Test Planning (1..*) creates (1..1) Test Plan<br/>
-Testing Process <>-- Test Planning<br/>
 Test Manager is in charge of Test Planning<br/>
 Test Case Designer participates in Test Planning<br/>
+Testing Process <>-- Test Planning<br/>
 </code><br/>
 <br/><br/>
 
@@ -865,9 +865,9 @@ Relations:<br/>
 <code>Test Result (0..*) relative to (1..1) Test Case<br/>
 Test Result (0..*) <>-- (0..*) Test Incident Report<br/>
 Test Result (1..*) <>-- (1..*) Test Case Actual Result<br/>
+Test Analysis Report (0..*) analyzes (1..*) Test Result<br/>
 Test Result Analysis (0..*) uses (1..*) Test Result<br/>
 Test Execution (1..1) creates (1..*) Test Result<br/>
-Test Analysis Report (0..*) analyzes (1..*) Test Result<br/>
 </code><br/>
 <br/><br/>
 
@@ -883,8 +883,8 @@ Simple Performed Activity for analyzing Test Results to determine whether or not
 Relations:<br/>
 <code>Test Result Analysis (0..*) uses (1..*) Test Result<br/>
 Test Result Analysis (1..*) creates (1..1) Test Analysis Report<br/>
-Test Manager participates in Test Result Analysis<br/>
 Level-based Testing <>-- Test Result Analysis<br/>
+Test Manager participates in Test Result Analysis<br/>
 Test Case Designer is in charge of Test Result Analysis<br/>
 </code><br/>
 <br/><br/>
@@ -911,8 +911,8 @@ Software Resource that comprises the Testing Environment of a Project.<br/>
 <br/>
 <br/>
 Relations:<br/>
-<code>Testing Environment (1..*) <>-- (1..*) Test Software Resource<br/>
-Level-based Testing uses Test Software Resource<br/>
+<code>Level-based Testing uses Test Software Resource<br/>
+Testing Environment (1..*) <>-- (1..*) Test Software Resource<br/>
 </code><br/>
 <br/><br/>
 
@@ -971,8 +971,8 @@ Levels in which testing activities are performed, such as Unit, Integration and 
 <br/>
 <br/>
 Relations:<br/>
-<code>Testing Technique Type (0..*) applies to (0..*) Testing Level<br/>
-Level-based Testing (0..*) instanceOf (1..1) Testing Level<br/>
+<code>Level-based Testing (0..*) instanceOf (1..1) Testing Level<br/>
+Testing Technique Type (0..*) applies to (0..*) Testing Level<br/>
 </code><br/>
 <br/><br/>
 
@@ -1050,7 +1050,7 @@ Testing Technique in which the tests are derived from an examination of the stru
 	<hr>
 	<br/>
 	<small><b>Reference Ontology on Software Testing (ROoST)</b></small><br/>
-	<small>Sun Sep 24 18:30:41 BRT 2017</small>
+	<small>Mon Sep 25 21:34:14 BRT 2017</small>
 	<br/>
 	<br/>
 	<br/>

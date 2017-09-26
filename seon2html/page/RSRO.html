@@ -72,7 +72,7 @@
 <area shape="rect" coords="861,113,987,143" href="UFO.html#UFO_Proposition" title="">
 <area shape="rect" coords="510,21,658,51" href="UFO.html#UFO_Mental+Moment" title="">
 <area shape="rect" coords="645,111,738,141" href="UFO.html#UFO_Belief" title="">
-<area shape="rect" coords="1141,691,1229,721" href="RSRO.html#RSRO_Assumption" title="Assumptions describe states-of-aaffairs in the environment of interest that the Stakeholders believe to be true, i.e., they are the propositional content of Stakeholders' Beliefs. They express the belief that a specific situation exists in the environment.">
+<area shape="rect" coords="1141,691,1229,721" href="RSRO.html#RSRO_Assumption" title="Assumptions describe states-of-affairs in the environment of interest that the Stakeholders believe to be true, i.e., they are the propositional content of Stakeholders' Beliefs. They express the belief that a specific situation exists in the environment.">
 <area shape="rect" coords="808,691,932,721" href="RSRO.html#RSRO_Stakeholder+Belief" title="The belief of Requirements Stakeholders regarding the environment of interest that are described in terms of Assumptions."></MAP></p>
 <p align="center"><b>Figure 1. RSRO conceptual model.</b></p>
 <p align="justify">The main RSRO concept is Requirement. It is a goal, representing the users' needs and expectations (Stakeholder Intention) to be achieved as result of the system development. Requirements can be functional or non-functional. Functional Requirements are the ones defining a function to be available from the target system (e.g. the need for providing a client register or controlling an order). They refer to Software Function Types, i.e. types of functions that the software must provide (e.g., providing a client register, controlling an order). Non-Functional Requirements define criteria or capabilities for the system (e.g. being easy to operate, being in conformance with a standard). A special type of NFR is Product Quality Requirement, which refers to Quality Characteristics that the product shall present in some degree, such as reliability, usability, efficiency.<br/>Requirements are documented by Requirement Artifacts, an Information Item that describes the Requirement in a proper way. The Requirements Document is composed of Requirement Artifacts and related information (such as models, information sources and varied descriptions). This Document is under the responsibility of the Requirements Engineer, a Stakeholder that conducts the requirements development activities. The Requirements Stakeholder represents the Stakeholders from whom the Requirements are collected and, consequently, are the ones interested in the Requirement Artifacts.</p>
@@ -91,7 +91,7 @@
 			<tr>
 <td><a name="RSRO_Assumption"><b>Assumption</b></a>
 <a href=#RSRO_Assumption_detail><IMG src="images/plus-4-16.ico"></a></td>
-<td>Assumptions describe states-of-aaffairs in the environment of interest that the Stakeholders believe to be true, i.e., they are the propositional content of Stakeholders' Beliefs. They express the belief that a specific situation exists in the environment.
+<td>Assumptions describe states-of-affairs in the environment of interest that the Stakeholders believe to be true, i.e., they are the propositional content of Stakeholders' Beliefs. They express the belief that a specific situation exists in the environment.
 <br/></td>
 </tr>
 <tr>
@@ -176,7 +176,7 @@
 </table><br/>
 <b>RSRO::Assumption</b><br/>
 Specializes UFO::Proposition<br/><br/>
-Assumptions describe states-of-aaffairs in the environment of interest that the Stakeholders believe to be true, i.e., they are the propositional content of Stakeholders' Beliefs. They express the belief that a specific situation exists in the environment.<br/>
+Assumptions describe states-of-affairs in the environment of interest that the Stakeholders believe to be true, i.e., they are the propositional content of Stakeholders' Beliefs. They express the belief that a specific situation exists in the environment.<br/>
 <br/>
 <br/>
 Relations:<br/>
@@ -266,14 +266,14 @@ Ex.:<i> "The system shall provide a product register.", "The system shall contro
 <br/>
 Relations:<br/>
 <code>Requirement Artifact (0..*) describes (1..1) Requirement<br/>
-Program (0..*) \intends to satisfy (1..*) Requirement Artifact<br/>
-Requirements Documentation uses Requirement Artifact<br/>
+Program Specification (0..*) intends to satisfy (1..*) Requirement Artifact<br/>
+Requirements Stakeholder (1..*) interested in (1..*) Requirement Artifact  &lt&ltmaterial&gt&gt<br/>
 Requirements Negotiation and Prioritization changes Requirement Artifact<br/>
 Conceptual Modeling uses Requirement Artifact<br/>
 Requirements Elicitation creates Requirement Artifact<br/>
-Program Specification (0..*) intends to satisfy (1..*) Requirement Artifact<br/>
 Requirements Document (0..1) <>-- (1..*) Requirement Artifact<br/>
-Requirements Stakeholder (1..*) interested in (1..*) Requirement Artifact  &lt&ltmaterial&gt&gt<br/>
+Program (0..*) \intends to satisfy (1..*) Requirement Artifact<br/>
+Requirements Documentation uses Requirement Artifact<br/>
 </code><br/>
 <br/><br/>
 
@@ -289,15 +289,15 @@ Ex.:<i> the Requirements Document of the Alfa Project.</i><br/>
 Relations:<br/>
 <code>Requirements Document (0..1) <>-- (1..*) Requirement Artifact<br/>
 Requirements Document describes Conceptual Model<br/>
-Requirements Engineer (1..*) responsible for (0..*) Requirements Document<br/>
 Coding uses Requirements Document<br/>
-Requirements Documentation creates Requirements Document<br/>
-Design Evaluation uses Requirements Document<br/>
 Requirements Negotiation and Prioritization changes Requirements Document<br/>
+Requirements Engineer (1..*) responsible for (0..*) Requirements Document<br/>
+Architectural Design uses Requirements Document<br/>
+Design Evaluation uses Requirements Document<br/>
 Code Review uses Requirements Document<br/>
 Requirements Verification and Validation uses Requirements Document<br/>
 Detailed Design uses Requirements Document<br/>
-Architectural Design uses Requirements Document<br/>
+Requirements Documentation creates Requirements Document<br/>
 </code><br/>
 <br/><br/>
 
@@ -335,8 +335,8 @@ Requirements Stakeholder participates in Requirements Negotiation and Prioritiza
 Requirements Stakeholder participates in Requirements Verification and Validation<br/>
 Requirements Stakeholder (1..*) interested in (1..*) Requirement Artifact  &lt&ltmaterial&gt&gt<br/>
 Stakeholder Intention (0..*) inheres in (1..*) Requirements Stakeholder<br/>
-Requirement (0..*) /got from (1..*) Requirements Stakeholder<br/>
 Stakeholder Belief (0..*) inheres in (1..*) Requirements Stakeholder<br/>
+Requirement (0..*) /got from (1..*) Requirements Stakeholder<br/>
 Assumption (1..1) /got from (1..*) Requirements Stakeholder<br/>
 </code><br/>
 <br/><br/>
@@ -351,10 +351,10 @@ Function Universal denoting the types of functions expected in a software.<br/>
 Ex.:<i> Controlling client orders.</i><br/>
 <br/>
 Relations:<br/>
-<code>Program (0..*) implements (1..*) Software Function Universal<br/>
-Functional Requirement (0..*) refers to (1..1) Software Function Universal<br/>
-Program Specification (0..*) describes (1..*) Software Function Universal<br/>
+<code>Program Specification (0..*) describes (1..*) Software Function Universal<br/>
 Software Function (0..*) instance of (1..*) Software Function Universal<br/>
+Functional Requirement (0..*) refers to (1..1) Software Function Universal<br/>
+Program (0..*) implements (1..*) Software Function Universal<br/>
 </code><br/>
 <br/><br/>
 
@@ -390,7 +390,7 @@ Requirement (1..*) propositional content of (1..*) Stakeholder Intention<br/>
 	<hr>
 	<br/>
 	<small><b>Reference Software Requirements Ontology (RSRO)</b></small><br/>
-	<small>Sun Sep 24 18:30:41 BRT 2017</small>
+	<small>Mon Sep 25 21:34:15 BRT 2017</small>
 	<br/>
 	<br/>
 	<br/>

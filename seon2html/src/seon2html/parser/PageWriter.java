@@ -124,7 +124,7 @@ public class PageWriter {
 			id++;
 		}
 		// neutral nodes (examples)
-		nodes += "  {data: {id:'" + (id++) + "', name:'DocO', dim:" + diff + ", level:3, color:'#e1e1d0'}},\n";
+		// nodes += " {data: {id:'" + (id++) + "', name:'DocO', dim:" + diff + ", level:3, color:'#e1e1d0'}},\n";
 		// nodes += " {data: {id:'" + (id++) + "', name:'RSMO', dim:" + diff + ", level:3, color:'#e1e1d0'}},\n";
 		// for (int i = 0; i < 2; i++) {
 		// nodes += " {data: {id:'" + (id + i) + "', name:'DO" + (i + 1) + "', dim:" + diff + ", level:3,

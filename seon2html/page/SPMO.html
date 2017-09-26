@@ -26,7 +26,7 @@
 	<h1 align="center">Software Project Management Ontology (SPMO)</h1>
 
 	<h2>1. Ontology Description</h2>
-	<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+	<p align="justify"></p>
 
 	<h2>2. Related Ontologies</h2>
 	<p>Networked ontologies used by SPMO:</p>
@@ -54,7 +54,7 @@
 <p align="justify">The Project Management Ontology (PMO) is defined as a layer over the Software Process Ontology, addressing aspects related to scope, time & duration, and cost estimation of intended processes, as well as aspects related to tracking planned versus performed processes. </p>
 
 <h3><a name="SPMO_WBS_section">3.1.  WBS</a></h3>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 <p>Figure 2 presents the conceptual model of the WBS subontology.</p>
 <p align="center"><IMG src="images/WBS.png" width="443" class="map" usemap="#WBS"><MAP NAME="WBS">
 <area shape="rect" coords="10,23,126,53" href="SPO.html#SPO_Software+Project" title="A Project related to software development or maintenance.">
@@ -62,10 +62,10 @@
 <area shape="rect" coords="322,125,432,155" href="SPMO.html#SPMO_Practical+Result" title="">
 <area shape="rect" coords="191,125,295,155" href="SPMO.html#SPMO_Work+Package" title=""></MAP></p>
 <p align="center"><b>Figure 2. WBS conceptual model.</b></p>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 
 <h3><a name="SPMO_Estimated+Process_section">3.2.  Estimated Process</a></h3>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 <p>Figure 3 presents the conceptual model of the Estimated Process subontology.</p>
 <p align="center"><IMG src="images/Estimated Process.png" width="1221" class="map" usemap="#Estimated Process"><MAP NAME="Estimated Process">
 <area shape="rect" coords="428,284,540,314" href="SPO.html#SPO_Project+Process" title="Intended Process defined to be performed within a Project.">
@@ -92,10 +92,10 @@
 <area shape="rect" coords="1033,456,1181,486" href="SPO.html#SPO_Stakeholder+Allocation" title="Social Relator representing a Stakeholder allocated to perform a Scheduled Activity acting an Organizational Role.">
 <area shape="rect" coords="1003,618,1211,709" href="SPMO.html#SPMO_Estimated+Stakeholder+Allocation" title=""></MAP></p>
 <p align="center"><b>Figure 3. Estimated Process conceptual model.</b></p>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 
 <h3><a name="SPMO_Tracked+Process_section">3.3.  Tracked Process</a></h3>
-<p align="justify"><b style='color:red'>No definition in Astah file</b></p>
+<p align="justify"></p>
 <p>Figure 4 presents the conceptual model of the Tracked Process subontology.</p>
 <p align="center"><IMG src="images/Tracked Process.png" width="1275" class="map" usemap="#Tracked Process"><MAP NAME="Tracked Process">
 <area shape="rect" coords="384,292,516,353" href="SPO.html#SPO_Performed+Process" title="Complex Action, composed of other processes or activities, performed in a specific Time Interval, for reaching a goal in a Project or Organization.">
@@ -253,8 +253,8 @@ Information Item describing an action to eliminate the cause or reduce the likel
 Ex.:<i> an additional developer shall be allocated for Project X; a new agreement on the requirements change shall be obtained from the client.</i><br/>
 <br/>
 Relations:<br/>
-<code>Noncompliance Resolution creates Corrective Action Register<br/>
-Noncompliance Register (0..*) <>-- (0..*) Corrective Action Register<br/>
+<code>Noncompliance Register (0..*) <>-- (0..*) Corrective Action Register<br/>
+Noncompliance Resolution creates Corrective Action Register<br/>
 </code><br/>
 <br/><br/>
 
@@ -290,8 +290,8 @@ Specializes <br/><br/>
 <br/>
 <br/>
 Relations:<br/>
-<code><span style='color:red' title='Relation to a lower level (SPO-->SPMO)'>Software Project (1..1) has (0..*) Deliverable</span><br/>
-Practical Result (0..*) <>-- (2..*) Deliverable<br/>
+<code>Practical Result (0..*) <>-- (2..*) Deliverable<br/>
+Software Project (1..1) has (0..*) Deliverable<br/>
 </code><br/>
 <br/><br/>
 
@@ -326,8 +326,8 @@ A Project Activity with scope, cost, duration and time estimated.<br/>
 <br/>
 <br/>
 Relations:<br/>
-<code>Tracked Activity (0..1) tracked in relation to (1..1) Estimated Activity<br/>
-Estimated Stakeholder Allocation (0..*) is to perform (1..1) Estimated Activity  &lt&ltmediation&gt&gt<br/>
+<code>Estimated Stakeholder Allocation (0..*) is to perform (1..1) Estimated Activity  &lt&ltmediation&gt&gt<br/>
+Tracked Activity (0..1) tracked in relation to (1..1) Estimated Activity<br/>
 </code><br/>
 <br/><br/>
 
@@ -461,8 +461,8 @@ Specializes SPMO::Deliverable<br/><br/>
 <br/>
 <br/>
 Relations:<br/>
-<code>Tracked Activity (0..*) contributes to produce (1..*) Work Package<br/>
-Scope Estimated Activity (1..*) is to produce (1..*) Work Package<br/>
+<code>Scope Estimated Activity (1..*) is to produce (1..*) Work Package<br/>
+Tracked Activity (0..*) contributes to produce (1..*) Work Package<br/>
 </code><br/>
 <br/><br/>
 
@@ -470,7 +470,7 @@ Scope Estimated Activity (1..*) is to produce (1..*) Work Package<br/>
 	<hr>
 	<br/>
 	<small><b>Software Project Management Ontology (SPMO)</b></small><br/>
-	<small>Sun Sep 24 18:30:41 BRT 2017</small>
+	<small>Mon Sep 25 21:34:14 BRT 2017</small>
 	<br/>
 	<br/>
 	<br/>

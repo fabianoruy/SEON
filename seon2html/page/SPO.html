@@ -912,13 +912,13 @@ Ex.:<i> a document, a model, a library, an e-mail, a bug.</i><br/>
 Relations:<br/>
 <code>Artifact (0..*) instance of (1..1) Artifact Type<br/>
 Artifact (0..*) depends on (0..*) Artifact  &lt&ltmaterial&gt&gt<br/>
-Composite Artifact (0..*) <>-- (2..*) Artifact  &lt&ltcomponentOf&gt&gt<br/>
 Performed Activity (0..1) creates (0..*) Artifact  &lt&ltmaterial&gt&gt<br/>
 Performed Activity (0..*) changes (0..*) Artifact  &lt&ltmaterial&gt&gt<br/>
 Performed Activity (0..*) uses (0..*) Artifact  &lt&ltmaterial&gt&gt<br/>
 Stakeholder (0..*) responsible for (0..*) Artifact  &lt&ltmaterial&gt&gt<br/>
-Artifact Participation (0..*) participation of (1..1) Artifact<br/>
 Document (0..*) describes (0..*) Artifact<br/>
+Artifact Participation (0..*) participation of (1..1) Artifact<br/>
+Composite Artifact (0..*) <>-- (2..*) Artifact  &lt&ltcomponentOf&gt&gt<br/>
 </code><br/>
 <br/><br/>
 
@@ -1101,8 +1101,8 @@ Artifact Type which is the powertype of Document, classifying its specialization
 Ex.:<i> Requirements Document, Design Specification, Project Plan.</i><br/>
 <br/>
 Relations:<br/>
-<code>Document Template (0..*) applies to (1..1) Document Type<br/>
-Document (0..*) instance of (1..1) Document Type<br/>
+<code>Document (0..*) instance of (1..1) Document Type<br/>
+Document Template (0..*) applies to (1..1) Document Type<br/>
 </code><br/>
 <br/><br/>
 
@@ -1202,8 +1202,8 @@ Object Kind which is the powertype of Hardware Equipment, classifying its specia
 Ex.:<i> Computer, Printer, Router, Keyboard.</i><br/>
 <br/>
 Relations:<br/>
-<code>Hardware Equipment (0..*) instance of (1..1) Hardware Type<br/>
-Standard Activity (0..*) requires (0..*) Hardware Type<br/>
+<code>Standard Activity (0..*) requires (0..*) Hardware Type<br/>
+Hardware Equipment (0..*) instance of (1..1) Hardware Type<br/>
 Intended Activity (0..*) requires (0..*) Hardware Type<br/>
 </code><br/>
 <br/><br/>
@@ -1251,10 +1251,10 @@ Intended Activity (0..*) is to be performed adopting (0..*) Procedure<br/>
 Intended Activity (0..*) creates (0..*) Artifact Type<br/>
 Intended Activity (0..*) changes (0..*) Artifact Type<br/>
 Intended Activity (0..*) uses (0..*) Artifact Type<br/>
-Stakeholder Allocation (0..*) is to perform (1..1) Intended Activity  &lt&ltmediation&gt&gt<br/>
+Performed Activity (0..*) caused by (0..1) Intended Activity<br/>
 Composite Intended Activity (0..*) <>-- (2..*) Intended Activity<br/>
 Specific Intended Process (1..1) <>-- (2..*) Intended Activity<br/>
-Performed Activity (0..*) caused by (0..1) Intended Activity<br/>
+Stakeholder Allocation (0..*) is to perform (1..1) Intended Activity  &lt&ltmediation&gt&gt<br/>
 </code><br/>
 <br/><br/>
 
@@ -1392,10 +1392,10 @@ Performed Activity (1..1) <>-- (1..*) Stakeholder Participation<br/>
 Performed Activity (0..*) adopts (0..*) Procedure  &lt&ltmaterial&gt&gt<br/>
 Performed Activity (1..1) <>-- (0..*) Procedure Participation<br/>
 Performed Activity (1..1) <>-- (0..*) Artifact Participation<br/>
-Performed Specific Process (1..*) <>-- (2..*) Performed Activity<br/>
-Software Measurement Execution (0..*) occurs in (1..1) Performed Activity<br/>
 Software Measurement Analysis (0..*)  (0..1) Performed Activity<br/>
+Performed Specific Process (1..*) <>-- (2..*) Performed Activity<br/>
 Stakeholder (1..*) is in charge of (0..*) Performed Activity  &lt&ltmaterial&gt&gt<br/>
+Software Measurement Execution (0..*) occurs in (1..1) Performed Activity<br/>
 Performed Composite Activity (0..*) <>-- (2..*) Performed Activity<br/>
 </code><br/>
 <br/><br/>
@@ -1538,8 +1538,8 @@ Normative Description prescribing a defined way for performing process activitie
 Ex.:<i> an OO Method, the Pair Programming technique, a Project Plan Template.</i><br/>
 <br/>
 Relations:<br/>
-<code>Performed Activity (0..*) adopts (0..*) Procedure  &lt&ltmaterial&gt&gt<br/>
-Standard Activity (0..*) is to be performed adoting (0..*) Procedure<br/>
+<code>Standard Activity (0..*) is to be performed adoting (0..*) Procedure<br/>
+Performed Activity (0..*) adopts (0..*) Procedure  &lt&ltmaterial&gt&gt<br/>
 Intended Activity (0..*) is to be performed adopting (0..*) Procedure<br/>
 Procedure Participation (0..*) participation of (1..1) Procedure<br/>
 </code><br/>
@@ -1743,7 +1743,7 @@ Specializes <br/><br/>
 <br/>
 <br/>
 Relations:<br/>
-<code><span style='color:red' title='Relation to a lower level (SPO-->RSMO)'>Software Organization (1..*) establishes (0..*) Operational Definition of Measure</span><br/>
+<code>Software Organization (1..*) establishes (0..*) Operational Definition of Measure<br/>
 </code><br/>
 <br/><br/>
 
@@ -1758,7 +1758,7 @@ Ex.:<i> Astah modeling tool, Microsoft Word, Eclipse IDE.</i><br/>
 <br/>
 Relations:<br/>
 <code>Software Product (0..*) instance of (1..1) Software Product Type<br/>
-<span style='color:red' title='Relation to a lower level (SPO-->SwO)'>Software Product (0..1) constituted of (1..*) Software System</span><br/>
+Software Product (0..1) constituted of (1..*) Software System<br/>
 </code><br/>
 <br/><br/>
 
@@ -1773,8 +1773,8 @@ Ex.:<i> Modeling Tool, Text Editor, IDE, Compiler.</i><br/>
 <br/>
 Relations:<br/>
 <code>Standard Activity (0..*) requires (0..*) Software Product Type<br/>
-Software Product (0..*) instance of (1..1) Software Product Type<br/>
 Intended Activity (0..*) requires (0..*) Software Product Type<br/>
+Software Product (0..*) instance of (1..1) Software Product Type<br/>
 </code><br/>
 <br/><br/>
 
@@ -1788,12 +1788,12 @@ A Project related to software development or maintenance.<br/>
 <br/>
 <br/>
 Relations:<br/>
-<code><span style='color:red' title='Relation to a lower level (SPO-->SPMO)'>Software Project (1..1) has (0..*) Deliverable</span><br/>
-Testing Environment (0..1) defined for (1..1) Software Project<br/>
+<code>Software Project (1..1) has (0..*) Deliverable<br/>
 Performed Project Process (0..*) performed in (1..1) Software Project<br/>
 Project Process (0..*) defined for (1..1) Software Project<br/>
 Performed Project Activity (0..*) /performed in (1..1) Software Project<br/>
 Software Project Measurement Plan (0..*) defined for (1..1) Software Project<br/>
+Testing Environment (0..1) defined for (1..1) Software Project<br/>
 Project Activity (0..*) /defined for (1..1) Software Project<br/>
 Project Stakeholder (0..*) interested in (1..*) Software Project  &lt&ltmaterial&gt&gt<br/>
 </code><br/>
@@ -1869,8 +1869,8 @@ Ex.:<i> the standard Requirements Development Process established as part of a b
 <br/>
 Relations:<br/>
 <code>Specific Standard Process (1..*) <>-- (2..*) Standard Activity<br/>
-Specific Intended Process (0..*) adapts (0..1) Specific Standard Process<br/>
 General Standard Process (0..*) <>-- (2..*) Specific Standard Process<br/>
+Specific Intended Process (0..*) adapts (0..1) Specific Standard Process<br/>
 </code><br/>
 <br/><br/>
 
@@ -1886,8 +1886,8 @@ Ex.:<i> an Analyst, a Programmer, a User, a Testing Team, a Client Organization.
 Relations:<br/>
 <code>Stakeholder (0..*) responsible for (0..*) Artifact  &lt&ltmaterial&gt&gt<br/>
 Stakeholder (1..*) is in charge of (0..*) Performed Activity  &lt&ltmaterial&gt&gt<br/>
-Stakeholder Allocation (0..*) allocates (1..1) Stakeholder  &lt&ltmediation&gt&gt<br/>
 Performed Activity (0..*) participates in (1..*) Stakeholder  &lt&ltmaterial&gt&gt<br/>
+Stakeholder Allocation (0..*) allocates (1..1) Stakeholder  &lt&ltmediation&gt&gt<br/>
 Stakeholder Participation (0..*) participation of (1..1) Stakeholder<br/>
 Stakeholder Main Participation (0..*) charge of (1..1) Stakeholder<br/>
 </code><br/>
@@ -1960,10 +1960,10 @@ Standard Activity (0..*) is to be performed adoting (0..*) Procedure<br/>
 Standard Activity (0..*) uses (0..*) Artifact Type<br/>
 Standard Activity (0..*) changes (0..*) Artifact Type<br/>
 Standard Activity (0..*) creates (0..*) Artifact Type<br/>
-Operational Definition of Measure (0..*) indicates (0..*) Standard Activity<br/>
+Specific Standard Process (1..*) <>-- (2..*) Standard Activity<br/>
 Intended Activity (0..*) adapts (0..1) Standard Activity<br/>
 Composite Standard Activity (0..*) <>-- (2..*) Standard Activity<br/>
-Specific Standard Process (1..*) <>-- (2..*) Standard Activity<br/>
+Operational Definition of Measure (0..*) indicates (0..*) Standard Activity<br/>
 </code><br/>
 <br/><br/>
 
@@ -2026,7 +2026,7 @@ Ex.:<i> White-box testing, Pair programming.</i><br/>
 	<hr>
 	<br/>
 	<small><b>Software Process Ontology (SPO)</b></small><br/>
-	<small>Sun Sep 24 18:30:40 BRT 2017</small>
+	<small>Mon Sep 25 21:34:13 BRT 2017</small>
 	<br/>
 	<br/>
 	<br/>
